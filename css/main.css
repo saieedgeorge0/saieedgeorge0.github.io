@@ -114,5 +114,9 @@ h1 {
     transform: none;
   }
 
+  .video {
+    background: black;
+  }
+
 }
 }
