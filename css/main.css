@@ -102,6 +102,7 @@ h1 {
   .container {
     padding: 20px;
     text-align: center;
+    background: black;
   }
   .content, .header {
     max-width: 100%;
