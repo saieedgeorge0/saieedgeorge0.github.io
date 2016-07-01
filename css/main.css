@@ -121,6 +121,12 @@ h1 {
 }
 
 @media(max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
   img.displayed {
     width: 250;
     height: 250;
