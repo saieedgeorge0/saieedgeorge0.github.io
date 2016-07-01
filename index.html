@@ -1,557 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+<html>
+  <head>
     <title>George Saieed</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <meta name="google-site-verification" content="K6UMbJ7bkMV2me2PMQL3Dgj9i2rnwLtTH8eDruyho68" />
-</head>
-
-<body id="page-top" class="index">
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">GS</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
+    <meta name="description" content="I am a software developer with an eye for design." />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="George Saieed">
+    <meta name="twitter:description" content="George Saieed: A software developer with an eye for design.">
+    <meta name="twitter:image" content="http://georgesaieed.com/img/georgesaieed.png">
+    <meta property="og:title" content="George Saieed" />
+    <meta property="og:url" content="http://georgesaieed.com/" />
+    <meta property="og:image" content="http://georgesaieed.com/img/georgesaieed.png" />
+    <meta property="og:description" content="George Saieed: A software developer with an eye for design." />
+    <meta property="og:site_name" content="George Saieed's personal website" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img class = "displayed" src="img/Thing.png" alt="My skills">
+        <h1>I am <span id="typingAnimation" style="color: #36B285"></span></h1>
+        <div class="typing">
+              <span id="typingAnimation"></span>
         </div>
-
-    </nav>
-
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">George Saieed</span>
-                        <hr class="star-light">
-                        <span class="skills">Software Developer | UI/UX Designer</span>
-                    </div>
-                </div>
-            </div>
+        <div class="icons">
+          <a href="http://github.com/saieedgeorge0">
+            <svg width="57px" height="57px" viewBox="0 0 57 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+                <title>github-logo</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Desktop-HD" transform="translate(-479.000000, -809.000000)" fill="#36B285">
+                        <g id="About-Me-Stuff" transform="translate(467.000000, 708.000000)">
+                            <g id="github-logo" transform="translate(12.000000, 101.000000)">
+                                <g id="Capa_1">
+                                    <path d="M53.1219226,14.5586503 C50.5760091,10.0948462 47.1226401,6.56084615 42.7609066,3.95585315 C38.3985239,1.35072727 33.6361025,0.0484965035 28.4702665,0.0484965035 C23.3050797,0.0484965035 18.5411002,1.35112587 14.1796264,3.95585315 C9.81750342,6.56071329 6.36426424,10.0948462 3.8183508,14.5586503 C1.27282688,19.0223217 0,23.8966853 0,29.1816084 C0,35.53 1.80997722,41.2386364 5.43084055,46.308979 C9.05131435,51.3797203 13.7284305,54.8884755 19.4617995,56.8356434 C20.12918,56.9623986 20.6232232,56.8732448 20.9444487,56.5704406 C21.2658041,56.2672378 21.426287,55.8875035 21.426287,55.4328322 C21.426287,55.356965 21.4199248,54.6744266 21.40759,53.3844196 C21.3948656,52.0944126 21.3888929,50.969028 21.3888929,50.0087972 L20.5362301,50.1597343 C19.9925877,50.2616434 19.3067699,50.3048252 18.4787768,50.2926014 C17.6511731,50.2807762 16.7920182,50.192021 15.9024806,50.027 C15.0125535,49.8634406 14.18482,49.4841049 13.418631,48.8897902 C12.6528314,48.2954755 12.1091891,47.5175385 11.7878337,46.5571748 L11.417139,45.6842378 C11.1700524,45.1030769 10.7810501,44.4574755 10.2496128,43.7498252 C9.7181754,43.0415105 9.18076538,42.5613287 8.63712301,42.3084825 L8.37757175,42.1183497 C8.20462415,41.991993 8.04414123,41.8395944 7.89573349,41.6627483 C7.74745558,41.4859021 7.63644191,41.3089231 7.56230296,41.1316783 C7.48803417,40.9543007 7.54957859,40.8088112 7.74758542,40.6946783 C7.94559226,40.5805455 8.3034328,40.5251399 8.82266515,40.5251399 L9.56379499,40.6384755 C10.0580979,40.7398531 10.6695171,41.0426573 11.3988314,41.5487483 C12.1277563,42.0544406 12.7269704,42.7118671 13.1966036,43.5207622 C13.7653052,44.5579231 14.4504738,45.3482168 15.2540569,45.892042 C16.0569909,46.4358671 16.8665467,46.7073147 17.6819453,46.7073147 C18.497344,46.7073147 19.2015991,46.6440699 19.7949704,46.5182448 C20.3876925,46.3917552 20.9437995,46.2016224 21.4630319,45.9489091 C21.6854487,44.2537902 22.2910251,42.9515594 23.2792415,42.0412867 C21.8707312,41.8898182 20.6043964,41.6616853 19.4795877,41.3583497 C18.3554282,41.0546154 17.1937449,40.5616783 15.9953166,39.8782098 C14.7962392,39.1956713 13.8015308,38.3481119 13.0109317,37.336993 C12.2202027,36.3253427 11.5712597,34.9972028 11.0650114,33.3537692 C10.5585034,31.7096713 10.3051845,29.8131259 10.3051845,27.6636014 C10.3051845,24.603007 11.2815854,21.9985455 13.2339977,19.8487552 C12.3194009,17.5477622 12.4057449,14.9682797 13.4932893,12.1105734 C14.2100091,11.8827063 15.2728838,12.0537063 16.6813941,12.6225105 C18.090164,13.1915804 19.1216173,13.6790699 19.7767927,14.0832517 C20.4319681,14.4873007 20.9569134,14.8296993 21.3524077,15.1073916 C23.6512346,14.4500979 26.0235513,14.1213846 28.4700068,14.1213846 C30.9164624,14.1213846 33.2892984,14.4500979 35.5882551,15.1073916 L36.9968952,14.1973846 C37.9601822,13.5901818 39.0977153,13.0337343 40.4067677,12.5279091 C41.7165991,12.0223497 42.7181891,11.8831049 43.4104989,12.110972 C44.5221936,14.9688112 44.621262,17.5481608 43.7064055,19.8491538 C45.6586879,21.9989441 46.6354784,24.6040699 46.6354784,27.664 C46.6354784,29.8135245 46.3812506,31.716049 45.8755216,33.3727692 C45.3691435,35.0297552 44.7146173,36.3565664 43.9116834,37.355993 C43.1078405,38.3552867 42.1067699,39.1962028 40.9083417,39.8786084 C39.7096538,40.5615455 38.5475809,41.0544825 37.4234214,41.3582168 C36.2987426,41.661951 35.0324077,41.8902168 33.6238975,42.041951 C34.9085399,43.1795594 35.5509909,44.9752587 35.5509909,47.4282517 L35.5509909,55.4317692 C35.5509909,55.8864406 35.7055011,56.266042 36.0147813,56.5693776 C36.323672,56.8721818 36.8114829,56.9613357 37.4788633,56.8344476 C43.2130114,54.8875455 47.8901276,51.3786573 51.5104715,46.3079161 C55.130426,41.2375734 56.9410524,35.5289371 56.9410524,29.1805455 C56.939754,23.8962867 55.6662779,19.0223217 53.1219226,14.5586503 L53.1219226,14.5586503 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </a>
+          <a href="mailto:gs@georgesaieed.com">
+            <svg width="57px" height="53px" viewBox="0 0 57 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+                <title>send-symbol</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Desktop-HD" transform="translate(-589.000000, -809.000000)" fill="#36B285">
+                        <g id="About-Me-Stuff" transform="translate(467.000000, 704.000000)">
+                            <g id="send-symbol" transform="translate(122.000000, 105.000000)">
+                                <g id="Capa_1">
+                                    <g id="Group">
+                                        <path d="M2.2906875,20.4220313 C1.07053125,20.8905 0.20484375,21.98775 0.0320625,23.2827188 C-0.1389375,24.5794688 0.41146875,25.86375 1.46775,26.6314688 L13.031625,35.0460938 L54.1036875,2.7324375 L17.7857813,38.5124063 L33.594375,50.0157188 C34.599,50.7460313 35.8975313,50.965125 37.09275,50.6035313 C38.2861875,50.2401563 39.237375,49.3335 39.664875,48.1667813 L56.5760625,1.87921875 C56.7470625,1.40896875 56.6259375,0.8835 56.2696875,0.53259375 C55.9152188,0.1816875 55.38975,0.07125 54.9195,0.25115625 L2.2906875,20.4220313 L2.2906875,20.4220313 Z" id="Shape"></path>
+                                        <path d="M10.2849375,37.8444375 L10.3829062,38.3805938 L12.6272812,50.651625 C12.7947187,51.563625 13.4039062,52.3277813 14.2517812,52.6965 C15.0996562,53.0634375 16.0775625,52.9850625 16.8541875,52.4845313 C19.9802812,50.4681563 24.0629062,47.7927188 23.9524687,47.6359688 L10.2849375,37.8444375 L10.2849375,37.8444375 Z" id="Shape"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/gsaieed">
+            <svg width="57px" height="57px" viewBox="0 0 57 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+                <title>1467353106_linkedin_square_color</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Desktop-HD" transform="translate(-699.000000, -809.000000)" fill="#36B285">
+                        <g id="About-Me-Stuff" transform="translate(467.000000, 704.000000)">
+                            <g id="1467353106_linkedin_square_color" transform="translate(232.000000, 105.000000)">
+                                <g id="Layer_1">
+                                    <path d="M44.49515,41.93015 L44.49515,30.80375 C44.49515,24.84345 41.31265,22.06945 37.06995,22.06945 C33.64615,22.06945 32.1119,23.95235 31.2569,25.2738 L31.2569,22.5245 L24.8064,22.5245 C24.8919,24.34565 24.8064,41.9311 24.8064,41.9311 L31.2569,41.9311 L31.2569,31.09255 C31.2569,30.51305 31.2987,29.93355 31.4697,29.5184 C31.9352,28.36035 32.99635,27.1605 34.7776,27.1605 C37.1127,27.1605 38.0456,28.93985 38.0456,31.5476 L38.0456,41.93015 L44.49515,41.93015 L44.49515,41.93015 Z M18.01105,19.8759 C20.2597,19.8759 21.66095,18.38535 21.66095,16.52145 C21.61915,14.6186 20.2597,13.16985 18.0538,13.16985 C15.8479,13.16985 14.40485,14.6186 14.40485,16.52145 C14.40485,18.38535 15.80515,19.8759 17.9702,19.8759 L18.01105,19.8759 L18.01105,19.8759 Z M21.2363,41.93015 L21.2363,22.5245 L14.78675,22.5245 L14.78675,41.93015 L21.2363,41.93015 L21.2363,41.93015 Z M0,0 L57,0 L57,57 L0,57 L0,0 L0,0 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </a>
+          <a href="DesignResume.pdf">
+            <svg width="45px" height="56px" viewBox="0 0 45 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+                <title>noun_387301_cc</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Desktop-HD" transform="translate(-809.000000, -809.000000)">
+                        <g id="About-Me-Stuff" transform="translate(348.000000, 683.000000)">
+                            <g id="noun_387301_cc" transform="translate(461.000000, 126.000000)">
+                                <g id="Group">
+                                    <g>
+                                        <polygon id="Shape" fill="#36B285" points="36.309 8.74863636 44.0454545 8.74863636 44.0454545 8.63981818 36.309 0.0431818182"></polygon>
+                                        <ellipse id="Oval" fill="#000000" cx="22.4545455" cy="13.5452727" rx="3.81209091" ry="3.81209091"></ellipse>
+                                        <path d="M34.5817273,0.00345454545 L0.863636364,0.00345454545 L0.863636364,55.2761818 L44.0454545,55.2761818 L44.0454545,10.4759091 L34.5817273,10.4759091 L34.5817273,0.00345454545 L34.5817273,0.00345454545 Z M33.6818182,25.5947273 L33.6818182,31.9562727 L22.7170909,31.9562727 L28.0681818,20.3541818 C28.0681818,20.3559091 33.6818182,20.4301818 33.6818182,25.5947273 L33.6818182,25.5947273 Z M22.4545455,28.8886364 L18.5992727,20.3559091 L22.4545455,20.3559091 L26.3098182,20.3559091 L22.4545455,28.8886364 L22.4545455,28.8886364 Z M22.4545455,8.00590909 C25.5135455,8.00590909 27.9939091,10.4862727 27.9939091,13.5452727 C27.9939091,16.6042727 25.5135455,19.0829091 22.4545455,19.0829091 C19.3955455,19.0829091 16.9151818,16.6025455 16.9151818,13.5435455 C16.9151818,10.4845455 19.3955455,8.00590909 22.4545455,8.00590909 L22.4545455,8.00590909 Z M11.2272727,25.5947273 C11.2272727,20.4301818 16.8409091,20.3559091 16.8409091,20.3559091 L22.192,31.958 L11.2272727,31.958 L11.2272727,25.5947273 L11.2272727,25.5947273 Z M35.4090909,48.4966364 L9.5,48.4966364 L9.5,46.7693636 L35.4090909,46.7693636 L35.4090909,48.4966364 L35.4090909,48.4966364 Z M35.4090909,44.0817273 L9.5,44.0817273 L9.5,42.3544545 L35.4090909,42.3544545 L35.4090909,44.0817273 L35.4090909,44.0817273 Z M35.4090909,37.9395455 L35.4090909,39.6668182 L9.5,39.6668182 L9.5,37.9395455 L35.4090909,37.9395455 L35.4090909,37.9395455 Z" id="Shape" fill="#36B285"></path>
+                                        <path d="M15.7993636,22.2213636 C14.6092727,22.4908182 12.9545455,23.2836364 12.9545455,25.5964545 L12.9545455,30.2307273 L19.494,30.2307273 L15.7993636,22.2213636 L15.7993636,22.2213636 Z" id="Shape" fill="#000000"></path>
+                                        <path d="M31.9545455,30.2307273 L31.9545455,25.5964545 C31.9545455,23.2732727 30.2790909,22.4856364 29.1114545,22.2196364 L25.4150909,30.2307273 L31.9545455,30.2307273 L31.9545455,30.2307273 Z" id="Shape" fill="#000000"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </a>
         </div>
-    </header>
-
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/epichess.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/fritter.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ios.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ireceipts.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/resume.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/segway.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/twilio.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I am a dedicated and hard-working individual, capable of learning anything at almost any speed. I am an excellent leader and always strive to be the best in anything I do.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>My interests lie in both software development and design, and I thus know Java, Ruby, Rails, Python, Swift, C#, and can use R, Stata, Photoshop, and Sketch.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" action = "https://formspree.io/gs@georgesaieed.com" method="POST" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" name="thename" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" name="theemail" class="form-control" placeholder="Email Address" id="email_address" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" name="thephonenumber" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" name = "themsg" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>The University of Chicago<br>5801 S Ellis Ave.<br>Chicago, IL 60637</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Learn More About Me</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/gsaieed" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/102274488220011117394" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://linkedin.com/in/gsaieed" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/saieedgeorge0" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Questions?</h3>
-                        <p>Contact me through the form above, or email me <a href="mailto:gs@georgesaieed.com">here</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; George Saieed 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+      </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>EpiChess</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/epichessfull.png" class="img-responsive img-centered" alt="">
-                            <p>An associate and I created a simple two-player chess app, where the pieces are constrained appropriately by their respective rules in the actual game of chess.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project Link:
-                                    <strong><a href="http://bit.ly/cepichess">Windows Store</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April - May 2014
-                                    </strong>
-                                </li>
-                                <li>Languages and/or Frameworks Used:
-                                    <strong>C#
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Fritter</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/fritterfull.png" class="img-responsive img-centered" alt="">
-                            <p>This is a simple twitter copycat built with Ruby on Rails.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project Link:
-                                    <strong><a href="http://bit.ly/usfritter">Fritter</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>May 2015
-                                    </strong>
-                                </li>
-                                <li>Languages and/or Frameworks Used:
-                                    <strong>HTML, CSS, Ruby, Rails
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Various iOS Apps</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/iosfull.png" class="img-responsive img-centered" alt="">
-                            <p>This is a conglomerate of iOS apps I built while teaching myself Swift. They are mostly simple apps designed to teach myself certain aspects of developing in Xcode with Swift for iOS.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project Link:
-                                    <strong><a href="http://bit.ly/saieedapps">Google Drive</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>August 2015
-                                    </strong>
-                                </li>
-                                <li>Languages, Software and/or Frameworks used:
-                                    <strong>Xcode, Swift
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>iReceipts</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ireceiptsfull.png" class="img-responsive img-centered" alt="">
-                            <p>This is an app I designed and built to allow users to store and categorize receipts. It won JP Morgan Chase's prize for best UI/UX design at Uncommon Hacks 2016, and will soon be available on the app store.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project Link:
-                                    <strong><a href="http://bit.ly/myReceiptDesign">Design</a>, <a href="http://bit.ly/myReceipt">Project (DevPost)</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2016
-                                    </strong>
-                                </li>
-                                <li>Languages, Software and/or Frameworks Used:
-                                    <strong>Xcode, Swift
-                                    </strong>
-                                </li>
-                                <li>Frameworks to be used:
-                                    <strong>Microsoft Oxford, Yodlee, Firebase
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Resume</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/resumefull.png" class="img-responsive img-centered" alt="">
-                            <p>This is my resume - I designed it myself. NOTE: The above image NO LONGER accurately reflects my projects and/or experience accurately. Click on the link below to view the most up-to-date version of my resume.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project Link:
-                                    <strong><a href="DesignResume.pdf">PDF</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2016
-                                    </strong>
-                                </li>
-                                <li>Software Used:
-                                    <strong>Sketch
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Segway Robot</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/segwayfull.png" class="img-responsive img-centered" alt="">
-                            <p>This project used kinematic skeletal tracking with the Microsoft Kinect, along with Blob Following. Started at Andrew's Leap (now called Leap@CMU), an associate and I wrote software in C++ for a Segway RMP440 robotic platform with a Kinect sensor that allowed it to follow subjects as they move around from place to place.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project Link:
-                                    <strong><a href="http://bit.ly/segwayc">Dropbox</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>June - August 2013
-                                    </strong>
-                                </li>
-                                <li>Languages and/or Frameworks Used:
-                                    <strong>C++
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Finals Schedule Replier</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/twiliofull.png" class="img-responsive img-centered" alt="">
-                            <p>This uses the Twilio API to allow University of Chicago students to text their classes to a number and have it text them back the location, date, and time of that final.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project Link:
-                                    <strong><a href="http://bit.ly/ucfinals">GitHub</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>May 2016
-                                    </strong>
-                                </li>
-                                <li>Languages and APIs Used:
-                                    <strong>Python, Twilio
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/jquery.js"></script>
+    <!-- JavaScript -->
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/unslider-min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/typed.js"></script>
+            <script>
+              $(function(){
+                  if($(window).width() > 640) {
+                      $("#typingAnimation").typed({
+                        strings: ["George Saieed", "a Software Developer", "a UI/UX Designer", "an Aspiring Entrepeneur", "a Tech Junkie", "a Pianist", "a Creative Thinker", "an Avid Reader", "a Movie Enthusiast", "a fearless Leader", "an Unstoppable Force"],
+                        typeSpeed: 50,
+                        backDelay: 2000,
+                        loop: true,
+                        loopCount: false,
+                        callback: function(){}
+                      });
+                  } else {
+                        $(".typing").hide();
+                        $("#typed-cursor").hide();
+                        $("#typeAnimation").hide();
+                  }
+              });
+            </script>
 
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <script src="js/freelancer.js"></script>
-
-</body>
-
+  </body>
 </html>
