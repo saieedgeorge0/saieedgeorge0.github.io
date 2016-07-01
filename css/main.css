@@ -100,9 +100,9 @@ h1 {
     font-size: 1.8em;
   }
   .container {
+    background: black;
     padding: 20px;
     text-align: center;
-    background: black;
   }
   .content, .header {
     max-width: 100%;
@@ -112,10 +112,6 @@ h1 {
   }
   .icons svg:hover {
     transform: none;
-  }
-
-  .video {
-    background: black;
   }
 
 }
