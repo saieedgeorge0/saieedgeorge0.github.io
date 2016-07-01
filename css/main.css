@@ -92,6 +92,12 @@ h1 {
 }
 
 @media(max-width: 768px) {
+  .container {
+    background:black;
+  }
+}
+
+@media(max-width: 768px) {
   img.displayed {
     width: 250;
     height: 250;
@@ -100,7 +106,6 @@ h1 {
     font-size: 1.8em;
   }
   .container {
-    background: black;
     padding: 20px;
     text-align: center;
   }
