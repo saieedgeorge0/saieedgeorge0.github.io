@@ -92,13 +92,8 @@ h1 {
 }
 
 @media(max-width: 768px) {
-  .body {
-    background: url("../animation/test.gif");
-    background-size: cover;
-    height: 100%;
-  }
   .container {
-    background: rgba(0,0,0,0.5);
+    background: black;
   }
 }
 
