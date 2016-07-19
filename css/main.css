@@ -10,6 +10,13 @@ body {
   overflow: hidden;
 }
 
+:focus {
+    outline: 0;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
 img.displayed {
   width: 300;
   height: 300;
