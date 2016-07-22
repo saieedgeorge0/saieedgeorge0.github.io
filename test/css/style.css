@@ -618,6 +618,13 @@ button:focus {
     }
 }
 
+@media (max-width: 800px){
+    .navbar#sub-nav li {
+        margin-left : .1em;
+        margin-right : .1em;
+    }
+}
+
 @media (min-width: 768px){ 
     #profilesmall {
         height: 40px;
