@@ -159,5 +159,11 @@ input:-webkit-autofill {
     color: white;
     border-top: none !important;
     border-bottom: none !important;
+    }
 }
+
+@media(max-width: 500px) {
+    .open-title {
+        font-size: 10vw;
+    }
 }
