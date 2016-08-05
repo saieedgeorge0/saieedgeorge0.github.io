@@ -217,6 +217,10 @@ animation-delay: 0.4s;
     border-top: none !important;
     border-bottom: none !important;
     }
+    
+    .back-over {
+        background: rgba(0,0,0,.5);
+    }
 }
 
 @media(max-width: 500px) {
