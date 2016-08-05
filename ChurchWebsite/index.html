@@ -36,7 +36,7 @@
 
                 <div class="collapse navbar-collapse" id="navbar-collapse">
 
-                    <ul class="nav navbar-nav" id = "main-nav-text">
+                    <ul class="nav navbar-nav animate fadeInUp one" id = "main-nav-text">
                         <li class = "active"><a href="index.html">HOME</a></li>
                         <li><a href="index.html">SCHEDULE</a></li>
                         <li><a href="index.html">MINISTRIES</a></li>
@@ -72,7 +72,7 @@
         <img src="img/mainphoto.jpg" alt="">
         </div>
         <div class = "back-over">
-            <span id = "typingAnimation" class = "open-title"></span>
+            <span class = "open-title animate fadeInUp one">St. Mary's Coptic Orthodox Church Pittsburgh, PA</span>
         </div>
     </div>    
         
@@ -82,26 +82,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/typed.js"></script>
-            <script>
-              $(function(){
-                  if($(window).width() > 0) {
-                      $("#typingAnimation").typed({
-                        strings: ["St. Mary's Coptic Orthodox Church Pittsburgh, PA"],
-                        typeSpeed: 20,
-                        backDelay: 2000,
-                        loop: false,
-                        loopCount: false,
-                        callback: function(){}
-                      });
-                      $("#typed-cursor").hide();
-                  } else {
-                        $(".typing").hide();
-                        $("#typed-cursor").hide();
-                        $("#typeAnimation").hide();
-                  }
-              });
-            </script>
+        
     </body>
 </html>
 
