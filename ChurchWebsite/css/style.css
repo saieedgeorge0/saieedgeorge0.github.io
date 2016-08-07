@@ -38,8 +38,8 @@ html,body
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     font-weight: 100 !important;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     -webkit-transition: .7s ease-in-out;
     -moz-transition: .7s ease-in-out;
     -o-transition: .7s ease-in-out;
@@ -190,15 +190,15 @@ animation-delay: 0.4s;
 
 @media(max-width: 1025px) {
     .nav.navbar-nav#main-nav-text li a {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 @media(max-width: 816px) {
     .nav.navbar-nav#main-nav-text li a {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
