@@ -19,3 +19,10 @@
     cursor: pointer;
     cursor: hand;
 }
+
+@media(max-width: 875px) {
+    .nav.navbar-nav.navbar-right li a {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
