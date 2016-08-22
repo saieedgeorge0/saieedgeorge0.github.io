@@ -1,0 +1,21 @@
+.mapView {
+        border: solid 1px black;
+        position: relative;
+        padding-bottom: 45%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+.mapView iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+}
+
+#thelogos {
+    width: 30px !important;
+    margin-top: -6px;
+    cursor: pointer;
+    cursor: hand;
+}

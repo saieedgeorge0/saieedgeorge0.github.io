@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Videos</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+    <link href="../css/styleother.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!--jquery-->
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	
+	
+	<!--youmax unpacked
+	<script src="./js/source_unpacked/imagesloaded.pkgd.js"></script>
+	<script src="./js/source_unpacked/masonry.pkgd.js"></script>
+	<script src="./js/source_unpacked/magnific_popup_iframe_gallery.js"></script>
+	<script src="./js/source_unpacked/jquery.youmax.js"></script>
+	<script src="./js/source_unpacked/share.js"></script>
+	-->
+	
+	<!--youmax packed-->
+	<script src="./js/jquery.youmax.min.js"></script>
+	
+	<!--youmax css unpacked
+	<link rel="stylesheet" href="./css/src/youmax_trend.css"/>
+	<link rel="stylesheet" href="./css/src/youmax_common.css"/>
+	-->
+
+	<!--youmax css packed-->
+	<link rel="stylesheet" href="./css/youmax_trend.min.css"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img id = "thelogos" src="../img/copticross2.svg"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../schedule.html">SCHEDULE</a></li>
+                        <li><a href="../videos/videos.html">VIDEOS</a></li>
+                        <li><a href="../allforone.html">ALL FOR ONE</a></li>
+                        <li><a href="../videos/logos.html">LOGOS RETREAT</a></li>
+                        <li><a href="../about.html">ABOUT</a></li>
+                        <li><a href="../subscribe.html">SUBSCRIBE</a></li>
+                        <li><a href="../contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('../img/mainchurchdark.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1>Videos</h1>
+                        <hr class="small">
+                        <span class="subheading">Our YouTube Channel + Livestreaming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <div id="youmax" class="youmax">
+            </div>
+            </div>
+            <script>
+               $("#youmax").youmax({
+                  //apiKey:"AIzaSyBRYSnSL1UYBVuSkV_2bxigKEsNd7Pdnl0",
+                  apiKey:"AIzaSyAlhAqP5RS7Gxwg_0r_rh9jOv_5WfaJgXw",
+                  clientId:"237485577723-lndqepqthdb3lh4gec2skvpfaii9sgh0.apps.googleusercontent.com",
+
+
+                  youtube_channel_uploads:[
+
+                        {
+                            url:"https://www.youtube.com/user/stmaypitt",
+                            name:"All Videos",
+                            selected:true
+
+                        }	
+                  ],
+                /*
+                youtube_playlist_videos:[
+                    {
+                        url:"https://www.youtube.com/playlist?list=PLxWQqrQTV0rJFTlSnADz0-EUelwY67qor",
+                        name:"List videos ",
+
+                    }			
+                ],
+                */
+                channel:"https://www.youtube.com/user/stmaypitt",
+                vimeoAccessToken:"eba568e542d445e983b2a9369bb9117c",
+                //vimeoAccessToken:"fb86169313df3f09803409547a4e4a78",
+                displayVideo:"inline",
+                alwaysUseDropdown:false,
+                skin:"trend",
+                maxResults:6,
+                maxContainerWidth:950,
+                autoPlayVideo:true,
+                displayFirstVideoOnLoad:false,
+                linkNewPages:true,
+                searchBoxScope:"channel",
+                videoProtocol:"https:",
+                autoLoadComments: false,
+                alignPopupToTop: true,
+                commentOrder:"relevance", //time|relevance
+                //featuredVideo:'https://vimeo.com/172490277',
+                //featuredVideo:'https://vimeo.com/133396066',
+                playlistSearchFile:'./json/searchlist.json',
+                userWebsite:"http://www.codehandling.com",
+                videoMode:"wide",
+                shareLink:"youtube",
+                facebookAppId:"",
+                widgetMode:false,
+                showTitleInVideoPlayer:false,
+                playlistAction:"showvideos",
+                viewCountType:"abbr",
+                likeCommentCountType:"abbr",
+                showEvents:true,
+                loadMode:"paginate-bottom", //paginate-sides, paginate-bottom
+                hideHeader:false,
+                hideNavigation:false,
+                hideComments:false,
+                //loadButtonSize:"large",
+                videoPlayerTheme:"light",
+                showTextInsteadOfIcons:false,
+                loadButtonSize:"large",
+                headerCountType:"abbr",
+                //minVideoContainerHeight:310,
+                translatorFile:"./json/translation.json",
+                oneColumnThumbnailWidth:'90%',
+                oneColumnThumbnailLeftRightMargin:'5%',
+                advertisementFile:"./json/advertisement.json",
+                tabStyle:"wire",
+                //For Block Tabs
+                tabBackgroundColor:"#f5f5f5",
+                tabTextColor:"#929090",
+                tabHoverBackgroundColor:"rgba(106, 106, 106, 0.09)",
+                tabActiveBackgroundColor:"#ACACAC",
+                tabActiveTextColor:"white",
+                //For Wire Tabs
+                tabBackgroundColor:"green",
+                tabTextColor:"#929090",
+                tabHoverColor:"#4E4E4E",
+                tabActiveBackgroundColor:"green",
+                tabActiveTextColor:"green",
+                //Youmax Background Color
+                youmaxBackgroundColor:"#fff",
+                //Load More Buttons
+                loadmoreButtonBackgroundColor:"rgb(212, 212, 212)",
+                loadmoreButtonTextColor:"#666",
+                loadmoreButtonHoverBackgroundColor:"#383838",
+                loadmoreButtonHoverTextColor:"white",
+                //Grid colors
+                gridItemBackgroundColor:"white",
+                gridItemSeparatorColor:"#e2e2e2",
+            });
+	</script>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.facebook.com/stmarycocpittpa/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com/user/stmaypitt">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:stmarypitt@gmail.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; St. Mary's Coptic Orthodox Church 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+    
+    <!-- JavaScript -->
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
+            <script src="../js/unslider-min.js"></script>
+            <script src="../js/main.js"></script>
+            <script src="../js/typed.js"></script>
+            
+
+</body>
+
+</html>
