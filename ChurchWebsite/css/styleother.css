@@ -20,9 +20,19 @@
     cursor: hand;
 }
 
+.banner{
+    width:100%
+}
+
+.navbar-mine{
+    font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+
 @media(max-width: 875px) {
     .nav.navbar-nav.navbar-right li a {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
 }
+
