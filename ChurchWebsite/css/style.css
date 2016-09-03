@@ -129,6 +129,10 @@ html,body
     text-align: center;
 }
 
+.back-text {
+    opacity: .75;
+}
+
 .open-title {
     position: absolute;
     top: 0;
