@@ -29,6 +29,10 @@
     font-size: 15px;
 }
 
+body {
+    background:#F3EEEE;
+}
+
 @media(max-width: 875px) {
     .nav.navbar-nav.navbar-right li a {
         padding-left: 10px !important;
