@@ -1,3 +1,7 @@
+hr {
+    border-color: #DCDCDC;
+}
+
 .mapView {
         border: solid 1px black;
         position: relative;
