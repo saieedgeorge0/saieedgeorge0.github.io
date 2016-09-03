@@ -70,7 +70,7 @@ body {
 }
 }
 
-@media(max-width: 865px) {
+@media(max-width: 865px) and (min-height:840px) {
     .banner {
         width:100%;
         height: 20vh;
