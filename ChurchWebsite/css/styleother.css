@@ -21,12 +21,23 @@
 }
 
 .banner{
-    width:100%
+    width:100%;
+    position:relative;
 }
 
 .navbar-mine{
     font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 15px;
+}
+
+.page-title {
+    font-size:4.5vw; 
+    width: 68vw;
+    font-family: 'Poiret One', cursive;
+    color:white; 
+    position: absolute; 
+    top:5vh;
+    left: 16vw;
 }
 
 body {
@@ -38,5 +49,24 @@ body {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
+}
+
+@media(max-width: 900px) {
+    .page-title {
+        top:2vh;
+}
+}
+
+
+@media(max-width: 600px) {
+    .page-title {
+        top:1vh;
+}
+}
+
+@media(max-width: 400px) {
+    .page-title {
+        top:0px;
+}
 }
 
