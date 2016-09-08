@@ -1028,10 +1028,26 @@ body {
 }
 
 @media (max-width: 500px) {
+    .popup-image {
+    object-fit: cover;
+    width: 96vw;
+    height: 200px;
+}
+
+.popup-img-div {
+    width: 96vw;
+    height: 300px;
+    margin-left: 2vw;
+}
+
     .popup-stuff {
+        
     padding-left: 6vw;
     padding-right: 6vw;
-}
+        width: 96vw;
+        margin-left: 2vw;
+        margin-top: -100px;
+    }
 }
 
 @media (max-width: 1294px) {
