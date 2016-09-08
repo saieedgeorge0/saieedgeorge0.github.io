@@ -1031,7 +1031,12 @@ body {
     background: rgba(255, 255, 255, .8);
 }
 }
-
+@media (max-width: 750px) {
+    #p-body {
+    font-size: 18px;
+}
+}
+}
 @media (max-width: 500px) {
     .popup-image {
     object-fit: cover;
@@ -1053,6 +1058,7 @@ body {
         margin-left: 2vw;
         margin-top: -100px;
     }
+
 }
 
 @media (max-width: 1294px) {
