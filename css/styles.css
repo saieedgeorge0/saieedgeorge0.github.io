@@ -34,6 +34,10 @@ body {
 .me {
     height: 200px;
     -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
 }
 
 .card {
@@ -41,10 +45,18 @@ body {
     text-align:center;
     vertical-align: middle;
     -webkit-filter: blur(2px) grayscale(100%);
+    -moz-filter: blur(2px) grayscale(100%);
+    -ms-filter: blur(2px) grayscale(100%);
+    -o-filter: blur(2px) grayscale(100%);
+    filter: blur(2px) grayscale(100%);
 }
 
 .card:hover {
     -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
     z-index: 1;
 }
 
@@ -55,6 +67,10 @@ body {
     font-weight: 100;
     position: absolute;
     top: 50%; left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
 
@@ -98,7 +114,15 @@ body {
     background: url('../img/lowpoly.jpg') no-repeat;
     background-size: contain;
     background-position: -webkit-calc(((100% - 20px)/2));
+    background-position: -moz-calc(((100% - 20px)/2));
+    background-position: -ms-calc(((100% - 20px)/2));
+    background-position: -o-calc(((100% - 20px)/2));
+    background-position: calc(((100% - 20px)/2));
     -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -ms-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    filter: blur(0px) grayscale(0%);
     margin-top: 4px;
     margin-bottom: 3px;
 }
@@ -107,7 +131,15 @@ body {
     background: url('../img/lowpoly.jpg') no-repeat;
     background-size: contain;
     background-position: -webkit-calc(((100% - 20px)/2));
+    background-position: -moz-calc(((100% - 20px)/2));
+    background-position: -ms-calc(((100% - 20px)/2));
+    background-position: -o-calc(((100% - 20px)/2));
+    background-position: calc(((100% - 20px)/2));
     -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -ms-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    filter: blur(0px) grayscale(0%);
     margin-top: 4px;
     margin-bottom: 3px;
 }
@@ -349,35 +381,71 @@ body {
 
 .git {
     margin-left: -webkit-calc((100% - 215px)/2)  /*80px*/;
+    margin-left: -moz-calc((100% - 215px)/2);
+    margin-left: -ms-calc((100% - 215px)/2);
+    margin-left: -o-calc((100% - 215px)/2);
+    margin-left: calc((100% - 215px)/2);
     margin-top: 15px;
     display:inline-block;
     color: #EC4A32;
     -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
 }
 
 .lin {
     margin-left: -webkit-calc((100% - 215px)/4) /*40px*/;
+    margin-left: -moz-calc((100% - 215px)/4);
+    margin-left: -ms-calc((100% - 215px)/4);
+    margin-left: -o-calc((100% - 215px)/4);
+    margin-left: calc((100% - 215px)/4);
     margin-top: 10px;
     color: #EC4A32;
     -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
 }
 
 .mail {
     margin-left: -webkit-calc((100% + 123px)/2);
+    margin-left: -moz-calc((100% + 123px)/2);
+    margin-left: -ms-calc((100% + 123px)/2);
+    margin-left: -o-calc((100% + 123px)/2);
+    margin-left: calc((100% + 123px)/2);
     margin-top: -107px;
     color: #EC4A32;
     -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
 }
 
 .res {
     margin-left: -webkit-calc((100% + 148px)/2);
+    margin-left: -moz-calc((100% + 148px)/2);
+    margin-left: -ms-calc((100% + 148px)/2);
+    margin-left: -o-calc((100% + 148px)/2);
+    margin-left: calc((100% + 148px)/2);
     margin-top: 22px;
     color: #EC4A32;
     -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
 }
 
 .git:hover, .lin:hover, .res:hover, .mail:hover {
     -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
 }
 
 .img-padding {
@@ -438,6 +506,10 @@ body {
 }
 
 #close-popup:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
     transform: scale(1.3);
     cursor: pointer;
 }
@@ -473,6 +545,16 @@ body {
 }
 
 @media (max-width: 991px) {
+    #uchicago {
+        background-position: 0px;
+    }
+    #inventoryconnection {
+         background-position: 0px;
+    }
+    
+    #sewickleyacademy2 {
+        background-position: 0px;
+    }
     .popup-image {
     object-fit: cover;
     width: 90vw;
@@ -492,6 +574,10 @@ body {
     }
     .card {
         -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
         height: 50vh;
         border-bottom: solid 1px white;
         border-top: solid 1px white;
@@ -562,12 +648,20 @@ body {
     
     .card:hover {
         -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
     }
     
     
     
     .git, .lin, .mail, .res {
         -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -ms-filter: blur(0px);
+        -o-filter: blur(0px);
+        filter: blur(0px);
     }
     .edu-point:hover .pg-section{
     visibility: visible;
@@ -577,36 +671,60 @@ body {
 .edu-point .pg-section{
     visibility: visible;
     opacity: .9;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
     transform: scale(1.3);
 }
     
 .exp-point .pg-section2{
     visibility: visible;
     opacity: .9;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
     transform: scale(1.3);
 }
 
 .pro1-point .pg-section3{
     visibility: visible;
     opacity: .9;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
     transform: scale(1.3);
 }
 
 .blog-point .pg-section4{
     visibility: visible;
     opacity: .9;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
     transform: scale(1.3);
 }
 
 .about-point .pg-section5{
     visibility: visible;
     opacity: .9;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
     transform: scale(1.3);
 }
 
 .contact-point .pg-section6{
     visibility: visible;
     opacity: .9;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
     transform: scale(1.3);
 }
     
@@ -659,10 +777,18 @@ body {
 }
     .mail {
     margin-left: -webkit-calc((100% + 150px)/2);
+        margin-left: -moz-calc((100% + 150px)/2);
+        margin-left: -ms-calc((100% + 150px)/2);
+        margin-left: -o-calc((100% + 150px)/2);
+        margin-left: calc((100% + 150px)/2);
 }
 
 .res {
     margin-left: -webkit-calc((100% + 230px)/2);
+        margin-left: -moz-calc((100% + 230px)/2);
+        margin-left: -ms-calc((100% + 230px)/2);
+        margin-left: -o-calc((100% + 230px)/2);
+        margin-left: calc((100% + 230px)/2);
 }
     
     #me {
@@ -693,6 +819,10 @@ body {
     }
     .card {
         -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
         height: 50vh;
         border-bottom: solid 1px white;
         border-top: solid 1px white;
@@ -707,10 +837,18 @@ body {
     }
     .mail {
     margin-left: -webkit-calc((100% + 130px)/2);
+        margin-left: -moz-calc((100% + 130px)/2);
+        margin-left: -ms-calc((100% + 130px)/2);
+        margin-left: -o-calc((100% + 130px)/2);
+        margin-left: calc((100% + 130px)/2);
 }
 
 .res {
     margin-left: -webkit-calc((100% + 170px)/2);
+        margin-left: -moz-calc((100% + 170px)/2);
+        margin-left: -ms-calc((100% + 170px)/2);
+        margin-left: -o-calc((100% + 170px)/2);
+        margin-left: calc((100% + 170px)/2);
 }
     
 }
@@ -728,6 +866,10 @@ body {
     }
     .card {
         -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
         height: 30vh;
         border-bottom: solid 1px white;
         border-top: solid 1px white;
@@ -742,81 +884,145 @@ body {
     }
     .mail {
     margin-left: -webkit-calc((100% + 110px)/2);
+        margin-left: -moz-calc((100% + 110px)/2);
+        margin-left: -ms-calc((100% + 110px)/2);
+        margin-left: -o-calc((100% + 110px)/2);
+        margin-left: calc((100% + 110px)/2);
 }
 
 .res {
     margin-left: -webkit-calc((100% + 125px)/2);
+        margin-left: -moz-calc((100% + 125px)/2);
+        margin-left: -ms-calc((100% + 125px)/2);
+        margin-left: -o-calc((100% + 125px)/2);
+        margin-left: calc((100% + 125px)/2);
 }
 }
 
 @media (min-width: 992px) {
     .edu-point:hover {
     -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
     background: rgba(255, 255, 255, .8);
 }
 
 .exp-point:hover {
     -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
     background: rgba(255, 255, 255, .8);
 }
 
 .pro1-point:hover {
     -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
     background: rgba(255, 255, 255, .8);
 }
 
 .pro2-point:hover {
     -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
     background: rgba(255, 255, 255, .8);
 }
 
 .blog-point:hover {
     -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
     background: rgba(255, 255, 255, .8);
 }
 
 .about-point:hover {
     -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
     background: rgba(255, 255, 255, .8);
 }
 
 .contact-point:hover {
     -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
     background: rgba(255, 255, 255, .8);
 }
 
 .edu-point:active {
     -webkit-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+    transform: scale(1.9);
     background: rgba(255, 255, 255, .8);
 }
 
 .exp-point:active {
     -webkit-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+    transform: scale(1.9);
     background: rgba(255, 255, 255, .8);
 }
 
 .pro1-point:active {
     -webkit-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+    transform: scale(1.9);
     background: rgba(255, 255, 255, .8);
 }
 
 .pro2-point:active {
     -webkit-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+    transform: scale(1.9);
     background: rgba(255, 255, 255, .8);
 }
 
 .blog-point:active {
     -webkit-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+    transform: scale(1.9);
     background: rgba(255, 255, 255, .8);
 }
 
 .about-point:active {
     -webkit-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+    transform: scale(1.9);
     background: rgba(255, 255, 255, .8);
 }
 
 .contact-point:active {
     -webkit-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+    transform: scale(1.9);
     background: rgba(255, 255, 255, .8);
 }
 }
