@@ -12,7 +12,7 @@ $(document).ready(function(){
     
     var expes = ["ExplORer Surgical", "Experience |", "Technical Operations Intern |", "May 2016 - Present", "", "I am currently a technical operations intern for <a class = 'blandlink' href = 'http://explorersurgical.com'>Explorer Surgical</a>, a start-up that built ExplORer, an interactive surgical playbook that promotes optimal teamwork in the operating room. I helped create several tutorial videos demonstrating use of the application, and I also help out with occasional technological issues that various members of the team encounter. I am currently helping ensure that the company and its application meet HIPAA's physical and administrative requirements."];
     
-    var expsa = ["Sewickley Academy", "Experience |", "Information Technology Assistant |", "August 2015 - September 2015", "", "As an IT Assistant at Sewickley Academy, I assisted in computer and network set up and day-to-day technology maintenance. I also re-imaged all computers for use in the lower and senior school, and set up and installed apps on iPads for use in the lower school. In addition, aided teachers and students with any technological problems that plagued their devices, and set up and calibrated many projectors."];
+    var expsa = ["Sewickley Academy (again)", "Experience |", "Information Technology Assistant |", "August 2015 - September 2015", "", "As an IT Assistant at Sewickley Academy, I assisted in computer and network set up and day-to-day technology maintenance. I also re-imaged all computers for use in the lower and senior school, and set up and installed apps on iPads for use in the lower school. In addition, aided teachers and students with any technological problems that plagued their devices, and set up and calibrated many projectors."];
     
     var expupmc = ["University of Pittsburgh Medical Center Children's Hospital", "Experience |", "Research Volunteer |", "June 2014 - September 2015", "", "While a research volunteer at UPMC Children's Hospital, I participated in various projects involving Characterization of Brain Morphometry and Cognitive Development in Neonates, carried out processing and analysis of magnetic resonance imaging data (this heavily involved coding and scripting), and used BrainSuite and FreeSurfer to perform analysis and volumetric segmentation of several brain MRI scans."];
 
@@ -44,7 +44,7 @@ $(document).ready(function(){
     
     var blogphb = ["Could you power your house with your bike?", "Yes, if you ate two cheeseburgers a minute |",  "Blog |",  "", "July 15, 2016 | 2-3 min. read", "<h3 class=\"section-heading\">The Question</h2> <p>I recently had Mark P. from Pittsburgh ask me how bicycles work - while he was asking as a joke, I decided I'd write about something related. So, <strong> how much power does a bicycle generate</strong>? And what could you power off of that energy?</p> <br><h3 class=\"section-heading\">The Answer</h3> <p>If you're an average, decently fit person who is casually riding your bike across flat terrain, you can generate about 100-150 watts of power. If you're a hardcore biker (i.e. you compete in the Tour de France), you can generate about 250 watts of power, and if you're really going hard while biking uphill, you can get up to 400 - 500 watts of power in.</p> <p>For the purposes of this post, though, I'm going to assume you're an average person and not a ripped athletic biker (a fair assumption, I think). So let's say, biking hard, you can generate 150 watts of power as you bike. So what could you power if you generated 150 watts of power for an hour? Well, for one, <strong>you could probably power a light bulb</strong> (for instance, incandescent lightbulbs draw about 100 watts of energy) for an hour. Ceiling fans also tend to use between 25 - 90 watts of power (depending on their size and speed), so you could probably also power a ceiling fan. Laptops require about 45 watts of power to stay on, while a smaller monitor (17\" LCD, for instance) requires about 40 watts of power - so you could probably power your laptop and an external monitor (not that that would be any good, as you'd be too busy biking).</p> <p><strong>Could you power all of the appliances in a house?</strong> Clearly not, if you wouldn't be able to power two lightbulbs (200 watts). Let's say you were to pedal an hour a day, every day, for thirty days. You'd generate about 100 * 30 watts, or 3000 watts (3 kWh). The typical family uses about 920 kWh per month, so you wouldn't even come close to generating enough power to keep your house running. Okay, fine. Let's pretend, though, that you bike 24 hours per day. You'd generate about 100 * 24 * 30 watts, or 72,000 watts (72 kWh). That's still less than 10% of what you'd need to generate. However, we absolutely don't want to be biking 24 hours a day, so let's assume we bike three hours a day (100 * 3 * 30 = 9 kWh for the month). <strong>How fast would you have to bike in order to get that 9 kWh up to 920 kWh?</strong> Assuming you weigh 160 pounds, and that your bike weighs 20 pounds, generating those 9 kWh would require you to bike at 15 mph every day for three hours. To generate the 920 kWh required to power a house, you would have to bike at a constant 77 mph, for three hours nonstop every. single. day. To put that in perspective, the Earth's circumference is approximately 24,901 miles. After 111 days of biking at that speed, for three hours each day, you'd have biked enough miles to go around the earth. Fine. For the sake of argument, let's assume you could bike every day for three hours at 77 mph. <strong>How much food would you have to eat to keep biking?</strong> Well, biking at 77 mph, you'd burn approximately 105,000 calories after three hours. To put that in perspective, burning a pound of fat requires you to lose 3,500 calories. After biking for three hours, you'd have lost <strong>35 pounds</strong>. If you don't want to lose weight, you'd have to eat 35,000 calories per hour. A McDonald's regular cheeseburger is approximately 313 calories - so you'd need to eat about 1.85 cheeseburgers <strong>per minute</strong> so as not to lose weight. </p> <p><strong>In conclusion</strong>: please don't try to power your house using your bicycle.</p>"];
     
-    var blogphb = ["How much fun would it be to run at the speed of light?", "Not even a little bit fun |", "Blog |",  "", "July 18, 2016 | 1-3 min. read", "<h3 class=\"section-heading\">The Question</h3> <p>The article title pretty much says it all - <strong>how much fun would it be to run at the speed of light?</strong> </p> <br> <h3 class=\"section-heading\">The Answer</h2> <p>Let me preface the rest of this article by saying that, if you were ever to run at the speed of light, you'd probably <strong>rip every muscle in your body</strong> and hit something so quickly and with such force that you'd be <strong>squashed like a bug</strong>. It's also important to note that you can't run at the speed of light. But just for kicks, let's assume neither of these are problems and that we can run at the speed of light. </p> <p>First things first - how much food would you have to eat in order to keep running at the speed of light without dying of malnutrition? Well, light travels at <strong>186,000 mi/sec</strong> or <strong>669,600,000 mph</strong>. So you'd be running at a lovely 669,600,000 mph. Splendid. Now, let's assume you're going to be running at the speed of light for an hour (because why not, right)? Well, according to this random treadmill calculator I found on the internet (and we all know everything on the internet is accurate), running at that speed would cause a 180 pound male to burn <strong>88,230,305,606 calories</strong>. So you'd be burning 88 billion calories. Lovely. Now, I don't know how many of you have been to the Cheesecake Factory, but they sell a cake they call the <strong>Chocolate Tower Truffle Cake</strong> (it's actually quite amazing in every possible way). One slice is <strong>1,680 calories</strong> (totally worth it), and an entire cake is 12 slices, or <strong>20,160 calories</strong>. In order to keep up with your caloric burn, you'd need to eat <strong>88 billion\/20 thousand calories</strong> per hour, or <strong>4,376,503 cakes per hour</strong>. That's <strong>1,216 cakes <em>per second</em></strong>. </p> <img class=\"img-responsive img-padding\" src=\"postimg/post-4-1.jpg\" alt=\"\"> <p>That is ABSURD. That's more than <strong>16 times</strong> what blue whales eat in <strong>a single day</strong>. Not to mention that due to the extreme stress you'd be under while running that you'd probably vomit the food back up at the same rate at which you ate it. </p> <p>Fine, you'd have to eat, like, <strong>a lot</strong>. So how far could you run in that hour (or a little bit longer)? If you ran for <strong>67 minutes</strong> (assuming you ran in a straight line and had something to run on), you would be able to run <strong>from the Earth to Jupiter... <em>and back</em></strong>. </p> <p>Remember how in the last article, I said that the average family consumed approximately 920 kWh of energy per month? Well, in 2013, the entire United States consumed approximately <strong>25,451 TWh</strong> of energy, or <strong>25,451,000,000,000 kWh</strong> of energy (25 trillion kWh, if that wasn't clear). Performing all the calculations, if you could harness the energy produced from your run, you would produce enough energy to power <strong>the entire United States</strong> for a solid <strong>thirty seconds</strong>. </p> <p><strong>In conclusion</strong>, light (and the Flash) <em>move really, really, REALLY fast</em>.</p>"];
+    var blogrsl = ["How much fun would it be to run at the speed of light?", "Not even a little bit fun |", "Blog |",  "", "July 18, 2016 | 1-3 min. read", "<h3 class=\"section-heading\">The Question</h3> <p>The article title pretty much says it all - <strong>how much fun would it be to run at the speed of light?</strong> </p> <br> <h3 class=\"section-heading\">The Answer</h2> <p>Let me preface the rest of this article by saying that, if you were ever to run at the speed of light, you'd probably <strong>rip every muscle in your body</strong> and hit something so quickly and with such force that you'd be <strong>squashed like a bug</strong>. It's also important to note that you can't run at the speed of light. But just for kicks, let's assume neither of these are problems and that we can run at the speed of light. </p> <p>First things first - how much food would you have to eat in order to keep running at the speed of light without dying of malnutrition? Well, light travels at <strong>186,000 mi/sec</strong> or <strong>669,600,000 mph</strong>. So you'd be running at a lovely 669,600,000 mph. Splendid. Now, let's assume you're going to be running at the speed of light for an hour (because why not, right)? Well, according to this random treadmill calculator I found on the internet (and we all know everything on the internet is accurate), running at that speed would cause a 180 pound male to burn <strong>88,230,305,606 calories</strong>. So you'd be burning 88 billion calories. Lovely. Now, I don't know how many of you have been to the Cheesecake Factory, but they sell a cake they call the <strong>Chocolate Tower Truffle Cake</strong> (it's actually quite amazing in every possible way). One slice is <strong>1,680 calories</strong> (totally worth it), and an entire cake is 12 slices, or <strong>20,160 calories</strong>. In order to keep up with your caloric burn, you'd need to eat <strong>88 billion\/20 thousand calories</strong> per hour, or <strong>4,376,503 cakes per hour</strong>. That's <strong>1,216 cakes <em>per second</em></strong>. </p> <img class=\"img-responsive img-padding\" src=\"postimg/post-4-1.jpg\" alt=\"\"> <p>That is ABSURD. That's more than <strong>16 times</strong> what blue whales eat in <strong>a single day</strong>. Not to mention that due to the extreme stress you'd be under while running that you'd probably vomit the food back up at the same rate at which you ate it. </p> <p>Fine, you'd have to eat, like, <strong>a lot</strong>. So how far could you run in that hour (or a little bit longer)? If you ran for <strong>67 minutes</strong> (assuming you ran in a straight line and had something to run on), you would be able to run <strong>from the Earth to Jupiter... <em>and back</em></strong>. </p> <p>Remember how in the last article, I said that the average family consumed approximately 920 kWh of energy per month? Well, in 2013, the entire United States consumed approximately <strong>25,451 TWh</strong> of energy, or <strong>25,451,000,000,000 kWh</strong> of energy (25 trillion kWh, if that wasn't clear). Performing all the calculations, if you could harness the energy produced from your run, you would produce enough energy to power <strong>the entire United States</strong> for a solid <strong>thirty seconds</strong>. </p> <p><strong>In conclusion</strong>, light (and the Flash) <em>move really, really, REALLY fast</em>.</p>"];
     
     var about = ["So You Want to Know Who I Am", "I ask too many questions, I know. Sorry. Well, actually, no, I'm not.", "",  "", "", "<h3 class=\"section-heading\">Who Am I?</h3> <p>I've broken three computers, two shredders, a printer, and a wireless router. I know you're judging me now, so I'll just say I was both a very foolish and very curious middle school child (and I'll have you know I fixed two of those computers). And that is how I taught myself to fix the everyday problems people face with their phones, computers, and the multitude of other gadgets out there. From there, I found programming, and I immediately fell in love. Over the course of five years, I proceeded to teach myself Java, Python, Ruby, Rails, C#, Swift, R, and Stata, building a multitude of web and mobile applications for all kinds of different devices in the process. Later down the line, I began to look into design, teaching myself how to use Photoshop and Sketch. On July 21 and 22, 2016, I taught myself HTML(5), CSS(3), Javascript, jQuery, and bootstrap, spending about 10 hours each day familiarizing myself with front-end development languages.</p> <p>I've released one app on the Windows App Store (<a class='blandlink' href=\"https://www.microsoft.com/en-us/store/apps/epichess/9wzdncrds3q\">Epichess</a>), two apps on the iOS App Store (<a class='blandlink' href=\"https://itunes.apple.com/us/app/calccolor/id1133313027?mt=8\">CalcColor</a> and <a class='blandlink' href=\"https://itunes.apple.com/us/app/ultimatehorn/id1133338024?mt=8\">UltimateHorn</a>), and am currently working as a Full Stack Designer for <a class='blandlink' href = \"http://inventoryconnectionllc.com\">Inventory Connection, LLC</a>, to design and build the front-end for their main product. I am constantly looking to learn more about everything and anything (especially tech), and so I often build random applications (see my <a class='blandlink' href=\"http://github.com/saieedgeorge0\">GitHub</a>) and read as much as I can. I am a Computer Science and Statistics major at the University of Chicago (I'm very interested in machine learning, deep neural nets, and artificial intelligence), and you can often find me helping other people with their computer or phone troubles. I hope to have a profound impact on the world, and my dream is to one day found my own start-up.</p> <br> <h3 class=\"section-heading\">How My Blog Was Started</h3> <p>One warm July day, I was sitting on my couch, randomly answering Quora questions (yes, I do that, and I'm sure you have before too), when I realized that so many of the questions about programming people were asking I had once asked myself. Just the previous day, someone was telling me about how she couldn't wrap her head around how mobile apps could work. While she was talking to me, I chuckled silently, as I too had once been dumbfounded by websites and applications in general. And so I decided to start this blog, to try and answer all the questions about technology that I once had that I eventually answered myself.</p>"];
     
@@ -568,12 +568,12 @@ $(document).ready(function(){
             else if($(this).attr('id') == "blogrsl") {
                 $('.popup-image').css('object-position', '0 0');
                 $('#close-popup').css('color', 'white');
-                $('#p-heading').html(blogphb[0]);
-                $('#p-type').html(blogphb[1]);
-                $('#p-subtype1').html(blogphb[2]);
-                $('#p-subtype2').html(blogphb[3]);
-                $('#p-subtype3').html(blogphb[4]);
-                $('#p-body').html(blogphb[5]);
+                $('#p-heading').html(blogrsl[0]);
+                $('#p-type').html(blogrsl[1]);
+                $('#p-subtype1').html(blogrsl[2]);
+                $('#p-subtype2').html(blogrsl[3]);
+                $('#p-subtype3').html(blogrsl[4]);
+                $('#p-body').html(blogrsl[5]);
             }
             
             
@@ -595,6 +595,75 @@ $(document).ready(function(){
             $('#popup').fadeOut(500);
             $('.pop-back').fadeOut(500);
             $('#the-hr').css('border-color', '#eeeeee');
+            if($('#p-heading').html() =="University of Chicago"){                              
+                scrollToAnchor('UofC');
+            }
+            if($('#p-heading').html() =="Sewickley Academy"){                              
+                scrollToAnchor('anch2');
+            }
+            if($('#p-heading').html() =="Carnegie Mellon University"){                              
+                scrollToAnchor('anch3');
+            }
+            if($('#p-heading').html() =="Fourteen Languages"){                              
+                scrollToAnchor('anch4');
+            }
+            if($('#p-heading').html() =="Inventory Connection, LLC"){                              
+                scrollToAnchor('IC');
+            }
+            if($('#p-heading').html() =="ExplORer Surgical"){                              
+                scrollToAnchor('anch6');
+            }
+            if($('#p-heading').html() =="Sewickley Academy (again)"){                              
+                scrollToAnchor('anch7');
+            }
+            if($('#p-heading').html() =="University of Pittsburgh Medical Center Children's Hospital"){                              
+                scrollToAnchor('anch8');
+            }
+            if($('#p-heading').html() =="Instagram Logo Re-Design"){                              
+                scrollToAnchor('IGDesign');
+            }
+            if($('#p-heading').html() =="Low Polygon Art"){                              
+                scrollToAnchor('anch10');
+            }
+            if($('#p-heading').html() =="Smart Receipts"){                              
+                scrollToAnchor('anch11');
+            }
+            if($('#p-heading').html() =="Calc Color"){                              
+                scrollToAnchor('anch12');
+            }
+            if($('#p-heading').html() =="Facebook Re-Design"){                              
+                scrollToAnchor('anch13');
+            }
+            if($('#p-heading').html() =="Accident Report"){                              
+                scrollToAnchor('anch14');
+            }
+            if($('#p-heading').html() =="Research Presentation"){                              
+                scrollToAnchor('anch15');
+            }
+            if($('#p-heading').html() =="St. Mary's Coptic Church's Website"){   
+                scrollToAnchor('anch16');
+            }
+            if($('#p-heading').html() =="Ultimate Horn"){                              
+                scrollToAnchor('anch17');
+            }
+            if($('#p-heading').html() =="Finals Generator"){                              
+                scrollToAnchor('anch18');
+            }
+            if($('#p-heading').html() =="Unaccompanied Women Concert Poster"){   
+                scrollToAnchor('anch19');
+            }
+            if($('#p-heading').html() =="Why am I 'terrible' with computers?"){   
+                scrollToAnchor('badcomp');
+            }
+            if($('#p-heading').html() =="How do mobile apps really work?"){   
+                scrollToAnchor('anch21');
+            }
+            if($('#p-heading').html() =="Could you power your house with your bike?"){
+                scrollToAnchor('anch22');
+            }
+            if($('#p-heading').html() =="How much fun would it be to run at the speed of light?"){   
+                scrollToAnchor('anch23');
+            }
         }); 
     
         $(".about-point").click(function(){
