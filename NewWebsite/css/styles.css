@@ -440,17 +440,67 @@ body {
 }
 
 .popup {
-    position: fixed;
+    display:none;
+    position: absolute;
     z-index: 100;
     height: 100%;
     width: -webkit-calc(100%-54px);
     margin-left: 54px;
+    text-align:center;
+    background: rgba(0,0,0,0.5);
 }
 
 .popup-contains {
-    position:fixed;
+    position:absolute;
     text-align: center;
-    margin:auto;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.popup-image {
+    width: 75vw;
+    height: 300px;
+    object-fit: cover;
+    margin-left: -webkit-calc((25vw - 54px)/2);
+}
+
+.popup-stuff {
+    background: white;
+    width: 75vw;
+    border-top: solid 1px black;
+    margin-left: -webkit-calc((25vw - 54px)/2);
+    position:absolute;
+    text-align: left;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 17px;
+    padding-bottom: 30px;
+}
+
+#close-popup {
+    position:absolute;
+    margin-left: -webkit-calc(100vw - ((25vw + 160px)/2));
+    margin-top: 20px;
+    color: white;
+}
+
+#close-popup:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.pop-back {
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    display: none;
+}
+
+.subheading {
+    color: grey;
 }
 
 .no-js #loader { display: none;  }

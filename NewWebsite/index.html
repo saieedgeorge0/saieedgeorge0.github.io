@@ -51,10 +51,26 @@
     <body>
         <div class = "toosmall">Website is not currently responsive (i.e. will not work on tablets or phones). Check back soon!</div>
         <div class="se-pre-con"></div>
-        <div class = "popup">
+        <div name="popup" id = "popup" class = "popup">
             <div class = "popup-contains">
+                <div>
+                    <i class="fa fa-close fa-3x" id= "close-popup"></i>
+                    <img id = "popup-image" class="popup-image" src = "img/uchicago.jpg">
+                </div>
+                <div class = "popup-stuff">
+                    <h1 id = "p-heading">University of Chicago</h1>
+                    <div class = "subheading">
+                        <span id = "p-type">Education |</span>
+                        <span id = "p-subtype1">College |</span>
+                        <span id = "p-subtype2">September 2015 - June 2019 |</span>
+                        <span id = "p-subtype3">GPA: 3.75/4.00</span>
+                    </div>
+                    <hr>
+                    <p id = "p-body">I attended Sewickley Academy High School, located in Sewickley, PA. I graduated as a member of the Cum Laude society, as well as with highest honors. I was president of the Speech and Debate, Mock Trial, Programming, and Quiz Bowl teams, and I received a total of more than ten awards over the course of the four years that I attended the school. These were: the <strong>Benjamin Thomas Memorial Forensic Award</strong> (given to the student who demonstrates the most passion for speech and debate), the <strong>Computer Science Award</strong> (given to the student who demonstrates that he or she is most proficient in the field of computer science), the <strong>Outstanding Physics Student Award</strong>, the <strong>Math Award</strong>, the <strong>Science Award</strong>, and the <strong>Tuck McClintock Community Service Award</strong> (given to the student who has contributed the most service to his/her communities). I was also an <strong>AP Scholar</strong>, an <strong>AP Scholar with Distinction</strong>, and a <strong>National AP Scholar</strong>.</p>
+                </div>
             </div>
         </div>
+        <div class = "pop-back"></div>
         <div class = "sidething">
             <h3 class = "initials" >GS</h3>
             <div class = "edu-point"><span class = "pg-section">Education</span></div>
@@ -67,29 +83,29 @@
         <div class = "container-fluid" id = "contains">
             <div class = "education">
                 <div class = "row">
-                    <a name = "UofC"><div class = "col-md-3 col-sm-6 card" id = "uchicago">
-                        <div class = "content" id = "edu-uc">
-                        <span class = "card-type" >Education</span>
+                    <a class="clicked" id = "eduuc" href = "#" name = "UofC"><div class = "col-md-3 col-sm-6 card" id = "uchicago">
+                        <div class = "content">
+                        <span class = "card-type">Education</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">University of Chicago</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-3 col-sm-6 card" id = "sewickleyacademy">
-                        <div class = "content" id = "edu-sa">
+                    <a class="clicked" id = "edusa" href = "#"><div class = "col-md-3 col-sm-6 card" id = "sewickleyacademy">
+                        <div class = "content">
                         <span class = "card-type" >Education</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">Sewickley Academy</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-3 col-sm-6 card" id = "carnegiemellon">
-                        <div class = "content cmucont" id = "edu-cmu">
+                    <a class="clicked" id = "educmu" href = "#"><div class = "col-md-3 col-sm-6 card" id = "carnegiemellon">
+                        <div class = "content cmucont">
                         <span class = "card-type" >Education</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">Carnegie Mellon University</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-3 col-sm-6 card" id = "selftaught">
-                        <div class = "content selft" id = "edu-st">
+                    <a class="clicked" id = "edust" href = "#"><div class = "col-md-3 col-sm-6 card" id = "selftaught">
+                        <div class = "content selft">
                         <span class = "card-type" >Education</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">Self-Taught</span>
@@ -99,14 +115,14 @@
           </div>
           <div class = "education2">
                 <div class = "row">
-                    <a name = "IC"><div class = "col-md-2 card" id = "inventoryconnection">
+                    <a class="clicked" id = "expic" href = "#" name = "IC"><div class = "col-md-2 card" id = "inventoryconnection">
                         <div class = "content content2 ic">
                         <span class = "card-type">Experience</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Inventory Connection</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "explorer">
+                    <a class="clicked" id = "expes" href = "#"><div class = "col-md-2 card" id = "explorer">
                         <div class = "content content2">
                         <span class = "card-type">Experience</span>
                             <hr class = "sep">
@@ -119,14 +135,14 @@
                             <div class="mail"><a class = "blandlink" target="_blank" href = "mailto:gs@georgesaieed.com"><i class="fa fa-envelope fa-3x"></i></a></div>
                             <div class="res"><a class = "blandlink" target="_blank" href = "DesignResume.pdf"><i class="fa fa-file-pdf-o fa-3x"></i></a></div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "sewickleyacademy2">
+                    <a class="clicked" id = "expsa" href = "#"><div class = "col-md-2 card" id = "sewickleyacademy2">
                         <div class = "content content2">
                         <span class = "card-type">Experience</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Sewickley Academy</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "upmc">
+                    <a class="clicked" id = "expupmc" href = "#"><div class = "col-md-2 card" id = "upmc">
                         <div class = "content content2">
                         <span class = "card-type">Experience</span>
                             <hr class = "sep">
