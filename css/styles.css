@@ -1085,3 +1085,15 @@ body {
     margin-left: 78vw;
 }
 }
+
+@media (max-height: 490px) {
+    .edu-point {
+        margin-top: 100px;
+    }
+}
+
+@media (max-height: 390px) {
+    .edu-point {
+        margin-top: 35px;
+    }
+}
