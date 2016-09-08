@@ -1033,8 +1033,7 @@ body {
 }
 @media (max-width: 750px) {
     #p-body {
-    font-size: 18px;
-}
+    font-size: 16.5px;
 }
 }
 @media (max-width: 500px) {
