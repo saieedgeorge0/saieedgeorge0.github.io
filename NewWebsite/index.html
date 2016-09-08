@@ -34,7 +34,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-
+    <link href="css/form.css" rel="stylesheet">
     <script>
         $(window).load(function() {
             // Animate loader off screen
@@ -49,24 +49,23 @@
     <![endif]-->
   </head>
     <body>
-        <div class = "toosmall">Website is not currently responsive (i.e. will not work on tablets or phones). Check back soon!</div>
         <div class="se-pre-con"></div>
         <div name="popup" id = "popup" class = "popup">
             <div class = "popup-contains">
-                <div>
+                <div class = "popup-img-div">
                     <i class="fa fa-close fa-3x" id= "close-popup"></i>
                     <img id = "popup-image" class="popup-image" src = "img/uchicago.jpg">
                 </div>
                 <div class = "popup-stuff">
-                    <h1 id = "p-heading">University of Chicago</h1>
+                    <h1 id = "p-heading"></h1>
                     <div class = "subheading">
-                        <span id = "p-type">Education |</span>
-                        <span id = "p-subtype1">College |</span>
-                        <span id = "p-subtype2">September 2015 - June 2019 |</span>
-                        <span id = "p-subtype3">GPA: 3.75/4.00</span>
+                        <span id = "p-type"></span>
+                        <span id = "p-subtype1"></span>
+                        <span id = "p-subtype2"></span>
+                        <span id = "p-subtype3"></span>
                     </div>
-                    <hr>
-                    <p id = "p-body">I attended Sewickley Academy High School, located in Sewickley, PA. I graduated as a member of the Cum Laude society, as well as with highest honors. I was president of the Speech and Debate, Mock Trial, Programming, and Quiz Bowl teams, and I received a total of more than ten awards over the course of the four years that I attended the school. These were: the <strong>Benjamin Thomas Memorial Forensic Award</strong> (given to the student who demonstrates the most passion for speech and debate), the <strong>Computer Science Award</strong> (given to the student who demonstrates that he or she is most proficient in the field of computer science), the <strong>Outstanding Physics Student Award</strong>, the <strong>Math Award</strong>, the <strong>Science Award</strong>, and the <strong>Tuck McClintock Community Service Award</strong> (given to the student who has contributed the most service to his/her communities). I was also an <strong>AP Scholar</strong>, an <strong>AP Scholar with Distinction</strong>, and a <strong>National AP Scholar</strong>.</p>
+                    <hr id = "the-hr">
+                    <p id = "p-body"></p>
                 </div>
             </div>
         </div>
@@ -83,28 +82,28 @@
         <div class = "container-fluid" id = "contains">
             <div class = "education">
                 <div class = "row">
-                    <a class="clicked" id = "eduuc" href = "#" name = "UofC"><div class = "col-md-3 col-sm-6 card" id = "uchicago">
+                    <a class="clicked" id = "eduuc" href = "#" name = "UofC"><div class = "col-md-3  card" id = "uchicago">
                         <div class = "content">
                         <span class = "card-type">Education</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">University of Chicago</span>
                         </div>
                     </div></a>
-                    <a class="clicked" id = "edusa" href = "#"><div class = "col-md-3 col-sm-6 card" id = "sewickleyacademy">
+                    <a class="clicked" id = "edusa" href = "#"><div class = "col-md-3  card" id = "sewickleyacademy">
                         <div class = "content">
                         <span class = "card-type" >Education</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">Sewickley Academy</span>
                         </div>
                     </div></a>
-                    <a class="clicked" id = "educmu" href = "#"><div class = "col-md-3 col-sm-6 card" id = "carnegiemellon">
+                    <a class="clicked" id = "educmu" href = "#"><div class = "col-md-3  card" id = "carnegiemellon">
                         <div class = "content cmucont">
                         <span class = "card-type" >Education</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">Carnegie Mellon University</span>
                         </div>
                     </div></a>
-                    <a class="clicked" id = "edust" href = "#"><div class = "col-md-3 col-sm-6 card" id = "selftaught">
+                    <a class="clicked" id = "edust" href = "#"><div class = "col-md-3  card" id = "selftaught">
                         <div class = "content selft">
                         <span class = "card-type" >Education</span>
                             <hr class = "sep">
@@ -115,14 +114,14 @@
           </div>
           <div class = "education2">
                 <div class = "row">
-                    <a class="clicked" id = "expic" href = "#" name = "IC"><div class = "col-md-2 card" id = "inventoryconnection">
+                    <a class="clicked" id = "expic" href = "#" name = "IC"><div class = "col-md-2   card" id = "inventoryconnection">
                         <div class = "content content2 ic">
                         <span class = "card-type">Experience</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Inventory Connection</span>
                         </div>
                     </div></a>
-                    <a class="clicked" id = "expes" href = "#"><div class = "col-md-2 card" id = "explorer">
+                    <a class="clicked" id = "expes" href = "#"><div class = "col-md-2  card" id = "explorer">
                         <div class = "content content2">
                         <span class = "card-type">Experience</span>
                             <hr class = "sep">
@@ -135,14 +134,14 @@
                             <div class="mail"><a class = "blandlink" target="_blank" href = "mailto:gs@georgesaieed.com"><i class="fa fa-envelope fa-3x"></i></a></div>
                             <div class="res"><a class = "blandlink" target="_blank" href = "DesignResume.pdf"><i class="fa fa-file-pdf-o fa-3x"></i></a></div>
                     </div></a>
-                    <a class="clicked" id = "expsa" href = "#"><div class = "col-md-2 card" id = "sewickleyacademy2">
+                    <a class="clicked" id = "expsa" href = "#"><div class = "col-md-2  card" id = "sewickleyacademy2">
                         <div class = "content content2">
                         <span class = "card-type">Experience</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Sewickley Academy</span>
                         </div>
                     </div></a>
-                    <a class="clicked" id = "expupmc" href = "#"><div class = "col-md-2 card" id = "upmc">
+                    <a class="clicked" id = "expupmc" href = "#"><div class = "col-md-2  card" id = "upmc">
                         <div class = "content content2">
                         <span class = "card-type">Experience</span>
                             <hr class = "sep">
@@ -153,81 +152,77 @@
           </div>
           <div class = "education2">
                 <div class = "row">
-                    <a name = "IGDesign"><div class = "col-md-2 card" id = "instagram">
+                    <a class="clicked" id = "projig" href = "#" name = "IGDesign"><div class = "col-md-2  card" id = "instagram">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">IG Logo Re-Design</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "polyart">
+                    <a class="clicked" id = "projlpa" href = "#"><div class = "col-md-2  card" id = "polyart">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Low Poly Art</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "myreceipts">
+                    <a class="clicked" id = "projsr" href = "#"><div class = "col-md-2  card" id = "myreceipts">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">smartReceipts</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "yourcalc">
+                    <a class="clicked" id = "projyc" href = "#"><div class = "col-md-2  card" id = "yourcalc">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
-                        <span class = "card-type sub-type2">YourCalc</span>
+                        <span class = "card-type sub-type2">CalcColor</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-4 card" id = "facebook">
+                    <a class="clicked" id = "projfr" href = "#"><div class = "col-md-4  card" id = "facebook">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Facebook Re-Design</span>
                         </div>
                     </div></a>
-              </div>
-            </div>
-            <div class = "education2">
-              <div class = "row">
-                    <a><div class = "col-md-2 card" id = "aig">
+                    <a class="clicked" id = "projaig" href = "#"><div class = "col-md-2  card" id = "aig">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">AIG Contest</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "presentation">
+                    <a class="clicked" id = "projrp" href = "#"><div class = "col-md-2  card" id = "presentation">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Presentation Design</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "church">
+                    <a class="clicked" id = "projcw" href = "#"><div class = "col-md-2  card" id = "church">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Church Website</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "airhorn">
+                    <a class="clicked" id = "projuh" href = "#"><div class = "col-md-2  card" id = "airhorn">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Ultimate Horn</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "finalschedule">
+                    <a class="clicked" id = "projfg" href = "#"><div class = "col-md-2  card" id = "finalschedule">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type2">Finals Generator</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-2 card" id = "clubw">
+                    <a class="clicked" id = "projuw" href = "#"><div class = "col-md-2 card" id = "clubw">
                         <div class = "content content2">
                         <span class = "card-type">Project</span>
                             <hr class = "sep">
@@ -235,31 +230,31 @@
                         </div>
                     </div></a>
               </div>
-          </div>
+            </div>
           <div class = "education">
                 <div class = "row">
-                    <a name = "badcomp"><div class = "col-md-3 card" id = "post1">
+                    <a class="clicked" id = "blogbwc" href = "#" name = "badcomp"><div class = "col-md-3  card" id = "post1">
                         <div class = "content">
                         <span class = "card-type" >Blog</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">Bad With Computers?</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-3 card" id = "post2">
+                    <a class="clicked" id = "blogdaw" href = "#"><div class = "col-md-3  card" id = "post2">
                         <div class = "content">
                         <span class = "card-type" >Blog</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">How Do Apps Work?</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-3 card" id = "post3">
+                    <a class="clicked" id = "blogphb" href = "#"><div class = "col-md-3  card" id = "post3">
                         <div class = "content cmucont">
                         <span class = "card-type" >Blog</span>
                             <hr class = "sep">
                         <span class = "card-type sub-type">Power A House With A Bike</span>
                         </div>
                     </div></a>
-                    <a><div class = "col-md-3 card" id = "post4">
+                    <a class="clicked" id = "blogrsl" href = "#"><div class = "col-md-3  card" id = "post4">
                         <div class = "content cmucont">
                         <span class = "card-type" >Blog</span>
                             <hr class = "sep">
