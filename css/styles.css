@@ -1068,20 +1068,20 @@ body {
 }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
     #close-popup {
-    margin-left: 78vw;
+    margin-left: 84vw;
 }
 }
 
 @media (max-width: 366px) {
     #close-popup {
-    margin-left: 76vw;
+    margin-left: 80vw;
 }
 }
 
 @media (max-width: 313px) {
     #close-popup {
-    margin-left: 74vw;
+    margin-left: 78vw;
 }
 }
