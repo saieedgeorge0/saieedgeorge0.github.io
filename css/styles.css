@@ -1038,7 +1038,6 @@ body {
 }
 }
 @media (max-width: 500px) {
-     
     .popup-image {
     object-fit: cover;
     width: 96vw;
