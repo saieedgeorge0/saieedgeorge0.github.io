@@ -2,6 +2,10 @@ body {
     font-family: 'Raleway';
 }
 
+#p-body {
+    font-size: 15px;
+}
+
 .initials {
     font-family: 'Bungee Shade';
     margin-left: 7px;
