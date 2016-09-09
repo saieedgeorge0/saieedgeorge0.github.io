@@ -55,6 +55,7 @@ $(document).ready(function(){
     
     
     $(document).ready(function() {
+        $.cookie("wasthanked", "true")
         if ($.cookie("wasthanked")==true) {
             $('#popup-image').attr("src", "postimg/contact.jpg");
             $('.popup-image').css('object-position', '');
