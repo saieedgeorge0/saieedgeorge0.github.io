@@ -75,6 +75,7 @@ $(document).ready(function(){
             scrollTop: $("#popup").offset().top
             }, 500);
             wasthanked=false;
+            localStorage.setItem("false", wasthanked);
         }
         
         $(document).mouseup(function(e)
@@ -840,6 +841,7 @@ $(document).ready(function(){
     
         $('#contact-submit').click(function(){
             wasthanked=true;
+            localStorage.setItem("true", wasthanked);
         });
     
         $(".card").hover(function(){
