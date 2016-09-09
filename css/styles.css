@@ -82,36 +82,40 @@ body {
 #uchicago {
     background: url('../img/uchicago.jpg');
     background-size: cover;
-    background-position: -90px;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #sewickleyacademy {
     background: url('../img/sewickacademy.jpg');
+    background-position: center;
     background-size: cover;
     border-right: solid 1px white;
 }
 
 #carnegiemellon {
     background: url('../img/cmu.jpg');
+    background-position: center;
     background-size: cover;
     border-right: solid 1px white;
 }
 
 #selftaught {
     background: url('../img/selftaugh.jpg');
+    background-position: center;
     background-size: cover;
 }
 
 #inventoryconnection {
     background: url('../img/iconnection.jpg');
     background-size: cover;
-    background-position: -20px;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #explorer {
     background: url('../img/explorer.png');
+    background-position: center;
     background-size: cover;
 }
 
@@ -152,25 +156,27 @@ body {
 #sewickleyacademy2 {
     background: url('../img/sewickacademy.jpg');
     background-size: cover;
-    background-position: -95px;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #upmc {
     background: url('../img/upmc.jpg');
     background-size: cover;
-    background-position: -110px;
+    background-position: center;
 }
 
 #facebook {
     background: url('../img/facebook.jpg');
     background-size: cover;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #clubw {
     background: url('../img/clubw.jpg');
     background-size: cover;
+    background-position: center;
     border-left: solid 1px white;
     border-right: solid 1px white;
 }
@@ -178,79 +184,85 @@ body {
 #polyart {
     background: url('../img/lauren.jpg');
     background-size: cover;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #myreceipts {
     background: url('../img/myreceipts.jpg');
     background-size: cover;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #yourcalc {
     background: url('../img/yourcalc.jpg');
+    background-position: center;
     background-size: cover;
 }
 
 #aig {
     background: url('../img/iaccidents.jpg');
     background-size: cover;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #presentation {
     background: url('../img/presentation.jpg');
     background-size: cover;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #instagram {
     background: url('../img/instagramlogo.jpg');
     background-size: cover;
-    background-position: -3px;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #church {
     background: url('../img/church.jpg');
     background-size: cover;
+    background-position: center;
     border-right: solid 1px white;
 }
 
 #finalschedule {
     background: url('../img/finalschedule.jpg');
     background-size: cover;
-    background-position: -50px;
+    background-position: center;
 }
 
 #airhorn {
     background: url('../img/horn.png');
     background-size: cover;
-    background-position: 0px;
+    background-position: center;
 }
 
 #post1 {
     background: url('../img/post-1.jpg');
     background-size: cover;
-    background-position: 0px;
+    background-position: center;
 }
 
 #post2 {
     background: url('../img/post-2.jpg');
     background-size: cover;
-    background-position: 0px;
+    background-position: center;
 }
 
 #post3 {
     background: url('../img/post-3.jpg');
     background-size: cover;
-    background-position: 0px;
+    background-position: center;
 }
 
 #post4 {
     background: url('../img/post-4.jpg');
     background-size: cover;
-    background-position: 0px;
+    background-position: center;
 }
 
 
@@ -551,14 +563,14 @@ body {
 
 @media (max-width: 991px) {
     #uchicago {
-        background-position: 0px;
+        background-position: center;
     }
     #inventoryconnection {
-         background-position: 0px;
+         background-position: center;
     }
     
     #sewickleyacademy2 {
-        background-position: 0px;
+        background-position: center;
     }
     .popup-image {
     object-fit: cover;
@@ -701,14 +713,14 @@ body {
 
 @media (max-width: 700px) {
     #uchicago {
-        background-position: 0px;
+        background-position: center;
     }
     #inventoryconnection {
-         background-position: 0px;
+         background-position: center;
     }
     
     #sewickleyacademy2 {
-        background-position: 0px;
+        background-position: center;
     }
     .card {
         -webkit-filter: grayscale(0%);
@@ -748,14 +760,14 @@ body {
 
 @media (max-width: 550px) {
     #uchicago {
-        background-position: 0px;
+        background-position: center;
     }
     #inventoryconnection {
-         background-position: 0px;
+         background-position: center;
     }
     
     #sewickleyacademy2 {
-        background-position: 0px;
+        background-position: center;
     }
     .card {
         -webkit-filter: grayscale(0%);
