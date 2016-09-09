@@ -49,7 +49,9 @@ $(document).ready(function(){
     
     var about = ["So You Want to Know Who I Am", "I ask too many questions, I know. Sorry. Well, actually, no, I'm not.", "",  "", "", "<h3 class=\"section-heading\">Who Am I?</h3> <p>I've broken three computers, two shredders, a printer, and a wireless router. I know you're judging me now, so I'll just say I was both a very foolish and very curious middle school child (and I'll have you know I fixed two of those computers). And that is how I taught myself to fix the everyday problems people face with their phones, computers, and the multitude of other gadgets out there. From there, I found programming, and I immediately fell in love. Over the course of five years, I proceeded to teach myself Java, Python, Ruby, Rails, C#, Swift, R, and Stata, building a multitude of web and mobile applications for all kinds of different devices in the process. Later down the line, I began to look into design, teaching myself how to use Photoshop and Sketch. On July 21 and 22, 2016, I taught myself HTML(5), CSS(3), Javascript, jQuery, and bootstrap, spending about 10 hours each day familiarizing myself with front-end development languages.</p> <p>I've released one app on the Windows App Store (<a class='blandlink' href=\"https://www.microsoft.com/en-us/store/apps/epichess/9wzdncrds3q\">Epichess</a>), two apps on the iOS App Store (<a class='blandlink' href=\"https://itunes.apple.com/us/app/calccolor/id1133313027?mt=8\">CalcColor</a> and <a class='blandlink' href=\"https://itunes.apple.com/us/app/ultimatehorn/id1133338024?mt=8\">UltimateHorn</a>), and am currently working as a Full Stack Designer for <a class='blandlink' href = \"http://inventoryconnectionllc.com\">Inventory Connection, LLC</a>, to design and build the front-end for their main product. I am constantly looking to learn more about everything and anything (especially tech), and so I often build random applications (see my <a class='blandlink' href=\"http://github.com/saieedgeorge0\">GitHub</a>) and read as much as I can. I am a Computer Science and Statistics major at the University of Chicago (I'm very interested in machine learning, deep neural nets, and artificial intelligence), and you can often find me helping other people with their computer or phone troubles. I hope to have a profound impact on the world, and my dream is to one day found my own start-up.</p> <br> <h3 class=\"section-heading\">How My Blog Was Started</h3> <p>One warm July day, I was sitting on my couch, randomly answering Quora questions (yes, I do that, and I'm sure you have before too), when I realized that so many of the questions about programming people were asking I had once asked myself. Just the previous day, someone was telling me about how she couldn't wrap her head around how mobile apps could work. While she was talking to me, I chuckled silently, as I too had once been dumbfounded by websites and applications in general. And so I decided to start this blog, to try and answer all the questions about technology that I once had that I eventually answered myself.</p>"];
     
-    var contact = ["Get In Touch With Me", "Currently Accepting Freelance Work |", "<a class = 'blandlink' href = 'mailto:gs@georgesaieed.com'>gs@georgesaieed.com</a> |", "412-329-8021",  "", "<form id=\"da-form\" name=\"sentMessage\" action = \"https://formspree.io/gs@georgesaieed.com\" method=\"POST\" novalidate> <div class=\"row control-group\"><div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>Name</label> <input type=\"text\" class=\"form-control\" placeholder=\"Name\" id=\"name\" required data-validation-required-message=\"Please enter your name.\" name = \"PersonName\"><p class=\"help-block text-danger\"></p></div></div> <div class=\"row control-group\"><div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>Email Address</label> <input type=\"email\" class=\"form-control\" placeholder=\"Email Address\" id=\"email\" required data-validation-required-message=\"Please enter your email address.\" name = \"_replyto\"><p class=\"help-block text-danger\"></p> </div> </div> <div class=\"row control-group\"> <div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>What's Your Question?</label> <textarea rows=\"5\" class=\"form-control\" placeholder=\"What's Your Question?\" id=\"message\" required data-validation-required-message=\"Please enter a message.\" name = \"PersonQuestion\"></textarea> <p class=\"help-block text-danger\"></p> </div> </div> <br> <div id=\"success\"></div> <div class=\"row\"> <div class=\"form-group col-xs-12\"> <input type=\"text\" name=\"_gotcha\" style=\"display:none\" /> <input type=\"hidden\" name=\"_next\" value=\"\" /><button type=\"submit\" class=\"btn btn-default\">Submit!</button></div> </div> </form>"];
+    var contact = ["Get In Touch With Me", "Currently Accepting Freelance Work |", "<a class = 'blandlink' href = 'mailto:gs@georgesaieed.com'>gs@georgesaieed.com</a> |", "412-329-8021",  "", "<form id=\"da-form\" name=\"sentMessage\" action = \"https://formspree.io/gs@georgesaieed.com\" method=\"POST\" novalidate> <div class=\"row control-group\"><div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>Name</label> <input type=\"text\" class=\"form-control\" placeholder=\"Name\" id=\"name\" required data-validation-required-message=\"Please enter your name.\" name = \"PersonName\"><p class=\"help-block text-danger\"></p></div></div> <div class=\"row control-group\"><div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>Email Address</label> <input type=\"email\" class=\"form-control\" placeholder=\"Email Address\" id=\"email\" required data-validation-required-message=\"Please enter your email address.\" name = \"_replyto\"><p class=\"help-block text-danger\"></p> </div> </div> <div class=\"row control-group\"> <div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>What's Your Question?</label> <textarea rows=\"5\" class=\"form-control\" placeholder=\"What's Your Question?\" id=\"message\" required data-validation-required-message=\"Please enter a message.\" name = \"PersonQuestion\"></textarea> <p class=\"help-block text-danger\"></p> </div> </div> <br> <div id=\"success\"></div> <div class=\"row\"> <div class=\"form-group col-xs-12\"> <input type=\"text\" name=\"_gotcha\" style=\"display:none\" /> <input type=\"hidden\" name=\"_next\" value=\"#\" /><button type=\"submit\" id='contact-submit' class=\"btn btn-default\">Submit!</button></div> </div> </form>"];
+    
+    var thankyou = ["Thanks!", "", "", "", "I got your message! I'll get back to you as soon as I can."];
     
     $(document).ready(function() {
         $(document).mouseup(function(e)
@@ -176,26 +178,26 @@ $(document).ready(function(){
         },
         function(){
             if ($(window).width() > 991){
-            $('#uchicago').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#carnegiemellon').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#selftaught').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#uchicago').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#carnegiemellon').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#selftaught').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#uchicago').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#carnegiemellon').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#selftaught').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#uchicago').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#carnegiemellon').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#selftaught').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#uchicago').css('filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy').css('filter', 'blur(2px) grayscale(100%)');
-            $('#carnegiemellon').css('filter', 'blur(2px) grayscale(100%)');
-            $('#selftaught').css('filter', 'blur(2px) grayscale(100%)');
+            $('#uchicago').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#carnegiemellon').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#selftaught').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#uchicago').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#carnegiemellon').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#selftaught').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#uchicago').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#carnegiemellon').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#selftaught').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#uchicago').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#carnegiemellon').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#selftaught').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#uchicago').css('filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy').css('filter', 'blur(2px) grayscale(60%)');
+            $('#carnegiemellon').css('filter', 'blur(2px) grayscale(60%)');
+            $('#selftaught').css('filter', 'blur(2px) grayscale(60%)');
             }
         });
     
@@ -227,26 +229,26 @@ $(document).ready(function(){
         },
         function(){
             if ($(window).width() > 991){
-            $('#inventoryconnection').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#explorer').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy2').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#upmc').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#inventoryconnection').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#explorer').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy2').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#upmc').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#inventoryconnection').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#explorer').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy2').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#upmc').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#inventoryconnection').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#explorer').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy2').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#upmc').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#inventoryconnection').css('filter', 'blur(2px) grayscale(100%)');
-            $('#explorer').css('filter', 'blur(2px) grayscale(100%)');
-            $('#sewickleyacademy2').css('filter', 'blur(2px) grayscale(100%)');
-            $('#upmc').css('filter', 'blur(2px) grayscale(100%)');
+            $('#inventoryconnection').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#explorer').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy2').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#upmc').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#inventoryconnection').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#explorer').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy2').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#upmc').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#inventoryconnection').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#explorer').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy2').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#upmc').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#inventoryconnection').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#explorer').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy2').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#upmc').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#inventoryconnection').css('filter', 'blur(2px) grayscale(60%)');
+            $('#explorer').css('filter', 'blur(2px) grayscale(60%)');
+            $('#sewickleyacademy2').css('filter', 'blur(2px) grayscale(60%)');
+            $('#upmc').css('filter', 'blur(2px) grayscale(60%)');
             }
         });
         
@@ -313,61 +315,61 @@ $(document).ready(function(){
         },
         function(){
             if ($(window).width() > 991){
-            $('#instagram').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#polyart').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#myreceipts').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#yourcalc').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#facebook').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#aig').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#presentation').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#church').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#airhorn').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#finalschedule').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#clubw').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#instagram').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#polyart').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#myreceipts').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#yourcalc').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#facebook').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#aig').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#presentation').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#church').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#airhorn').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#finalschedule').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#clubw').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#instagram').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#polyart').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#myreceipts').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#yourcalc').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#facebook').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#aig').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#presentation').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#church').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#airhorn').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#finalschedule').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#clubw').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#instagram').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#polyart').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#myreceipts').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#yourcalc').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#facebook').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#aig').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#presentation').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#church').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#airhorn').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#finalschedule').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#clubw').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#instagram').css('filter', 'blur(2px) grayscale(100%)');
-            $('#polyart').css('filter', 'blur(2px) grayscale(100%)');
-            $('#myreceipts').css('filter', 'blur(2px) grayscale(100%)');
-            $('#yourcalc').css('filter', 'blur(2px) grayscale(100%)');
-            $('#facebook').css('filter', 'blur(2px) grayscale(100%)');
-            $('#aig').css('filter', 'blur(2px) grayscale(100%)');
-            $('#presentation').css('filter', 'blur(2px) grayscale(100%)');
-            $('#church').css('filter', 'blur(2px) grayscale(100%)');
-            $('#airhorn').css('filter', 'blur(2px) grayscale(100%)');
-            $('#finalschedule').css('filter', 'blur(2px) grayscale(100%)');
-            $('#clubw').css('filter', 'blur(2px) grayscale(100%)');
+            $('#instagram').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#polyart').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#myreceipts').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#yourcalc').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#facebook').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#aig').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#presentation').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#church').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#airhorn').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#finalschedule').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#clubw').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#instagram').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#polyart').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#myreceipts').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#yourcalc').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#facebook').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#aig').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#presentation').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#church').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#airhorn').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#finalschedule').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#clubw').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#instagram').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#polyart').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#myreceipts').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#yourcalc').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#facebook').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#aig').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#presentation').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#church').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#airhorn').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#finalschedule').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#clubw').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#instagram').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#polyart').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#myreceipts').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#yourcalc').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#facebook').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#aig').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#presentation').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#church').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#airhorn').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#finalschedule').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#clubw').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#instagram').css('filter', 'blur(2px) grayscale(60%)');
+            $('#polyart').css('filter', 'blur(2px) grayscale(60%)');
+            $('#myreceipts').css('filter', 'blur(2px) grayscale(60%)');
+            $('#yourcalc').css('filter', 'blur(2px) grayscale(60%)');
+            $('#facebook').css('filter', 'blur(2px) grayscale(60%)');
+            $('#aig').css('filter', 'blur(2px) grayscale(60%)');
+            $('#presentation').css('filter', 'blur(2px) grayscale(60%)');
+            $('#church').css('filter', 'blur(2px) grayscale(60%)');
+            $('#airhorn').css('filter', 'blur(2px) grayscale(60%)');
+            $('#finalschedule').css('filter', 'blur(2px) grayscale(60%)');
+            $('#clubw').css('filter', 'blur(2px) grayscale(60%)');
             }
         });
         
@@ -395,26 +397,26 @@ $(document).ready(function(){
         },
         function(){
             if ($(window).width() > 991){
-            $('#post1').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#post2').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#post3').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#post4').css('-webkit-filter', 'blur(2px) grayscale(100%)');
-            $('#post1').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#post2').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#post3').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#post4').css('-moz-filter', 'blur(2px) grayscale(100%)');
-            $('#post1').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#post2').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#post3').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#post4').css('-ms-filter', 'blur(2px) grayscale(100%)');
-            $('#post1').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#post2').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#post3').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#post4').css('-o-filter', 'blur(2px) grayscale(100%)');
-            $('#post1').css('filter', 'blur(2px) grayscale(100%)');
-            $('#post2').css('filter', 'blur(2px) grayscale(100%)');
-            $('#post3').css('filter', 'blur(2px) grayscale(100%)');
-            $('#post4').css('filter', 'blur(2px) grayscale(100%)');
+            $('#post1').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#post2').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#post3').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#post4').css('-webkit-filter', 'blur(2px) grayscale(60%)');
+            $('#post1').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#post2').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#post3').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#post4').css('-moz-filter', 'blur(2px) grayscale(60%)');
+            $('#post1').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#post2').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#post3').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#post4').css('-ms-filter', 'blur(2px) grayscale(60%)');
+            $('#post1').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#post2').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#post3').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#post4').css('-o-filter', 'blur(2px) grayscale(60%)');
+            $('#post1').css('filter', 'blur(2px) grayscale(60%)');
+            $('#post2').css('filter', 'blur(2px) grayscale(60%)');
+            $('#post3').css('filter', 'blur(2px) grayscale(60%)');
+            $('#post4').css('filter', 'blur(2px) grayscale(60%)');
             }
         });
     
@@ -813,7 +815,14 @@ $(document).ready(function(){
             $('html,body').animate({scrollTop: aTag.offset().top},'slow');
         }
     
-        
+        $('#contact-submit').click(function(){
+            $('#p-heading').html(thankyou[0]);
+                $('#p-type').html(thankyou[1]);
+                $('#p-subtype1').html(thankyou[2]);
+                $('#p-subtype2').html(thankyou[3]);
+                $('#p-subtype3').html(thankyou[4]);
+                $('#p-body').html(thankyou[5]);
+        });
     
         $(".card").hover(function(){
             if ($(window).width() > 991){
@@ -826,11 +835,11 @@ $(document).ready(function(){
         },
         function(){
             if ($(window).width() > 991){
-                $(this).css('-webkit-filter', 'blur(2px) grayscale(100%)');
-                $(this).css('-moz-filter', 'blur(2px) grayscale(100%)');
-                $(this).css('-ms-filter', 'blur(2px) grayscale(100%)');
-                $(this).css('-o-filter', 'blur(2px) grayscale(100%)');
-                $(this).css('filter', 'blur(2px) grayscale(100%)');
+                $(this).css('-webkit-filter', 'blur(2px) grayscale(60%)');
+                $(this).css('-moz-filter', 'blur(2px) grayscale(60%)');
+                $(this).css('-ms-filter', 'blur(2px) grayscale(60%)');
+                $(this).css('-o-filter', 'blur(2px) grayscale(60%)');
+                $(this).css('filter', 'blur(2px) grayscale(60%)');
             }
         });
         $("#me").hover(function(){
