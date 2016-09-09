@@ -405,11 +405,6 @@ body {
     margin-top: 15px;
     display:inline-block;
     color: #EC4A32;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -ms-filter: blur(1px);
-    -o-filter: blur(1px);
-    filter: blur(1px);
 }
 
 .lin {
@@ -420,11 +415,6 @@ body {
     margin-left: calc((100% - 215px)/4);
     margin-top: 10px;
     color: #EC4A32;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -ms-filter: blur(1px);
-    -o-filter: blur(1px);
-    filter: blur(1px);
 }
 
 .mail {
@@ -435,11 +425,6 @@ body {
     margin-left: calc((100% + 123px)/2);
     margin-top: -107px;
     color: #EC4A32;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -ms-filter: blur(1px);
-    -o-filter: blur(1px);
-    filter: blur(1px);
 }
 
 .res {
@@ -450,20 +435,8 @@ body {
     margin-left: calc((100% + 148px)/2);
     margin-top: 22px;
     color: #EC4A32;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -ms-filter: blur(1px);
-    -o-filter: blur(1px);
-    filter: blur(1px);
 }
 
-.git:hover, .lin:hover, .res:hover, .mail:hover {
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(0px);
-    -ms-filter: blur(0px);
-    -o-filter: blur(0px);
-    filter: blur(0px);
-}
 
 .img-padding {
     padding-top: 10px !important;
