@@ -56,6 +56,7 @@ $(document).ready(function(){
     var wasthanked = false;
     
     $(document).ready(function() {
+        wasthanked = localStore.getItem("wasthanked");
         if (wasthanked==true) {
             $('#popup-image').attr("src", "postimg/contact.jpg");
             $('.popup-image').css('object-position', '');
@@ -75,7 +76,7 @@ $(document).ready(function(){
             scrollTop: $("#popup").offset().top
             }, 500);
             wasthanked=false;
-            localStorage.setItem("false", wasthanked);
+            localStorage.setItem("wasthanked", wasthanked);
         }
         
         $(document).mouseup(function(e)
@@ -841,7 +842,7 @@ $(document).ready(function(){
     
         $('#contact-submit').click(function(){
             wasthanked=true;
-            localStorage.setItem("true", wasthanked);
+            localStorage.setItem("wasthanked", wasthanked);
         });
     
         $(".card").hover(function(){
