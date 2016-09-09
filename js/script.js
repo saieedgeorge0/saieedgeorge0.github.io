@@ -53,11 +53,9 @@ $(document).ready(function(){
     
     var thankyou = ["Thanks!", "", "", "", "I got your message! I'll get back to you as soon as I can."];
     
-    var wasthanked = false;
     
     $(document).ready(function() {
-        wasthanked = localStore.getItem("wasthanked");
-        if (wasthanked==true) {
+        if ($.cookie("wasthanked")==true) {
             $('#popup-image').attr("src", "postimg/contact.jpg");
             $('.popup-image').css('object-position', '');
             $('#close-popup').css('color', 'white');
@@ -75,8 +73,7 @@ $(document).ready(function(){
             $('html, body').animate({
             scrollTop: $("#popup").offset().top
             }, 500);
-            wasthanked=false;
-            localStorage.setItem("wasthanked", wasthanked);
+            $.cookie("wasthanked", "false");
         }
         
         $(document).mouseup(function(e)
@@ -841,8 +838,7 @@ $(document).ready(function(){
         }
     
         $('#contact-submit').click(function(){
-            wasthanked=true;
-            localStorage.setItem("wasthanked", wasthanked);
+            $.cookie("wasthanked", "true");
         });
     
         $(".card").hover(function(){
