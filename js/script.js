@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+    var open = false;
     var eduuc = ["University of Chicago", "Education |", "College |", "September 2015 - June 2019 |", "GPA: 3.75/4.00", "I am currently a sophomore at the University of Chicago, where I plan on pursuing a Bachelors degree in both Computer Science and Statistics. I am also a member of UChicago's all-male A Capella group <a class = 'blandlink' href='https://www.facebook.com/UChicagoRunforCover/'>Run For Cover</a> - you can find us on Spotify, iTunes, and Loudr."];
 
     var edusa = ["Sewickley Academy", "Education |", "High School |", "September 2011 - June 2015 |", "GPA: 3.91/4.00 | SAT: 2360 | ACT: 35", "I attended Sewickley Academy High School, located in Sewickley, PA. I graduated as a member of the cum laude society, as well as with highest honors. I was president of the Speech and Debate, Mock Trial, Programming, and Quiz Bowl teams, and I received a total of more than ten awards over the course of the four years that I attended the school. These were: the <strong>Benjamin Thomas Memorial Forensic Award</strong> (given to the student who demonstrates the most passion for speech and debate), the <strong>Computer Science Award</strong> (given to the student who demonstrates that he or she is most proficient in the field of computer science), the <strong>Outstanding Physics Student Award</strong>, the <strong>Math Award</strong>, the <strong>Science Award</strong>, and the <strong>Tuck McClintock Community Service Award</strong> (given to the student who has contributed the most service to his/her communities). I was also an <strong>AP Scholar</strong>, an <strong>AP Scholar with Distinction</strong>, and a <strong>National AP Scholar</strong>."];
@@ -51,7 +52,91 @@ $(document).ready(function(){
     var contact = ["Get In Touch With Me", "Currently Accepting Freelance Work |", "<a class = 'blandlink' href = 'mailto:gs@georgesaieed.com'>gs@georgesaieed.com</a> |", "412-329-8021",  "", "<form id=\"da-form\" name=\"sentMessage\" action = \"https://formspree.io/gs@georgesaieed.com\" method=\"POST\" novalidate> <div class=\"row control-group\"><div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>Name</label> <input type=\"text\" class=\"form-control\" placeholder=\"Name\" id=\"name\" required data-validation-required-message=\"Please enter your name.\" name = \"PersonName\"><p class=\"help-block text-danger\"></p></div></div> <div class=\"row control-group\"><div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>Email Address</label> <input type=\"email\" class=\"form-control\" placeholder=\"Email Address\" id=\"email\" required data-validation-required-message=\"Please enter your email address.\" name = \"_replyto\"><p class=\"help-block text-danger\"></p> </div> </div> <div class=\"row control-group\"> <div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>What's Your Question?</label> <textarea rows=\"5\" class=\"form-control\" placeholder=\"What's Your Question?\" id=\"message\" required data-validation-required-message=\"Please enter a message.\" name = \"PersonQuestion\"></textarea> <p class=\"help-block text-danger\"></p> </div> </div> <br> <div id=\"success\"></div> <div class=\"row\"> <div class=\"form-group col-xs-12\"> <input type=\"text\" name=\"_gotcha\" style=\"display:none\" /> <input type=\"hidden\" name=\"_next\" value=\"\" /><button type=\"submit\" class=\"btn btn-default\">Submit!</button></div> </div> </form>"];
     
     $(document).ready(function() {
-        $('#test').parent().prepend('#test');
+        $(document).mouseup(function(e)
+        { if(open == true) {
+        var subject = $(".popup-stuff"); 
+        var subject2 = $("#popup-image");
+
+        if((e.target.id != subject.attr('id'))&(e.target.id != subject2.attr('id')) && !subject.has(e.target).length)
+        {
+            open=false;
+            $('#contains').css("position", "relative");
+            $('#contains').css("height", "");
+            $('#contains').css("width", "");
+            $('#popup').fadeOut(500);
+            $('.pop-back').fadeOut(500);
+            $('#the-hr').css('border-color', '#eeeeee');
+            if($('#p-heading').html() =="University of Chicago"){                              
+                scrollToAnchor('UofC');
+            }
+            if($('#p-heading').html() =="Sewickley Academy"){                              
+                scrollToAnchor('anch2');
+            }
+            if($('#p-heading').html() =="Carnegie Mellon University"){                              
+                scrollToAnchor('anch3');
+            }
+            if($('#p-heading').html() =="Fourteen Languages"){                              
+                scrollToAnchor('anch4');
+            }
+            if($('#p-heading').html() =="Inventory Connection, LLC"){                              
+                scrollToAnchor('IC');
+            }
+            if($('#p-heading').html() =="ExplORer Surgical"){                              
+                scrollToAnchor('anch6');
+            }
+            if($('#p-heading').html() =="Sewickley Academy (again)"){                              
+                scrollToAnchor('anch7');
+            }
+            if($('#p-heading').html() =="University of Pittsburgh Medical Center Children's Hospital"){                              
+                scrollToAnchor('anch8');
+            }
+            if($('#p-heading').html() =="Instagram Logo Re-Design"){                              
+                scrollToAnchor('IGDesign');
+            }
+            if($('#p-heading').html() =="Low Polygon Art"){                              
+                scrollToAnchor('anch10');
+            }
+            if($('#p-heading').html() =="Smart Receipts"){                              
+                scrollToAnchor('anch11');
+            }
+            if($('#p-heading').html() =="Calc Color"){                              
+                scrollToAnchor('anch12');
+            }
+            if($('#p-heading').html() =="Facebook Re-Design"){                              
+                scrollToAnchor('anch13');
+            }
+            if($('#p-heading').html() =="Accident Report"){                              
+                scrollToAnchor('anch14');
+            }
+            if($('#p-heading').html() =="Research Presentation"){                              
+                scrollToAnchor('anch15');
+            }
+            if($('#p-heading').html() =="St. Mary's Coptic Church's Website"){   
+                scrollToAnchor('anch16');
+            }
+            if($('#p-heading').html() =="Ultimate Horn"){                              
+                scrollToAnchor('anch17');
+            }
+            if($('#p-heading').html() =="Finals Generator"){                              
+                scrollToAnchor('anch18');
+            }
+            if($('#p-heading').html() =="Unaccompanied Women Concert Poster"){   
+                scrollToAnchor('anch19');
+            }
+            if($('#p-heading').html() =="Why am I 'terrible' with computers?"){   
+                scrollToAnchor('badcomp');
+            }
+            if($('#p-heading').html() =="How do mobile apps really work?"){   
+                scrollToAnchor('anch21');
+            }
+            if($('#p-heading').html() =="Could you power your house with your bike?"){
+                scrollToAnchor('anch22');
+            }
+            if($('#p-heading').html() =="How much fun would it be to run at the speed of light?"){   
+                scrollToAnchor('anch23');
+            }
+        } }
+    });
     });
         
         $('.container-fluid').scroll(function(){
@@ -62,9 +147,12 @@ $(document).ready(function(){
             $('.pg-section5').css('visibility', 'hidden');
             $('.pg-section6').css('visibility', 'hidden');
         });
-    
-        $(".edu-point").hover(function(){
+        
+        $(".edu-point").click(function(){
             scrollToAnchor('UofC');
+        });
+        
+        $(".edu-point").hover(function(){
             $('#uchicago').css('-webkit-filter', 'blur(0px)');
             $('#sewickleyacademy').css('-webkit-filter', 'blur(0px)');
             $('#carnegiemellon').css('-webkit-filter', 'blur(0px)');
@@ -111,8 +199,11 @@ $(document).ready(function(){
             }
         });
     
-        $(".exp-point").hover(function(){
+        $(".exp-point").click(function(){
             scrollToAnchor('IC');
+        });
+    
+        $(".exp-point").hover(function(){
             $('#inventoryconnection').css('-webkit-filter', 'blur(0px)');
             $('#explorer').css('-webkit-filter', 'blur(0px)');
             $('#sewickleyacademy2').css('-webkit-filter', 'blur(0px)');
@@ -159,8 +250,11 @@ $(document).ready(function(){
             }
         });
         
-        $(".pro1-point").hover(function(){
+        $(".pro1-point").click(function(){
             scrollToAnchor('IGDesign');
+        });
+        
+        $(".pro1-point").hover(function(){
             $('#instagram').css('-webkit-filter', 'blur(0px)');
             $('#polyart').css('-webkit-filter', 'blur(0px)');
             $('#myreceipts').css('-webkit-filter', 'blur(0px)');
@@ -276,9 +370,12 @@ $(document).ready(function(){
             $('#clubw').css('filter', 'blur(2px) grayscale(100%)');
             }
         });
+        
+        $(".blog-point").click(function(){
+            scrollToAnchor('badcomp');
+        });
     
         $(".blog-point").hover(function(){
-            scrollToAnchor('badcomp');
             $('#post1').css('-webkit-filter', 'blur(0px)');
             $('#post2').css('-webkit-filter', 'blur(0px)');
             $('#post3').css('-webkit-filter', 'blur(0px)');
@@ -322,6 +419,7 @@ $(document).ready(function(){
         });
     
         $(".clicked").click(function(){
+            open=true;
             $('#popup-image').attr("src", "postimg/" + $(this).attr('id') + ".jpg");
             if($(this).attr('id') == "eduuc") {
                 $('.popup-image').css('object-position', '');
@@ -589,6 +687,7 @@ $(document).ready(function(){
         }); 
     
         $("#close-popup").click(function(){
+            open = false;
             $('#contains').css("position", "relative");
             $('#contains').css("height", "");
             $('#contains').css("width", "");
@@ -667,6 +766,7 @@ $(document).ready(function(){
         }); 
     
         $(".about-point").click(function(){
+            open=true;
             $('#popup-image').attr("src", "postimg/about.jpg");
             $('.popup-image').css('object-position', '');
             $('#close-popup').css('color', 'white');
@@ -687,6 +787,7 @@ $(document).ready(function(){
         }); 
     
         $(".contact-point").click(function(){
+            open=true;
             $('#the-hr').css('border-color', 'white');
             $('#popup-image').attr("src", "postimg/contact.jpg");
             $('.popup-image').css('object-position', '');
