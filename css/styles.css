@@ -1239,14 +1239,38 @@ body {
 @media (min-width: 992px) {
     .card {
         -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: transform .1s ease-in-out;
+        -moz-transition: transform .1s ease-in-out;
+        -ms-transition: transform .1s ease-in-out;
+        -o-transition: transform .1s ease-in-out;
         transition: transform .1s ease-in-out;
         -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     
     .card:hover {
         -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
         -webkit-transform: scale(1.075);
+        -moz-transform: scale(1.075);
+        -ms-transform: scale(1.075);
+        -o-transform: scale(1.075);
+        transform: scale(1.075);
         border: solid 1px white;
         -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
