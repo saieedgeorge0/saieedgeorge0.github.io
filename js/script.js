@@ -53,7 +53,30 @@ $(document).ready(function(){
     
     var thankyou = ["Thanks!", "", "", "", "I got your message! I'll get back to you as soon as I can."];
     
+    var wasthanked = false;
+    
     $(document).ready(function() {
+        if (wasthanked==true) {
+            $('#popup-image').attr("src", "postimg/contact.jpg");
+            $('.popup-image').css('object-position', '');
+            $('#close-popup').css('color', 'white');
+            $('#p-heading').html(thankyou[0]);
+            $('#p-type').html(thankyou[1]);
+            $('#p-subtype1').html(thankyou[2]);
+            $('#p-subtype2').html(thankyou[3]);
+            $('#p-subtype3').html(thankyou[4]);
+            $('#p-body').html(thankyou[5]);
+            $('#contains').css("position", "fixed");
+            $('#contains').css("height", "100%");
+            $('#contains').css("width", "100%");
+            $('.pop-back').fadeIn(1000);
+            $('#popup').fadeIn(1000);
+            $('html, body').animate({
+            scrollTop: $("#popup").offset().top
+            }, 500);
+            wasthanked=false;
+        }
+        
         $(document).mouseup(function(e)
         { if(open == true) {
         var subject = $(".popup-stuff"); 
@@ -816,12 +839,7 @@ $(document).ready(function(){
         }
     
         $('#contact-submit').click(function(){
-            $('#p-heading').html(thankyou[0]);
-                $('#p-type').html(thankyou[1]);
-                $('#p-subtype1').html(thankyou[2]);
-                $('#p-subtype2').html(thankyou[3]);
-                $('#p-subtype3').html(thankyou[4]);
-                $('#p-body').html(thankyou[5]);
+            wasthanked=true;
         });
     
         $(".card").hover(function(){
