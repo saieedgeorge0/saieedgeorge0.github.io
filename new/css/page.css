@@ -1,3 +1,50 @@
+/*=== Trigger  ===*/
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ 
+/*=== Optional Delays, change values here  ===*/
+.one {
+-webkit-animation-delay: 0.4s;
+-moz-animation-delay: 0.4s;
+animation-delay: 0.4s;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+ 
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+ 
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+ 
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
 body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway';
 }
@@ -43,7 +90,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .welcome {
     position:absolute;
-    margin-left: 8vw;
+    margin-left:10vw;
 }
 
 .fa-lg, .fa-2x, .fa-3x, .fa-4x {
@@ -80,7 +127,149 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .fa-lg {
-    transition: transform .2s ease-in-out;
+    transition: color .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.fa-circle-o, .fa-circle {
+    color: white;
+    position:relative;
+}
+
+.fa-circle {
+    color: white;
+    cursor: pointer;
+}
+
+.circle-1 {
+    margin-left: 200px;
+}
+
+.circle-2, .circle-3, .circle-4, .circle-5, .circle-6 {
+    margin-left: 130px;
+}
+
+.lines {
+    position:relative;
+    top: 0;
+    width: 600px;
+    margin-left: 271px;
+}
+
+.labels {
+    position: relative;
+    top: 0;
+    margin-left: 271px;
+}
+
+#label-1 {
+    position:absolute;
+    margin-left: -286px;
+    margin-top: 5px;
+    display: none;
+}
+
+#label-2 {
+    position:absolute;
+    margin-left: -83px;
+    margin-top: 5px;
+    display: none;
+}
+
+#label-3 {
+    position:absolute;
+    margin-left: 62px;
+    margin-top: 5px;
+    display: none;
+}
+
+#label-4 {
+    position:absolute;
+    margin-left: 220px;
+    margin-top: 5px;
+    display: none;
+}
+
+#label-5 {
+    position:absolute;
+    margin-left: 375px;
+    margin-top: 5px;
+    display: none;
+}
+
+#label-6 {
+    position:absolute;
+    margin-left: 516px;
+    margin-top: 5px;
+    display: none;
+}
+
+#line-1 {
+    position:absolute;
+    margin-top: -12px;
+    margin-left: -41px;
+}
+
+#line-2 {
+    position:absolute;
+    margin-top: -12px;
+    margin-left: 107px;
+}
+
+#line-3 {
+    position:absolute;
+    margin-top: -12px;
+    margin-left: 255px;
+}
+
+#line-4 {
+    position:absolute;
+    margin-top: -12px;
+    margin-left: 403px;
+}
+
+#line-5 {
+    position:absolute;
+    margin-top: -12px;
+    margin-left: 550px;
+}
+
+.line {
+    display: inline-block;
+    width: 132px;
+    top: 0;
+    position: relative;
+    margin-left: -5px;
+    margin-right: -5px;
+    height: 0.05px;
+    border: solid 2px white; 
+}
+
+.label {
+    display: inline-block;
+    top: 0;
+    position: relative;
+    color: white;
+}
+
+#move-circles {
+    position:absolute;
+    margin-top: 10vh;
+}
+
+.fa-2x, .fa-3x {
+    transition: color .4s ease-in-out, transform .4s ease-in-out;
+}
+
+.fa-angle-double-up:hover {
+    -webkit-transform: translate3d(0,-9px,0);
+    color: #D87E95;
+    cursor: pointer;
+}
+
+.fa-angle-double-down:hover {
+    -webkit-transform: translate3d(0,9px,0);
+    color: #D87E95;
+    cursor: pointer;
 }
 
 .fa-lg:hover {
@@ -94,6 +283,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #arrows {
     position: absolute;
+    margin-left: 5vw;
 }
 
 #arrow-up {
