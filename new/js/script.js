@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('#me').css('left', meleft.toString()+"px");
     var socmedialeft = ($(window).width() - $('#socialmedia').width() - 107)/2;
     $('#socialmedia').css('left', socmedialeft.toString()+"px");
-    var navcircles = ($(window).width() - $('#move-circles').width() + 30)/2;
+    var navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
     $('#move-circles').css('left', navcircles.toString()+"px");
     $(".cssload-container").fadeOut(3000);
     $(window).resize(function(){
@@ -24,7 +24,7 @@ $(document).ready(function(){
         $('#me').css('left', meleft.toString()+"px");
         socmedialeft = ($(window).width() - $('#socialmedia').width())/2;
         $('#socialmedia').css('left', socmedialeft.toString()+"px");
-        navcircles = ($(window).width() - $('#move-circles').width() + 30)/2;
+        navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
         $('#move-circles').css('left', navcircles.toString()+"px");
         $(".cssload-container").fadeOut(3000);
     });
