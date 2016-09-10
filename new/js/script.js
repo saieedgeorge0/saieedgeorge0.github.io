@@ -16,7 +16,7 @@ $(document).ready(function(){
         $('#me').css('top', meheight.toString()+"px");
         meleft = $(window).width() - $('#me').width() - (.08*$(window).width());
         $('#me').css('left', meleft.toString()+"px");
-        socmedialeft = ($(window).width() - $('#socialmedia').width()+59)/2;
+        socmedialeft = ($(window).width() - $('#socialmedia').width())/2;
         $('#socialmedia').css('left', socmedialeft.toString()+"px");
         $(".cssload-container").fadeOut(3000);
     });
