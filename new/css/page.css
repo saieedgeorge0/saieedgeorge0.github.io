@@ -1,0 +1,93 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway';
+}
+
+#container {
+    background: url('../img/background.jpeg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+#back-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+}
+    
+#me {
+    border-radius: 50%;
+    position: absolute;
+    height: 200px;
+}
+
+#welcome-text{
+    color: white;
+    font-weight: 300;
+    font-size: 1.4vw;
+    width: 200px;
+}
+
+#welcome-description {
+    color: white;
+    font-weight: 600;
+    width: 650px;
+    margin-top: -5px;
+}
+
+.welcome {
+    position:absolute;
+    margin-left: 8vw;
+}
+
+.fa-lg {
+    color: white;
+}
+
+.fa-facebook-official, .fa-github, .fa-linkedin-square, .fa-file-pdf-o {
+    margin-right: 50px;
+}
+
+.fa-facebook-official:hover {
+    color: 	#3b5998;
+    cursor: pointer;
+}
+
+.fa-github:hover {
+    color: #9CDAF0;
+    cursor: pointer;
+}
+
+.fa-linkedin-square:hover {
+    color: #0077B5;
+    cursor: pointer;
+}
+
+.fa-file-pdf-o:hover {
+    color: #EEAC5A;
+    cursor: pointer;
+}
+
+.fa-paper-plane-o:hover {
+    color: #D87E95;
+    cursor: pointer;
+}
+
+.fa-lg {
+    transition: transform .2s ease-in-out;
+}
+
+.fa-lg:hover {
+    -webkit-transform: scale(1.2);
+}
+
+#socialmedia {
+    position: absolute;
+    top: 90vh;
+}
