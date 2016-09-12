@@ -12,7 +12,7 @@ $(document).ready(function(){
     var navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
     $('#move-circles').css('left', navcircles.toString()+"px");
     $(window).on("load", function() {
-        $(".cssload-container").fadeOut(3000);
+        $(".cssload-container").delay(1000).fadeOut(3000);
     });
     
     $(window).resize(function(){
