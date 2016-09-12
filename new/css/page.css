@@ -1,8 +1,14 @@
 /*=== Trigger  ===*/
 .animate {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.7s;
+    -moz-animation-duration: 0.7s;
+    -ms-animation-duration: 0.7s;
+    -o-animation-duration: 0.7s;
+  animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
   animation-fill-mode: both;
 }
  
@@ -10,6 +16,8 @@
 .one {
 -webkit-animation-delay: 0.4s;
 -moz-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
 animation-delay: 0.4s;
 }
 
@@ -17,12 +25,18 @@ animation-delay: 0.4s;
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
+      -moz-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+      -o-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
  
   to {
     opacity: 1;
     -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
     transform: none;
   }
 }
@@ -30,18 +44,27 @@ animation-delay: 0.4s;
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
+      -moz-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+      -o-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
  
   to {
     opacity: 1;
     -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
     transform: none;
   }
 }
  
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -ms-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 
@@ -164,42 +187,43 @@ body, h1, h2, h3, h4, h5, h6 {
 #label-1 {
     position:absolute;
     margin-left: -286px;
-    margin-top: 5px;
+    margin-top: 10px;
     display: none;
+    display: block;
 }
 
 #label-2 {
     position:absolute;
     margin-left: -83px;
-    margin-top: 5px;
+    margin-top: 10px;
     display: none;
 }
 
 #label-3 {
     position:absolute;
     margin-left: 62px;
-    margin-top: 5px;
+    margin-top: 10px;
     display: none;
 }
 
 #label-4 {
     position:absolute;
     margin-left: 220px;
-    margin-top: 5px;
+    margin-top: 10px;
     display: none;
 }
 
 #label-5 {
     position:absolute;
     margin-left: 375px;
-    margin-top: 5px;
+    margin-top: 10px;
     display: none;
 }
 
 #label-6 {
     position:absolute;
     margin-left: 516px;
-    margin-top: 5px;
+    margin-top: 10px;
     display: none;
 }
 
