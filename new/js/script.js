@@ -11,8 +11,18 @@ $(document).ready(function(){
     $('#socialmedia').css('left', socmedialeft.toString()+"px");
     var navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
     $('#move-circles').css('left', navcircles.toString()+"px");
-
-    
+    $('#container').css("background-image", "url('img/eduuc.jpg')");
+    $('#container').css("background-position", "center");
+    $('#container').css("background-repeat", "none");
+    $('#container').css("background-size", "cover");
+    $('#container').css("background-image", "url('img/edust.jpg')");
+    $('#container').css("background-position", "center");
+    $('#container').css("background-repeat", "none");
+    $('#container').css("background-size", "cover");
+    $('#container').css("background-image", "url('img/background.jpeg')");
+    $('#container').css("background-position", "center");
+    $('#container').css("background-repeat", "none");
+    $('#container').css("background-size", "cover");
     
     $(window).on("load", function() {
         $(".cssload-container").delay(1000).fadeOut(3000);
