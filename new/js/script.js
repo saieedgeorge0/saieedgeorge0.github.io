@@ -11,18 +11,7 @@ $(document).ready(function(){
     $('#socialmedia').css('left', socmedialeft.toString()+"px");
     var navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
     $('#move-circles').css('left', navcircles.toString()+"px");
-    this.addEventListener("DOMContentLoaded", preloadImages, true);
- 
-    function preloadImages(e) {
-        var imageArray = new Array("img/background.jpeg", "img/blogbike.jpg", "img/blogbwc.jpeg", "img/blogdaw.jpeg", "img/bloglight.jpg", "img/edust.jpg", "img/eduuc.jpg", "img/expes.jpg", "img/expic.jpg", "img/expsa.jpg", "img/expupmc.jpg", "img/lowpoly.jpg", "img/me.jpg", "img/projaig.jpg", "img/projcc.jpg", "img/projcw.jpg", "img/projfg.jpg", "img/projfr.png", "img/projid.jpg", "img/projlpa.jpg", "img/projpd.jpeg", "img/projpw.png", "img/projsr.jpg", "img/projuh.jpeg", "img/projuw.jpg");
 
-        for (var i = 0; i < imageArray.length; i++) {
-            var tempImage = new Image();
-
-            tempImage.addEventListener("load", trackProgress, true);
-            tempImage.src = imageArray[i];
-        }
-    }
     
     $(window).on("load", function() {
         $(".cssload-container").delay(1000).fadeOut(3000);
