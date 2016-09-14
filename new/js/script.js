@@ -226,8 +226,6 @@ $(document).ready(function(){
             $('#welcome-description').html(edutext[0]);
             $('#welcome-description').addClass('huge');
             $('#container').css("background", edupics[0]);
-            $('#home-img').css("opacity", "0");
-            $('#inventory-img').css("opacity", "1");
         }
         if ($(this).attr('id') == "3") {
             $('#welcome-description').html(exptext[0]);
