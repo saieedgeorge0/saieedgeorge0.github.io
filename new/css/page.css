@@ -1,3 +1,7 @@
+.cssload-container {
+    overflow: hidden;
+}
+
 /*=== Trigger  ===*/
 .animate {
   -webkit-animation-duration: 0.7s;
@@ -74,6 +78,11 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #container {
     background: url('../img/background.jpeg');
+    -webkit-transition: background 0.3s f;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -81,6 +90,7 @@ body, h1, h2, h3, h4, h5, h6 {
     left: 0;
     background-position: center;
     background-size: cover;
+    background-repeat: none;
 }
 
 #back-overlay {
@@ -312,4 +322,16 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #arrow-up {
     margin-bottom: 15px;
+}
+
+.huge {
+    font-size: 60px;
+}
+
+.semi-huge {
+    font-size: 55px;
+}
+
+.not-as-huge {
+    50px;
 }
