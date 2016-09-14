@@ -92,6 +92,7 @@ $(document).ready(function(){
             $('#welcome-description').html(edutext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(edusubtext[textnum]);
+            $( ("#" + edupics[textnum]) ).css("visibility", "visible");
             $( ("#" + edupics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -106,6 +107,7 @@ $(document).ready(function(){
             $('#welcome-description').html(exptext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(expsubtext[textnum]);
+            $( ("#" + exppics[textnum]) ).css("visibility", "visible");
             $( ("#" + exppics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -120,6 +122,7 @@ $(document).ready(function(){
             $('#welcome-description').html(projtext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(projsubtext[textnum]);
+            $( ("#" + projpics[textnum]) ).css("visibility", "visible");
             $( ("#" + projpics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -134,6 +137,7 @@ $(document).ready(function(){
             $('#welcome-description').html(blogtext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(blogsubtext[textnum]);
+            $( ("#" + blogpics[textnum]) ).css("visibility", "visible");
             $( ("#" + blogpics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -162,6 +166,7 @@ $(document).ready(function(){
             $('#welcome-description').html(edutext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(edusubtext[textnum]);
+            $( ("#" + edupics[textnum]) ).css("visibility", "visible");
             $( ("#" + edupics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -177,6 +182,7 @@ $(document).ready(function(){
             $('#welcome-description').html(exptext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(expsubtext[textnum]);
+            $( ("#" + exppics[textnum]) ).css("visibility", "visible");
             $( ("#" + exppics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -192,6 +198,7 @@ $(document).ready(function(){
             $('#welcome-description').html(projtext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(projsubtext[textnum]);
+            $( ("#" + projpics[textnum]) ).css("visibility", "visible");
             $( ("#" + projpics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -207,6 +214,7 @@ $(document).ready(function(){
             $('#welcome-description').html(blogtext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(blogsubtext[textnum]);
+            $( ("#" + blogpics[textnum]) ).css("visibility", "visible");
             $( ("#" + blogpics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -232,6 +240,7 @@ $(document).ready(function(){
         if ($(this).attr('id') == "2") {
             $('#welcome-description').html(edutext[0]);
             $('#welcome-description').addClass('huge');
+            $( "#uchicago-img" ).css("visibility", "visible");
             $( "#uchicago-img" ).insertBefore( $( "#container" ) );
             $( "#uchicago-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -241,6 +250,7 @@ $(document).ready(function(){
         if ($(this).attr('id') == "3") {
             $('#welcome-description').html(exptext[0]);
             $('#welcome-description').addClass('huge');
+            $( "#inventory-img" ).css("visibility", "visible");
             $( "#inventory-img" ).insertBefore( $( "#container" ) );
             $( "#inventory-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -249,6 +259,7 @@ $(document).ready(function(){
         if ($(this).attr('id') == "4") {
             $('#welcome-description').html(projtext[0]);
             $('#welcome-description').addClass('semi-huge');
+            $( "#church-img" ).css("visibility", "visible");
             $( "#church-img" ).insertBefore( $( "#container" ) );
             $( "#church-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -257,6 +268,7 @@ $(document).ready(function(){
         if ($(this).attr('id') == "5") {
             $('#welcome-description').html(blogtext[0]);
             $('#welcome-description').addClass('semi-huge');
+            $( "#search-img" ).css("visibility", "visible");
             $( "#search-img" ).insertBefore( $( "#container" ) );
             $( "#search-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -265,6 +277,7 @@ $(document).ready(function(){
         if ($(this).attr('id') == "6") {
             $('#welcome-description').html(abouttext[0]);
             $('#welcome-description').addClass('huge');
+            $( "#about-img" ).css("visibility", "visible");
             $( "#about-img" ).insertBefore( $( "#container" ) );
             $( "#about-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");

@@ -93,6 +93,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 }
 
 #light-img{
@@ -111,6 +112,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #bike-img{
     background: url('../img/blogbike.jpg');
@@ -128,6 +130,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #apps-img{
     background: url('../img/blogdaw.jpeg');
@@ -145,6 +148,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #search-img{
     background: url('../img/blogbwc.jpeg');
@@ -162,6 +166,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #past-img{
     background: url('../img/projpw.png');
@@ -179,6 +184,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #uw-img{
     background: url('../img/projuw.jpg');
@@ -196,6 +202,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #ultimate-img{
     background: url('../img/projuh.jpeg');
@@ -217,6 +224,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #instagram-img{
     background: url('../img/projid.jpg');
@@ -238,6 +246,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #calc-img{
     background: url('../img/projcc.jpg');
@@ -255,6 +264,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #presentation-img{
     background: url('../img/projpd.jpeg');
@@ -272,6 +282,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #low-img{
     background: url('../img/projlpa.jpg');
@@ -289,6 +300,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #finals-img{
     background: url('../img/projfg.jpg');
@@ -306,6 +318,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #smart-img{
     background: url('../img/projsr.jpg');
@@ -323,6 +336,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #accident-img{
     background: url('../img/projaig.jpg');
@@ -340,6 +354,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #facebook-img{
     background: url('../img/projfr.png');
@@ -357,6 +372,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #church-img{
     background: url('../img/projcw.jpg');
@@ -374,6 +390,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #upmc-img{
     background: url('../img/expupmc.jpg');
@@ -391,6 +408,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #sewickley-img{
     background: url('../img/expsa.jpg');
@@ -408,6 +426,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #explorer-img{
     background: url('../img/expes.jpg');
@@ -425,6 +444,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #inventory-img{
     background: url('../img/expic.jpg');
@@ -442,6 +462,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 }
 #selftaught-img{
     background: url('../img/edust.jpg');
@@ -459,6 +480,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #uchicago-img{
     
@@ -477,6 +499,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -ms-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
+    visibility: hidden;
 } 
 #home-img{
     -webkit-transition: opacity .3s ease-in-out;
