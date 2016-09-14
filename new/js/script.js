@@ -93,6 +93,7 @@ $(document).ready(function(){
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(edusubtext[textnum]);
             $( ("#" + edupics[textnum]) ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( ("#" + edupics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -108,6 +109,7 @@ $(document).ready(function(){
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(expsubtext[textnum]);
             $( ("#" + exppics[textnum]) ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( ("#" + exppics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -123,6 +125,7 @@ $(document).ready(function(){
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(projsubtext[textnum]);
             $( ("#" + projpics[textnum]) ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( ("#" + projpics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -138,6 +141,7 @@ $(document).ready(function(){
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(blogsubtext[textnum]);
             $( ("#" + blogpics[textnum]) ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( ("#" + blogpics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -167,6 +171,7 @@ $(document).ready(function(){
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(edusubtext[textnum]);
             $( ("#" + edupics[textnum]) ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( ("#" + edupics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -183,6 +188,7 @@ $(document).ready(function(){
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(expsubtext[textnum]);
             $( ("#" + exppics[textnum]) ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( ("#" + exppics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -199,6 +205,7 @@ $(document).ready(function(){
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(projsubtext[textnum]);
             $( ("#" + projpics[textnum]) ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( ("#" + projpics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -215,6 +222,7 @@ $(document).ready(function(){
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(blogsubtext[textnum]);
             $( ("#" + blogpics[textnum]) ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( ("#" + blogpics[textnum]) ).insertBefore( $( "#container" ) );
             $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html((textnum + 1).toString());
@@ -232,6 +240,7 @@ $(document).ready(function(){
             $('#welcome-description').removeClass('huge');
             $('#welcome-description').removeClass('semi-huge');
             $('#welcome-description').removeClass('not-as-huge');
+            $("#container").prev().css("display", "none");
             $( "#home-img" ).insertBefore( $( "#container" ) );
             $( "#home-img").css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -241,6 +250,7 @@ $(document).ready(function(){
             $('#welcome-description').html(edutext[0]);
             $('#welcome-description').addClass('huge');
             $( "#uchicago-img" ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( "#uchicago-img" ).insertBefore( $( "#container" ) );
             $( "#uchicago-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -251,6 +261,7 @@ $(document).ready(function(){
             $('#welcome-description').html(exptext[0]);
             $('#welcome-description').addClass('huge');
             $( "#inventory-img" ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( "#inventory-img" ).insertBefore( $( "#container" ) );
             $( "#inventory-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -260,6 +271,7 @@ $(document).ready(function(){
             $('#welcome-description').html(projtext[0]);
             $('#welcome-description').addClass('semi-huge');
             $( "#church-img" ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( "#church-img" ).insertBefore( $( "#container" ) );
             $( "#church-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -269,6 +281,7 @@ $(document).ready(function(){
             $('#welcome-description').html(blogtext[0]);
             $('#welcome-description').addClass('semi-huge');
             $( "#search-img" ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( "#search-img" ).insertBefore( $( "#container" ) );
             $( "#search-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
@@ -278,6 +291,7 @@ $(document).ready(function(){
             $('#welcome-description').html(abouttext[0]);
             $('#welcome-description').addClass('huge');
             $( "#about-img" ).css("visibility", "visible");
+            $("#container").prev().css("display", "none");
             $( "#about-img" ).insertBefore( $( "#container" ) );
             $( "#about-img" ).css("opacity", "0").fadeTo(400, 1);
             $('#current-count').html("1");
