@@ -750,3 +750,23 @@ body, h1, h2, h3, h4, h5, h6 {
 .not-as-huge {
     50px;
 }
+
+#current-count, #total-count {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 20px;
+}
+
+#current-count {
+    margin-top: -21px;
+    margin-bottom: 7px;
+    color: #D87E95;
+}
+
+#total-count {
+    border-top: solid 1px white;
+    margin-bottom: -5px;
+    padding-top: 4px;
+}
