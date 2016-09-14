@@ -11,6 +11,8 @@ $(document).ready(function(){
     $('#socialmedia').css('left', socmedialeft.toString()+"px");
     var navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
     $('#move-circles').css('left', navcircles.toString()+"px");
+    var chicago = new Image();
+    chicago.src = '../img/eduuc.jpg';
     
     $(window).on("load", function() {
         $(".cssload-container").delay(1000).fadeOut(3000);
@@ -235,6 +237,14 @@ $(document).ready(function(){
             }
         });
     });
+    
+    function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+        // Alternatively you could use:
+        // (new Image()).src = this;
+    });
+    }
     
 });
                   
