@@ -184,12 +184,10 @@
 
 .cssload-container {
     position: fixed;
-    height: 100vh;
+    height: -webkit-calc(100vh + 100px);
     width: 100vw;
-    top: -49px;
+    top: -100px;
     left: 0;
-    background-position: center;
-    background-size: cover;
     background: black;
     z-index: 5;
 }
