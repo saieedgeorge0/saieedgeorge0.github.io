@@ -14,6 +14,7 @@ $(document).ready(function(){
 
     
     $(window).on("load", function() {
+        $("#outside").css("visibility", "visible");
         $(".cssload-container").delay(500).fadeOut(1000);
     });
     
