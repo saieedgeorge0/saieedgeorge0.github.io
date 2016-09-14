@@ -89,8 +89,8 @@ $(document).ready(function(){
             $('#welcome-description').html(edutext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(edusubtext[textnum]);
-            $( ("#" + edupics[textnum]) ).hide();
-            $( ("#" + edupics[textnum]) ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( ("#" + edupics[textnum]) ).insertBefore( $( "#container" ) );
+            $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
         }
         if ($('#welcome-text').hasClass('3')) {
             textnum += 1;
@@ -101,8 +101,8 @@ $(document).ready(function(){
             $('#welcome-description').html(exptext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(expsubtext[textnum]);
-            $( ("#" + exppics[textnum]) ).hide();
-            $( ("#" + exppics[textnum]) ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( ("#" + exppics[textnum]) ).insertBefore( $( "#container" ) );
+            $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
         }
         if ($('#welcome-text').hasClass('4')) {
             textnum += 1;
@@ -113,8 +113,8 @@ $(document).ready(function(){
             $('#welcome-description').html(projtext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(projsubtext[textnum]);
-            $( ("#" + projpics[textnum]) ).hide();
-            $( ("#" + projpics[textnum]) ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( ("#" + projpics[textnum]) ).insertBefore( $( "#container" ) );
+            $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
         }
         if ($('#welcome-text').hasClass('5')) {
             textnum += 1;
@@ -125,8 +125,8 @@ $(document).ready(function(){
             $('#welcome-description').html(blogtext[textnum]);
             $('#welcome-text').hide().delay(50).fadeIn('slow');
             $('#welcome-text').html(blogsubtext[textnum]);
-            $( ("#" + blogpics[textnum]) ).hide();
-            $( ("#" + blogpics[textnum]) ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( ("#" + blogpics[textnum]) ).insertBefore( $( "#container" ) );
+            $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(400, 1);
         }
     });
     
