@@ -220,56 +220,34 @@ $(document).ready(function(){
             $('#welcome-description').removeClass('huge');
             $('#welcome-description').removeClass('semi-huge');
             $('#welcome-description').removeClass('not-as-huge');
-            $('#back-overlay').css("background", "rgba(0,0,0,0.4)");
             $('#container').css("background", "url('img/background.jpeg')");
-            $('#container').css("background-position", "center");
-            $('#container').css("background-repeat", "none");
-            $('#container').css("background-size", "cover");
         }
         if ($(this).attr('id') == "2") {
             $('#welcome-description').html(edutext[0]);
             $('#welcome-description').addClass('huge');
-            $('#back-overlay').css("background", "rgba(0,0,0,0.5)");
             $('#container').css("background", edupics[0]);
-            $('#container').css("background-position", "center");
-            $('#container').css("background-repeat", "none");
-            $('#container').css("background-size", "cover");
+            $('#home-img').css("opacity", "0");
+            $('#inventory-img').css("opacity", "1");
         }
         if ($(this).attr('id') == "3") {
             $('#welcome-description').html(exptext[0]);
             $('#welcome-description').addClass('huge');
-            $('#back-overlay').css("background", "rgba(0,0,0,0.5)");
             $('#container').css("background", exppics[0]);
-            $('#container').css("background-position", "center");
-            $('#container').css("background-repeat", "none");
-            $('#container').css("background-size", "cover");
         }
         if ($(this).attr('id') == "4") {
             $('#welcome-description').html(projtext[0]);
             $('#welcome-description').addClass('semi-huge');
-            $('#back-overlay').css("background", "rgba(0,0,0,0.5)");
             $('#container').css("background", projpics[0]);
-            $('#container').css("background-position", "center");
-            $('#container').css("background-repeat", "none");
-            $('#container').css("background-size", "cover");
         }
         if ($(this).attr('id') == "5") {
             $('#welcome-description').html(blogtext[0]);
             $('#welcome-description').addClass('semi-huge');
-            $('#back-overlay').css("background", "rgba(0,0,0,0.5)");
             $('#container').css("background", blogpics[0]);
-            $('#container').css("background-position", "center");
-            $('#container').css("background-repeat", "none");
-            $('#container').css("background-size", "cover");
         }
         if ($(this).attr('id') == "6") {
             $('#welcome-description').html(abouttext[0]);
             $('#welcome-description').addClass('huge');
-            $('#back-overlay').css("background", "rgba(0,0,0,0.5)");
             $('#container').css("background", "url('img/me.jpg')");
-            $('#container').css("background-position", "center");
-            $('#container').css("background-repeat", "none");
-            $('#container').css("background-size", "cover");
         }
         welcomeheight = ($(window).height() - $('.welcome').height())/2;
         $('.welcome').css('top', welcomeheight.toString()+"px");

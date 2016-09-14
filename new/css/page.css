@@ -77,13 +77,8 @@ body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway';
 }
 
-#container {
-    background: url('../img/background.jpeg');
-    -webkit-transition: background 1s f;
-    -moz-transition: background 1s ease-in-out;
-    -ms-transition: background 1s ease-in-out;
-    -o-transition: background 1s ease-in-out;
-    transition: background 1s ease-in-out;
+#light-img{
+    background: url('../img/bloglight.jpg');
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -92,14 +87,293 @@ body, h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-size: cover;
     background-repeat: none;
-}
-
-#back-overlay {
-    height: 100%;
-    width: 100%;
+    z-index: -1;
+     opacity:0;
+} 
+#bike-img{
+    background: url('../img/blogbike.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.4);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#apps-img{
+    background: url('../img/blogdaw.jpeg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#search-img{
+    background: url('../img/blogbwc.jpeg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#past-img{
+    background: url('../img/projpw.png');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#uw-img{
+    background: url('../img/projuw.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#ultimate-img{
+    background: url('../img/projuh.jpeg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#instagram-img{
+    background: url('../img/projid.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#calc-img{
+    background: url('../img/projcc.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#presentation-img{
+    background: url('../img/projpd.jpeg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#low-img{
+    background: url('../img/projlpa.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#finals-img{
+    background: url('../img/projfg.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#smart-img{
+    background: url('../img/projsr.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#accident-img{
+    background: url('../img/projaig.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#facebook-img{
+    background: url('../img/projfr.png');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#church-img{
+    background: url('../img/projcw.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#upmc-img{
+    background: url('../img/expupmc.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#sewickley-img{
+    background: url('../img/expsa.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#explorer-img{
+    background: url('../img/expes.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#inventory-img{
+    background: url('../img/expic.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+}
+#selftaught-img{
+    background: url('../img/edust.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+     opacity:0;
+} 
+#uchicago-img{
+    background: url('../img/eduuc.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+    opacity:0;
+} 
+#home-img{
+    background: url('../img/background.jpeg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
 }
     
 #me {
