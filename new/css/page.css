@@ -363,7 +363,7 @@ body, h1, h2, h3, h4, h5, h6 {
     z-index: -1;
     
 } 
-#home-img{
+/*#home-img{
     background: url('../img/background.jpeg');
     position: absolute;
     height: 100vh;
@@ -374,7 +374,7 @@ body, h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-repeat: none;
     z-index: -1;
-}
+}*/
     
 #me {
     border-radius: 50%;
