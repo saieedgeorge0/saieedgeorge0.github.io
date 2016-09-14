@@ -79,11 +79,11 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #container {
     background: url('../img/background.jpeg');
-    -webkit-transition: background 0.3s f;
-    -moz-transition: background 0.3s ease-in-out;
-    -ms-transition: background 0.3s ease-in-out;
-    -o-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
+    -webkit-transition: background 1s f;
+    -moz-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out;
     position: absolute;
     height: 100vh;
     width: 100vw;
