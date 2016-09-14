@@ -77,6 +77,19 @@ body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway';
 }
 
+#about-img {
+    background: url('../img/me.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+}
+
 #light-img{
     background: url('../img/bloglight.jpg');
     position: absolute;
