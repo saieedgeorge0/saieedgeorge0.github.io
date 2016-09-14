@@ -184,13 +184,13 @@
 
 .cssload-container {
     position: fixed;
-    height: -webkit-calc(100vh + 215px);
-    height: -moz-calc(100vh + 215px);
-    height: -ms-calc(100vh + 215px);
-    height: -o-calc(100vh + 215px);
-    height: calc(100vh + 215px);
+    height: -webkit-calc(100vh + 230px);
+    height: -moz-calc(100vh + 230px);
+    height: -ms-calc(100vh + 230px);
+    height: -o-calc(100vh + 230px);
+    height: calc(100vh + 230px);
     width: 100vw;
-    top: -215px;
+    top: -230px;
     left: 0;
     background: black;
     z-index: 5;
