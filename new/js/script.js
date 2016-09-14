@@ -199,38 +199,38 @@ $(document).ready(function(){
             $('#welcome-description').removeClass('huge');
             $('#welcome-description').removeClass('semi-huge');
             $('#welcome-description').removeClass('not-as-huge');
-            $( "#home-img" ).hide();
-            $( "#home-img" ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( "#home-img" ).insertBefore( $( "#container" ) );
+            $( "#home-img").css("opacity", "0").fadeTo(400, 1);
         }
         if ($(this).attr('id') == "2") {
             $('#welcome-description').html(edutext[0]);
             $('#welcome-description').addClass('huge');
-            $( "#uchicago-img" ).hide();
-            $( "#uchicago-img" ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( "#uchicago-img" ).insertBefore( $( "#container" ) );
+            $( "#uchicago-img" ).css("opacity", "0").fadeTo(400, 1);
         }
         if ($(this).attr('id') == "3") {
             $('#welcome-description').html(exptext[0]);
             $('#welcome-description').addClass('huge');
-            $( "#inventory-img" ).hide();
-            $( "#inventory-img" ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( "#inventory-img" ).insertBefore( $( "#container" ) );
+            $( "#inventory-img" ).css("opacity", "0").fadeTo(400, 1);
         }
         if ($(this).attr('id') == "4") {
             $('#welcome-description').html(projtext[0]);
             $('#welcome-description').addClass('semi-huge');
-            $( "#church-img" ).hide();
-            $( "#church-img" ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( "#church-img" ).insertBefore( $( "#container" ) );
+            $( "#church-img" ).css("opacity", "0").fadeTo(400, 1);
         }
         if ($(this).attr('id') == "5") {
             $('#welcome-description').html(blogtext[0]);
             $('#welcome-description').addClass('semi-huge');
-            $( "#search-img" ).hide();
-            $( "#search-img" ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( "#search-img" ).insertBefore( $( "#container" ) );
+            $( "#search-img" ).css("opacity", "0").fadeTo(400, 1);
         }
         if ($(this).attr('id') == "6") {
             $('#welcome-description').html(abouttext[0]);
             $('#welcome-description').addClass('huge');
-            $( "#about-img" ).hide();
-            $( "#about-img" ).insertBefore( $( "#container" ) ).fadeIn(500);
+            $( "#about-img" ).insertBefore( $( "#container" ) );
+            $( "#about-img" ).css("opacity", "0").fadeTo(400, 1);
         }
         welcomeheight = ($(window).height() - $('.welcome').height())/2;
         $('.welcome').css('top', welcomeheight.toString()+"px");
