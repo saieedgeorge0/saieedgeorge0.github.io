@@ -78,8 +78,8 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 #container {
-    background: url(../img/eduuc.jpg) no-repeat -9999px -9999px;
-    background: url(../img/edust.jpg) no-repeat -9999px -9999px;
+    background: url(../img/eduuc.jpg);
+    background: url(../img/edust.jpg);
     background: url('../img/background.jpeg');
     -webkit-transition: background 0.3s f;
     -moz-transition: background 0.3s ease-in-out;
