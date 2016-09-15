@@ -129,7 +129,7 @@ $(document).ready(function(){
             $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( ("#" + edupics[textnum]) ).prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         }
@@ -147,7 +147,7 @@ $(document).ready(function(){
             $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( ("#" + exppics[textnum]) ).prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         }
@@ -165,7 +165,7 @@ $(document).ready(function(){
             $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( ("#" + projpics[textnum]) ).prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         }
@@ -183,7 +183,7 @@ $(document).ready(function(){
             $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( ("#" + blogpics[textnum]) ).prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         }
@@ -215,7 +215,7 @@ $(document).ready(function(){
             $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( ("#" + edupics[textnum]) ).prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         
@@ -234,7 +234,7 @@ $(document).ready(function(){
             $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( ("#" + exppics[textnum]) ).prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         
@@ -253,7 +253,7 @@ $(document).ready(function(){
             $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( ("#" + projpics[textnum]) ).prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         
@@ -272,7 +272,7 @@ $(document).ready(function(){
             $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( ("#" + blogpics[textnum]) ).prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         }
@@ -292,7 +292,7 @@ $(document).ready(function(){
             $( "#home-img").css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( "#home-img").prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html("1");
             $('#total-count').html("4");
         }
@@ -304,7 +304,7 @@ $(document).ready(function(){
             $( "#uchicago-img" ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( "#uchicago-img").prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html("1");
             $('#total-count').html("2");
             
@@ -317,7 +317,7 @@ $(document).ready(function(){
             $( "#inventory-img" ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( "#inventory-img").prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html("1");
             $('#total-count').html("4");
         }
@@ -329,7 +329,7 @@ $(document).ready(function(){
             $( "#church-img" ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( "#church-img").prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html("1");
             $('#total-count').html("12");
         }
@@ -341,7 +341,7 @@ $(document).ready(function(){
             $( "#search-img" ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( "#search-img").prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html("1");
             $('#total-count').html("4");
         }
@@ -353,7 +353,7 @@ $(document).ready(function(){
             $( "#about-img" ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
                 $( "#about-img").prev().css("display", "none");
-            }, 320);
+            }, 400);
             $('#current-count').html("1");
             $('#total-count').html("1");
         }
