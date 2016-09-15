@@ -636,38 +636,32 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #label-2 {
     position:absolute;
-    margin-left: -83px;
+    margin-left: -76px;
     margin-top: 10px;
     display: none;
 }
 
 #label-3 {
     position:absolute;
-    margin-left: 62px;
+    margin-left: 85px;
     margin-top: 10px;
     display: none;
 }
 
 #label-4 {
     position:absolute;
-    margin-left: 220px;
+    margin-left: 227px;
     margin-top: 10px;
     display: none;
 }
 
 #label-5 {
     position:absolute;
-    margin-left: 375px;
+    margin-left: 368px;
     margin-top: 10px;
     display: none;
 }
 
-#label-6 {
-    position:absolute;
-    margin-left: 516px;
-    margin-top: 10px;
-    display: none;
-}
 
 #line-1 {
     position:absolute;
@@ -685,18 +679,6 @@ body, h1, h2, h3, h4, h5, h6 {
     position:absolute;
     margin-top: -12px;
     margin-left: 255px;
-}
-
-#line-4 {
-    position:absolute;
-    margin-top: -12px;
-    margin-left: 403px;
-}
-
-#line-5 {
-    position:absolute;
-    margin-top: -12px;
-    margin-left: 550px;
 }
 
 .line {

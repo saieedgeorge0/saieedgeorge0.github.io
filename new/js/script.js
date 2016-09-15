@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('#me').css('left', meleft.toString()+"px");
     var socmedialeft = ($(window).width() - $('#socialmedia').width() - 107)/2;
     $('#socialmedia').css('left', socmedialeft.toString()+"px");
-    var navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
+    var navcircles = ($(window).width() - $('#move-circles').width() + 210)/2;
     $('#move-circles').css('left', navcircles.toString()+"px");
     
     function getUrlVars() {
@@ -62,7 +62,7 @@ $(document).ready(function(){
         $('#me').css('left', meleft.toString()+"px");
         socmedialeft = ($(window).width() - $('#socialmedia').width())/2;
         $('#socialmedia').css('left', socmedialeft.toString()+"px");
-        navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
+        navcircles = ($(window).width() - $('#move-circles').width() + 210)/2;
         $('#move-circles').css('left', navcircles.toString()+"px");
         $(".cssload-container").fadeOut(3000);
     });
@@ -83,12 +83,6 @@ $(document).ready(function(){
     
     var hometext = ["I am a self-taught designer and developer attending the University of Chicago, and I challenge you to find something for me that I cannot learn to do.", "Nothing fascinates me more than the human brain, or understanding why people do what they do.", "I can play piano, sing, and weirdest of all, beatbox, and I love to read about technology.", "I want to change the world one day, and I will."];
     var smalltext = ["Hi. I'm George Saieed.", "Sept. 2015 - Jun. 2019 | GPA: 3.75/4.00", "Full Stack Designer + Developer | June 2016 - Present", "Made w/ HTML, CSS, jQuery | Sept. 2016", "March 22\, 2016 | 3 - 5 min. read", "All About Me"];
-    var edutext = ["University of Chicago", "Self-Taught Skills"];
-    var edusubtext = ["Sept. 2015 - Jun. 2019 | GPA: 3.75/4.00", "Fourteen Languages"]
-    var edupics = ["uchicago-img", "selftaught-img"];
-    var exptext = ["Inventory Connection", "ExplORer Surgical", "Sewickley Academy", "UPMC Hospital"];
-    var expsubtext = ["Full Stack Designer + Developer | Jun. 2016 - Present", "Technical Operations Intern | May 2016 - Present", "IT Assistant | Aug. 2015 - Sept. 2015", "Research Volunteer | Jul. 2014 - Aug. 2015"];
-    var exppics = ["inventory-img", "explorer-img","sewickley-img", "upmc-img"];
     var projtext = ["Church Website", "Facebook Re-Design", "Accident Report", "Smart Receipts", "Finals Generator", "Low Polygon Art", "Presentation Design", "Calc Color", "Instagram Logo Design", "Ultimate Horn", "UW Poster", "Past Websites"];
     var projsubtext = ["Made w/ HTML, CSS, jQuery | Sept. 2016", "Made w/ Sketch | Sept. 2016", "Made w/ Sketch | Aug. 2016", "Made w/ Sketch, Swift, XCode | Mar. 2016", "Made w/ Twilio, Python | May 2016", "Made w/ Photoshop | May 2016", "Made w/ Sketch | Jun. 2016", "Made w/ Sketch, Swift, XCode | Jul. 2016", "Made w/ Sketch | May 2016", "Made w/ Swift, XCode | Jul. 2016", "Made w/ Photoshop | May 2016", "Made w/ HTML, CSS, jQuery | Mar./Aug. 2016"];
     var projpics = ["church-img", "facebook-img", "accident-img", "smart-img", "finals-img", "low-img", "presentation-img", "calc-img", "instagram-img", "ultimate-img", "uw-img", "past-img"];
@@ -114,44 +108,7 @@ $(document).ready(function(){
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         }
-        
         if ($('#welcome-text').hasClass('2')) {
-            textnum += 1;
-            if (textnum > 1) {
-                textnum = 0;
-            }
-            $('#welcome-description').hide().delay(50).fadeIn('slow');
-            $('#welcome-description').html(edutext[textnum]);
-            $('#welcome-text').hide().delay(50).fadeIn('slow');
-            $('#welcome-text').html(edusubtext[textnum]);
-            $( ("#" + edupics[textnum]) ).css("visibility", "visible");
-            $( ("#" + edupics[textnum]) ).insertBefore( $( "#container" ) );
-            $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
-            setTimeout(function(){
-                $( ("#" + edupics[textnum]) ).prev().css("display", "none");
-            }, 400);
-            $('#current-count').html((textnum + 1).toString());
-            $('#current-count').hide().fadeIn(400);
-        }
-        if ($('#welcome-text').hasClass('3')) {
-            textnum += 1;
-            if (textnum > 3) {
-                textnum = 0;
-            }
-            $('#welcome-description').hide().delay(50).fadeIn('slow');
-            $('#welcome-description').html(exptext[textnum]);
-            $('#welcome-text').hide().delay(50).fadeIn('slow');
-            $('#welcome-text').html(expsubtext[textnum]);
-            $( ("#" + exppics[textnum]) ).css("visibility", "visible");
-            $( ("#" + exppics[textnum]) ).insertBefore( $( "#container" ) );
-            $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
-            setTimeout(function(){
-                $( ("#" + exppics[textnum]) ).prev().css("display", "none");
-            }, 400);
-            $('#current-count').html((textnum + 1).toString());
-            $('#current-count').hide().fadeIn(400);
-        }
-        if ($('#welcome-text').hasClass('4')) {
             textnum += 1;
             if (textnum > 11) {
                 textnum = 0;
@@ -169,7 +126,7 @@ $(document).ready(function(){
             $('#current-count').html((textnum + 1).toString());
             $('#current-count').hide().fadeIn(400);
         }
-        if ($('#welcome-text').hasClass('5')) {
+        if ($('#welcome-text').hasClass('3')) {
             textnum += 1;
             if (textnum > 3) {
                 textnum = 0;
@@ -204,44 +161,6 @@ $(document).ready(function(){
         if ($('#welcome-text').hasClass('2')) {
             textnum -= 1;
             if (textnum == -1) {
-                textnum = 1;
-            }
-            $('#welcome-description').hide().delay(50).fadeIn('slow');
-            $('#welcome-description').html(edutext[textnum]);
-            $('#welcome-text').hide().delay(50).fadeIn('slow');
-            $('#welcome-text').html(edusubtext[textnum]);
-            $( ("#" + edupics[textnum]) ).css("visibility", "visible");
-            $( ("#" + edupics[textnum]) ).insertBefore( $( "#container" ) );
-            $( ("#" + edupics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
-            setTimeout(function(){
-                $( ("#" + edupics[textnum]) ).prev().css("display", "none");
-            }, 400);
-            $('#current-count').html((textnum + 1).toString());
-            $('#current-count').hide().fadeIn(400);
-        
-        }
-        if ($('#welcome-text').hasClass('3')) {
-            textnum -= 1;
-            if (textnum == -1) {
-                textnum = 3;
-            }
-            $('#welcome-description').hide().delay(50).fadeIn('slow');
-            $('#welcome-description').html(exptext[textnum]);
-            $('#welcome-text').hide().delay(50).fadeIn('slow');
-            $('#welcome-text').html(expsubtext[textnum]);
-            $( ("#" + exppics[textnum]) ).css("visibility", "visible");
-            $( ("#" + exppics[textnum]) ).insertBefore( $( "#container" ) );
-            $( ("#" + exppics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
-            setTimeout(function(){
-                $( ("#" + exppics[textnum]) ).prev().css("display", "none");
-            }, 400);
-            $('#current-count').html((textnum + 1).toString());
-            $('#current-count').hide().fadeIn(400);
-        
-        }
-        if ($('#welcome-text').hasClass('4')) {
-            textnum -= 1;
-            if (textnum == -1) {
                 textnum = 11;
             }
             $('#welcome-description').hide().delay(50).fadeIn('slow');
@@ -258,7 +177,7 @@ $(document).ready(function(){
             $('#current-count').hide().fadeIn(400);
         
         }
-        if ($('#welcome-text').hasClass('5')) {
+        if ($('#welcome-text').hasClass('3')) {
             textnum -= 1;
             if (textnum == -1) {
                 textnum = 3;
@@ -297,31 +216,6 @@ $(document).ready(function(){
             $('#total-count').html("4");
         }
         if ($(this).attr('id') == "2") {
-            $('#welcome-description').html(edutext[0]);
-            $('#welcome-description').addClass('huge');
-            $( "#uchicago-img" ).css("visibility", "visible");
-            $( "#uchicago-img" ).insertBefore( $( "#container" ) );
-            $( "#uchicago-img" ).css("opacity", "0").fadeTo(20, 1);
-            setTimeout(function(){
-                $( "#uchicago-img").prev().css("display", "none");
-            }, 400);
-            $('#current-count').html("1");
-            $('#total-count').html("2");
-            
-        }
-        if ($(this).attr('id') == "3") {
-            $('#welcome-description').html(exptext[0]);
-            $('#welcome-description').addClass('huge');
-            $( "#inventory-img" ).css("visibility", "visible");
-            $( "#inventory-img" ).insertBefore( $( "#container" ) );
-            $( "#inventory-img" ).css("opacity", "0").fadeTo(20, 1);
-            setTimeout(function(){
-                $( "#inventory-img").prev().css("display", "none");
-            }, 400);
-            $('#current-count').html("1");
-            $('#total-count').html("4");
-        }
-        if ($(this).attr('id') == "4") {
             $('#welcome-description').html(projtext[0]);
             $('#welcome-description').addClass('semi-huge');
             $( "#church-img" ).css("visibility", "visible");
@@ -333,7 +227,7 @@ $(document).ready(function(){
             $('#current-count').html("1");
             $('#total-count').html("12");
         }
-        if ($(this).attr('id') == "5") {
+        if ($(this).attr('id') == "3") {
             $('#welcome-description').html(blogtext[0]);
             $('#welcome-description').addClass('semi-huge');
             $( "#search-img" ).css("visibility", "visible");
@@ -345,7 +239,7 @@ $(document).ready(function(){
             $('#current-count').html("1");
             $('#total-count').html("4");
         }
-        if ($(this).attr('id') == "6") {
+        if ($(this).attr('id') == "4") {
             $('#welcome-description').html(abouttext[0]);
             $('#welcome-description').addClass('huge');
             $( "#about-img" ).css("visibility", "visible");
