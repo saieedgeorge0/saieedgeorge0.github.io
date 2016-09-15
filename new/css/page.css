@@ -5,11 +5,11 @@
 
 /*=== Trigger  ===*/
 .animate {
-  -webkit-animation-duration: 0.7s;
-    -moz-animation-duration: 0.7s;
-    -ms-animation-duration: 0.7s;
-    -o-animation-duration: 0.7s;
-  animation-duration: 0.7s;
+  -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -ms-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+  animation-duration: 0.4s;
   -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
@@ -19,11 +19,11 @@
  
 /*=== Optional Delays, change values here  ===*/
 .one {
--webkit-animation-delay: 0.4s;
--moz-animation-delay: 0.4s;
-    -ms-animation-delay: 0.4s;
-    -o-animation-delay: 0.4s;
-animation-delay: 0.4s;
+-webkit-animation-delay: 0.2s;
+-moz-animation-delay: 0.2s;
+    -ms-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+animation-delay: 0.2s;
 }
 
 @-webkit-keyframes fadeInUp {
