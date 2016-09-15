@@ -11,9 +11,41 @@ $(document).ready(function(){
     $('#socialmedia').css('left', socmedialeft.toString()+"px");
     var navcircles = ($(window).width() - $('#move-circles').width() + 45)/2;
     $('#move-circles').css('left', navcircles.toString()+"px");
+    
+    function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+    
 
     
     $(window).on("load", function() {
+        if (getUrlVars()["section"]=="education") {
+            $('#2').trigger('click');
+            $('#2').trigger('hover').trigger('mouseenter');
+        }
+        if (getUrlVars()["section"]=="experience") {
+            $('#3').trigger('click');
+            $('#3').trigger('hover').trigger('mouseenter');
+        }
+        if (getUrlVars()["section"]=="projects") {
+            $('#4').trigger('click');
+            $('#4').trigger('hover').trigger('mouseenter');
+        }
+        if (getUrlVars()["section"]=="blog") {
+            $('#5').trigger('click');
+            $('#5').trigger('hover').trigger('mouseenter');
+        }
+        if (getUrlVars()["section"]=="about") {
+            $('#6').trigger('click');
+            $('#6').trigger('hover').trigger('mouseenter');
+        }
         $("#outside").css("visibility", "visible");
         $(".cssload-container").delay(500).fadeOut(1000);
     });
