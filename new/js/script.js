@@ -82,7 +82,7 @@ $(document).ready(function(){
     });
     
     var hometext = ["I am a self-taught designer and developer attending the University of Chicago, and I challenge you to find something for me that I cannot learn to do.", "Nothing fascinates me more than the human brain, or understanding why people do what they do.", "I can play piano, sing, and weirdest of all, beatbox, and I love to read about technology.", "I want to change the world one day, and I will."];
-    var smalltext = ["Hi. I'm George Saieed.", "Sept. 2015 - Jun. 2019 | GPA: 3.75/4.00", "Full Stack Designer + Developer | June 2016 - Present", "Made w/ Sketch | May 2016", "March 22\, 2016 | 3 - 5 min. read", "All About Me"];
+    var smalltext = ["Hi. I'm George Saieed.", "Sept. 2015 - Jun. 2019 | GPA: 3.75/4.00", "Full Stack Designer + Developer | June 2016 - Present", "Made w/ HTML, CSS, jQuery | Sept. 2016", "March 22\, 2016 | 3 - 5 min. read", "All About Me"];
     var edutext = ["University of Chicago", "Self-Taught Skills"];
     var edusubtext = ["Sept. 2015 - Jun. 2019 | GPA: 3.75/4.00", "Fourteen Languages"]
     var edupics = ["uchicago-img", "selftaught-img"];
