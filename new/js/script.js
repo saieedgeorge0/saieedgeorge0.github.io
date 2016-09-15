@@ -26,25 +26,21 @@ $(document).ready(function(){
 
     
     $(window).on("load", function() {
-        if (getUrlVars()["section"]=="education") {
+        if (getUrlVars()["section"]=="projects") {
             $('#2').trigger('click');
             $('#2').trigger('hover').trigger('mouseenter');
         }
-        if (getUrlVars()["section"]=="experience") {
+        if (getUrlVars()["section"]=="blog") {
             $('#3').trigger('click');
             $('#3').trigger('hover').trigger('mouseenter');
         }
-        if (getUrlVars()["section"]=="projects") {
+        if (getUrlVars()["section"]=="about") {
             $('#4').trigger('click');
             $('#4').trigger('hover').trigger('mouseenter');
         }
-        if (getUrlVars()["section"]=="blog") {
+        if (getUrlVars()["section"]=="contact") {
             $('#5').trigger('click');
             $('#5').trigger('hover').trigger('mouseenter');
-        }
-        if (getUrlVars()["section"]=="about") {
-            $('#6').trigger('click');
-            $('#6').trigger('hover').trigger('mouseenter');
         }
         $("#outside").css("visibility", "visible");
         $(".cssload-container").delay(500).fadeOut(1000);
@@ -203,6 +199,7 @@ $(document).ready(function(){
         $('#welcome-text').addClass($(this).attr('id'));
         $('#welcome-text').html(smalltext[$(this).attr('id')-1]);
         if ($(this).attr('id') == "1") {
+            $('#arrows').css("display", "block");
             $('#welcome-description').html(hometext[0]);
             $('#welcome-description').removeClass('huge');
             $('#welcome-description').removeClass('semi-huge');
@@ -216,6 +213,7 @@ $(document).ready(function(){
             $('#total-count').html("4");
         }
         if ($(this).attr('id') == "2") {
+            $('#arrows').css("display", "block");
             $('#welcome-description').html(projtext[0]);
             $('#welcome-description').addClass('semi-huge');
             $( "#church-img" ).css("visibility", "visible");
@@ -228,6 +226,7 @@ $(document).ready(function(){
             $('#total-count').html("12");
         }
         if ($(this).attr('id') == "3") {
+            $('#arrows').css("display", "block");
             $('#welcome-description').html(blogtext[0]);
             $('#welcome-description').addClass('semi-huge');
             $( "#search-img" ).css("visibility", "visible");
@@ -240,6 +239,7 @@ $(document).ready(function(){
             $('#total-count').html("4");
         }
         if ($(this).attr('id') == "4") {
+            $('#arrows').css("display", "none");
             $('#welcome-description').html(abouttext[0]);
             $('#welcome-description').addClass('huge');
             $( "#about-img" ).css("visibility", "visible");
