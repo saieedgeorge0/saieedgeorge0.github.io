@@ -436,15 +436,29 @@ body {
 	color: #D87E95;
 }
 
-.theme-1,
-.theme-1 .intro {
-	background-image: url('../img/background.jpeg');
-    background-position: center;
+.testing {
+    background-image: url('../img/projcw.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: 100;
 }
 
+#container-1 {
+    background-image: url('../img/projcw.jpg') !important;
+}
+
+.theme-1 .intro {
+	background-image: url('../img/projcw.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.items-wrap {
+    background: black !important;
+}
 .theme-1 .item {
-	border-color: rgba(0,0,0,0);
-	background: black;
+	border-color: black;
 }
 
 .theme-2 a {
@@ -453,16 +467,99 @@ body {
 
 .theme-2,
 .theme-2 .intro {
-	background-image: url('../img/background.jpeg');
+	background-image: url('../img/projfr.png');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
 }
 
 .theme-2 .item {
-	border-color: rgba(0,0,0,0);
+	border-color: black;
 	background: rgba(0,0,0,0);
 }
 
+.intro {
+    border-bottom: solid 9px black;
+}
 .item {
-    border-color: rgba(0,0,0,0);
+    border-color: black;
+}
+
+.theme-3 .intro {
+	background-image: url('../img/projaig.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-4 .intro {
+	background-image: url('../img/projsr.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-5,
+.theme-5 .intro {
+	background-image: url('../img/projfg.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-6,
+.theme-6 .intro {
+	background-image: url('../img/projlpa.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-7 .intro {
+	background-image: url('../img/projpd.jpeg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-8,
+.theme-8 .intro {
+	background-image: url('../img/projcc.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-9,
+.theme-9 .intro {
+	background-image: url('../img/projid.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-10,
+.theme-10 .intro {
+	background-image: url('../img/projuh.jpeg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-11,
+.theme-11 .intro {
+	background-image: url('../img/projuw.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-12,
+.theme-12 .intro {
+	background-image: url('../img/projpw.png');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
 }
 
 /* Media Queries */

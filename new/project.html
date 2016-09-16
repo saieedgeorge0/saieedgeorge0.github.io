@@ -11,10 +11,25 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/layout-multi.css" />
+        <link href="css/loading.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 		<script src="js/modernizr.custom.js"></script>
+        <script src = "js/jquery-3.1.0.js"></script>
+        <script src="js/projectload.js"></script>
 	</head>
 	<body>
+        <div class="cssload-container">
+            <div class="cssload-shaft1"></div>
+            <div class="cssload-shaft2"></div>
+            <div class="cssload-shaft3"></div>
+            <div class="cssload-shaft4"></div>
+            <div class="cssload-shaft5"></div>
+            <div class="cssload-shaft6"></div>
+            <div class="cssload-shaft7"></div>
+            <div class="cssload-shaft8"></div>
+            <div class="cssload-shaft9"></div>
+            <div class="cssload-shaft10"></div>
+        </div>
 		<svg class="hidden">
 			<g id="icon-grid">
 				<rect x="32.5" y="5.5" width="22" height="22"/>
@@ -27,21 +42,21 @@
 				<line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
 			</g>
 		</svg>
-		<nav class="thumb-nav">
-			<a data-container="container-1" class="thumb-nav__item" href="#"><img src="img/thumbs/projcw.jpg" alt="thumb01"/><span>1</span></a>
-			<a data-container="container-2" class="thumb-nav__item" href="#"><img src="img/thumbs/projfr.png" alt="thumb02" /><span>2</span></a>
-			<a data-container="container-3" class="thumb-nav__item" href="#"><img src="img/thumbs/projaig.jpg" alt="thumb03" /><span>3</span></a>
-            <a data-container="container-4" class="thumb-nav__item" href="#"><img src="img/thumbs/projsr.jpg" alt="thumb03" /><span>4</span></a>
-            <a data-container="container-5" class="thumb-nav__item" href="#"><img src="img/thumbs/projfg.jpg" alt="thumb03" /><span>5</span></a>
-            <a data-container="container-6" class="thumb-nav__item" href="#"><img src="img/thumbs/projlpa.jpg" alt="thumb03" /><span>6</span></a>
-            <a data-container="container-7" class="thumb-nav__item" href="#"><img src="img/thumbs/projpd.jpeg" alt="thumb03" /><span>7</span></a>
-            <a data-container="container-8" class="thumb-nav__item" href="#"><img src="img/thumbs/projcc.jpg" alt="thumb03" /><span>8</span></a>
-            <a data-container="container-9" class="thumb-nav__item" href="#"><img src="img/thumbs/projid.jpg" alt="thumb03" /><span>9</span></a>
-            <a data-container="container-10" class="thumb-nav__item" href="#"><img src="img/thumbs/projuh.jpeg" alt="thumb03" /><span>10</span></a>
-            <a data-container="container-11" class="thumb-nav__item" href="#"><img src="img/thumbs/projuw.jpg" alt="thumb03" /><span>11</span></a>
-            <a data-container="container-12" class="thumb-nav__item" href="#"><img src="img/thumbs/projpw.png" alt="thumb03" /><span>12</span></a>
+		<nav class="thumb-nav" style="display:none;">
+			<a id="proj-1" data-container="container-1" class="thumb-nav__item projy-1" href="#"><img src="img/thumbs/projcw.jpg" alt="thumb01"/><span>1</span></a>
+			<a id="proj-2" data-container="container-2" class="thumb-nav__item projy-2" href="#"><img src="img/thumbs/projfr.png" alt="thumb02" /><span>2</span></a>
+			<a data-container="container-3" class="thumb-nav__item projy-3" href="#"><img src="img/thumbs/projaig.jpg" alt="thumb03" /><span>3</span></a>
+            <a data-container="container-4" class="thumb-nav__item projy-4" href="#"><img src="img/thumbs/projsr.jpg" alt="thumb03" /><span>4</span></a>
+            <a data-container="container-5" class="thumb-nav__item projy-5" href="#"><img src="img/thumbs/projfg.jpg" alt="thumb03" /><span>5</span></a>
+            <a data-container="container-6" class="thumb-nav__item projy-6" href="#"><img src="img/thumbs/projlpa.jpg" alt="thumb03" /><span>6</span></a>
+            <a data-container="container-7" class="thumb-nav__item projy-7" href="#"><img src="img/thumbs/projpd.jpeg" alt="thumb03" /><span>7</span></a>
+            <a data-container="container-8" class="thumb-nav__item projy-8" href="#"><img src="img/thumbs/projcc.jpg" alt="thumb03" /><span>8</span></a>
+            <a data-container="container-9" class="thumb-nav__item projy-9" href="#"><img src="img/thumbs/projid.jpg" alt="thumb03" /><span>9</span></a>
+            <a data-container="container-10" class="thumb-nav__item projy-10" href="#"><img src="img/thumbs/projuh.jpeg" alt="thumb03" /><span>10</span></a>
+            <a data-container="container-11" class="thumb-nav__item projy-11" href="#"><img src="img/thumbs/projuw.jpg" alt="thumb03" /><span>11</span></a>
+            <a data-container="container-12" class="thumb-nav__item projy-12" href="#"><img src="img/thumbs/projpw.png" alt="thumb03" /><span>12</span></a>
 		</nav>
-		<div id="container-1" class="container theme-1">
+		<div id="container-1" class="container theme-1" style="background-image: background-image: url('../img/projcw.jpg');">
 			<header class="intro">
 				<img class="intro__image" src="img/projimg/projcw.jpg" alt="Lava"/>
 				<div class="intro__content">
@@ -58,7 +73,7 @@
 								<a class="demos__item demos__item--current" href="https://github.com/saieedgeorge0/Church-Website">Source Code</a>
 							</div>
 						</div>
-						<button class="trigger">
+						<button class="trigger" style="display:none;">
 							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
 								<use class="icon icon--grid" xlink:href="#icon-grid" />
 								<use class="icon icon--cross" xlink:href="#icon-cross" />
@@ -131,7 +146,7 @@
 								<a class="demos__item demos__item--current" href="http://stmarypittsburgh.org/">Download</a>
 							</div>
 						</div>
-						<button class="trigger">
+						<button class="trigger" style="display:none;">
 							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
 								<use class="icon icon--grid" xlink:href="#icon-grid" />
 								<use class="icon icon--cross" xlink:href="#icon-cross" />
@@ -150,7 +165,7 @@
 			<section class="related2">
 			</section>
 		</div><!-- /container -->
-		<div id="container-3" class="container">
+		<div id="container-3" class="container theme-3">
 			<header class="intro">
 				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
 				<div class="intro__content">
@@ -167,7 +182,7 @@
 								<a class="demos__item demos__item--current" href="">Mock-Ups</a>
 							</div>
 						</div>
-						<button class="trigger">
+						<button class="trigger" style="display:none;">
 							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
 								<use class="icon icon--grid" xlink:href="#icon-grid" />
 								<use class="icon icon--cross" xlink:href="#icon-cross" />
@@ -200,7 +215,7 @@
                 </a>
 			</section>
 		</div><!-- /container -->
-        <div id="container-4" class="container">
+        <div id="container-4" class="container theme-4">
 			<header class="intro">
 				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
 				<div class="intro__content">
@@ -217,7 +232,7 @@
 								<a class="demos__item demos__item--current" href="https://github.com/saieedgeorge0/smartReceipts">Source Code</a>
 							</div>
 						</div>
-						<button class="trigger">
+						<button class="trigger" style="display:none;">
 							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
 								<use class="icon icon--grid" xlink:href="#icon-grid" />
 								<use class="icon icon--cross" xlink:href="#icon-cross" />
@@ -262,7 +277,7 @@
                 </a>
 			</section>
 		</div><!-- /container -->
-        <div id="container-5" class="container">
+        <div id="container-5" class="container theme-5">
 			<header class="intro">
 				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
 				<div class="intro__content">
@@ -278,7 +293,7 @@
 								<a class="demos__item demos__item--current" href="https://github.com/saieedgeorge0/finalschedule">Source Code</a>
 							</div>
 						</div>
-						<button class="trigger">
+						<button class="trigger" style="display:none;">
 							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
 								<use class="icon icon--grid" xlink:href="#icon-grid" />
 								<use class="icon icon--cross" xlink:href="#icon-cross" />
@@ -301,7 +316,7 @@
             <section class="related2">
 			</section>
 		</div><!-- /container -->
-        <div id="container-6" class="container">
+        <div id="container-6" class="container theme-6">
 			<header class="intro">
 				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
 				<div class="intro__content">
@@ -317,7 +332,7 @@
 								<a class="demos__item demos__item--current" href="">Download</a>
 							</div>
 						</div>
-						<button class="trigger">
+						<button class="trigger" style="display:none;">
 							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
 								<use class="icon icon--grid" xlink:href="#icon-grid" />
 								<use class="icon icon--cross" xlink:href="#icon-cross" />
@@ -344,7 +359,7 @@
             <section class="related2">
 			</section>
 		</div><!-- /container -->
-        <div id="container-7" class="container">
+        <div id="container-7" class="container theme-7">
 			<header class="intro">
 				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
 				<div class="intro__content">
@@ -360,7 +375,7 @@
 								<a class="demos__item demos__item--current" href="">Download</a>
 							</div>
 						</div>
-						<button class="trigger">
+						<button class="trigger" style="display:none;">
 							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
 								<use class="icon icon--grid" xlink:href="#icon-grid" />
 								<use class="icon icon--cross" xlink:href="#icon-cross" />
@@ -393,7 +408,7 @@
 				</a>
 			</section>
 		</div><!-- /container -->
-        <div id="container-8" class="container">
+        <div id="container-8" class="container theme-8">
 			<header class="intro">
 				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
 				<div class="intro__content">
@@ -404,14 +419,14 @@
 							<div class="codrops-icon codrops-icon--drop" href="" title="Nothing"><span>Nothing</span></div>
 						</div>
 						<div class="intro__description">
-							Twilio/Python script that allows UChicago students to text their classes to a number and have it text them back their finals schedule.
+							Simple calculator app that allows users to customize its background.
 							<div class="demos">
 								<a class="demos__item demos__item--current" href="https://itunes.apple.com/us/app/calccolor/id1133313027?mt=8">App Store</a>
                                 <a class="demos__item demos__item--current" href="">Design</a>
                                 <a class="demos__item demos__item--current" href="https://github.com/saieedgeorge0/YourCalc">Source Code</a>
 							</div>
 						</div>
-						<button class="trigger">
+						<button class="trigger" style="display:none;">
 							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
 								<use class="icon icon--grid" xlink:href="#icon-grid" />
 								<use class="icon icon--cross" xlink:href="#icon-cross" />
@@ -423,11 +438,162 @@
 			</header><!-- /intro -->
 			<section class="items-wrap">
 				<a href="#" class="item">
-					<img class="item__image" src="img/projimg/projfs.png" alt="item01"/>
+					<img class="item__image" src="img/projimg/ccimg/img1.jpg" alt="item01"/>
 					<h2 class="item__title"></h2>
 				</a>
                 <a href="#" class="item">
-					<img class="item__image" src="img/projimg/projfs2.png" alt="item01"/>
+					<img class="item__image" src="img/projimg/ccimg/img2.png" alt="item01"/>
+					<h2 class="item__title"></h2>
+				</a>
+			</section>
+            <section class="related2">
+			</section>
+		</div><!-- /container -->
+        <div id="container-9" class="container theme-9">
+			<header class="intro">
+				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
+				<div class="intro__content">
+					<h1 class="intro__title">Instagram Logo Re-Design</h1>
+					<div class="intro__subtitle">
+						<div class="codrops-links">
+							<a class="codrops-icon codrops-icon--prev" href="index.html?proj=church" title="Main"><span>Home Page</span></a>
+							<div class="codrops-icon codrops-icon--drop" href="" title="Nothing"><span>Nothing</span></div>
+						</div>
+						<div class="intro__description">
+							Attempt at designing Instagram's new logo, as well as a creation of what I might have made it look like.
+							<div class="demos">
+                                <a class="demos__item demos__item--current" href="">Design</a>
+							</div>
+						</div>
+						<button class="trigger" style="display:none;">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<use class="icon icon--grid" xlink:href="#icon-grid" />
+								<use class="icon icon--cross" xlink:href="#icon-cross" />
+							</svg>
+							<span>Toggle content</span>
+						</button>
+					</div>
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+			<section class="items-wrap">
+				<a href="#" class="item">
+					<img class="item__image" src="img/projimg/idimg/img1.png" alt="item01"/>
+					<h2 class="item__title"></h2>
+				</a>
+                <a href="#" class="item">
+					<img class="item__image" src="img/projimg/idimg/img2.png" alt="item01"/>
+					<h2 class="item__title"></h2>
+				</a>
+			</section>
+            <section class="related2">
+			</section>
+		</div><!-- /container -->
+        <div id="container-10" class="container theme-10">
+			<header class="intro">
+				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
+				<div class="intro__content">
+					<h1 class="intro__title">Ultimate Horn</h1>
+					<div class="intro__subtitle">
+						<div class="codrops-links">
+							<a class="codrops-icon codrops-icon--prev" href="index.html?proj=church" title="Main"><span>Home Page</span></a>
+							<div class="codrops-icon codrops-icon--drop" href="" title="Nothing"><span>Nothing</span></div>
+						</div>
+						<div class="intro__description">
+							Simple airhorn app that automatically unmutes the user's volume on press to ensure the moment is never missed.
+							<div class="demos">
+                                <a class="demos__item demos__item--current" href="https://itunes.apple.com/us/app/ultimatehorn/id1133338024?mt=8">App Store</a>
+                                <a class="demos__item demos__item--current" href="">Design</a>
+                                <a class="demos__item demos__item--current" href="https://github.com/saieedgeorge0/UltimateHorn">Source Code</a>
+							</div>
+						</div>
+						<button class="trigger" style="display:none;">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<use class="icon icon--grid" xlink:href="#icon-grid" />
+								<use class="icon icon--cross" xlink:href="#icon-cross" />
+							</svg>
+							<span>Toggle content</span>
+						</button>
+					</div>
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+			<section class="items-wrap">
+				<a href="#" class="item">
+					<img class="item__image" src="img/projimg/projuh.png" alt="item01"/>
+					<h2 class="item__title"></h2>
+				</a>
+			</section>
+            <section class="related2">
+			</section>
+		</div><!-- /container -->
+        <div id="container-11" class="container theme-11">
+			<header class="intro">
+				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
+				<div class="intro__content">
+					<h1 class="intro__title">A Cappella Group Poster</h1>
+					<div class="intro__subtitle">
+						<div class="codrops-links">
+							<a class="codrops-icon codrops-icon--prev" href="index.html?proj=church" title="Main"><span>Home Page</span></a>
+							<div class="codrops-icon codrops-icon--drop" href="" title="Nothing"><span>Nothing</span></div>
+						</div>
+						<div class="intro__description">
+							Poster created by modifying a Vella wine box, for Unaccompanied Women A Cappella group (an all-female group at UChicago).
+							<div class="demos">
+                                <a class="demos__item demos__item--current" href="">Design</a>
+							</div>
+						</div>
+						<button class="trigger" style="display:none;">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<use class="icon icon--grid" xlink:href="#icon-grid" />
+								<use class="icon icon--cross" xlink:href="#icon-cross" />
+							</svg>
+							<span>Toggle content</span>
+						</button>
+					</div>
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+			<section class="items-wrap">
+				<a href="#" class="item">
+					<img class="item__image" src="img/projimg/projuw.png" alt="item01"/>
+					<h2 class="item__title"></h2>
+				</a>
+			</section>
+            <section class="related2">
+			</section>
+		</div><!-- /container -->
+        <div id="container-12" class="container theme-12">
+			<header class="intro">
+				<img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
+				<div class="intro__content">
+					<h1 class="intro__title">Past Websites</h1>
+					<div class="intro__subtitle">
+						<div class="codrops-links">
+							<a class="codrops-icon codrops-icon--prev" href="index.html?proj=church" title="Main"><span>Home Page</span></a>
+							<div class="codrops-icon codrops-icon--drop" href="" title="Nothing"><span>Nothing</span></div>
+						</div>
+						<div class="intro__description">
+							Previous iterations of my personal website.
+							<div class="demos">
+                                <a class="demos__item demos__item--current" href="">v. 1</a>
+                                <a class="demos__item demos__item--current" href="">v. 2</a>
+							</div>
+						</div>
+						<button class="trigger" style="display:none;">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<use class="icon icon--grid" xlink:href="#icon-grid" />
+								<use class="icon icon--cross" xlink:href="#icon-cross" />
+							</svg>
+							<span>Toggle content</span>
+						</button>
+					</div>
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+			<section class="items-wrap">
+				<a href="#" class="item">
+					<img class="item__image" src="img/projimg/pwimg/img1.png" alt="item01"/>
+					<h2 class="item__title"></h2>
+				</a>
+                <a href="#" class="item">
+					<img class="item__image" src="img/projimg/pwimg/img2.png" alt="item01"/>
 					<h2 class="item__title"></h2>
 				</a>
 			</section>
@@ -436,7 +602,8 @@
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
 		<script>
-			(function() {
+			(
+                function() {
 				var support = { animations : Modernizr.cssanimations },
 					animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
 					animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
@@ -455,6 +622,8 @@
 							onEndCallbackFn();
 						}
 					};
+                    
+                    
 
 				var containers = [].slice.call( document.querySelectorAll( '.container' ) ),
 					containersCount = containers.length,
@@ -569,7 +738,8 @@
 						allowScroll();
 					}
 				}
-
+                
+                
 				// scroll functions
 				function resetScroll() { document.body.scrollTop = document.documentElement.scrollTop = 0; }
 				function preventScroll() { window.addEventListener( 'scroll', noscroll ); }
@@ -579,9 +749,109 @@
 				}
 
 				init();
+                    
+                function getUrlVars() {
+                    var vars = [], hash;
+                    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                    for(var i = 0; i < hashes.length; i++) {
+                        hash = hashes[i].split('=');
+                        vars.push(hash[0]);
+                        vars[hash[0]] = hash[1];
+                    }
+                    return vars;
+                }
 
 				// For Demo purposes only (prevent jump on click)
 				[].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+                    
+                $(document).ready(function(){ 
+                    $(window).on("load", function() {
+                    if (getUrlVars()["projectid"]=="church") {
+                        $('.projy-1')[0].click();
+                        toggleContent(document.getElementById("container-1"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="facebook") {
+                        $('.projy-2')[0].click();
+                        toggleContent(document.getElementById("container-2"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="accident") {
+                        $('.projy-3')[0].click();
+                        toggleContent(document.getElementById("container-3"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="receipt") {
+                        $('.projy-4')[0].click();
+                        toggleContent(document.getElementById("container-4"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="finals") {
+                        $('.projy-5')[0].click();
+                        toggleContent(document.getElementById("container-5"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="polygon") {
+                        $('.projy-6')[0].click();
+                        toggleContent(document.getElementById("container-6"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="presentation") {
+                        $('.projy-7')[0].click();
+                        toggleContent(document.getElementById("container-7"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="calc") {
+                        $('.projy-8')[0].click();
+                        toggleContent(document.getElementById("container-8"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="instagram") {
+                        $('.projy-9')[0].click();
+                        toggleContent(document.getElementById("container-9"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="horn") {
+                        $('.projy-10')[0].click();
+                        toggleContent(document.getElementById("container-10"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="uw") {
+                        $('.projy-11')[0].click();
+                        toggleContent(document.getElementById("container-11"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    else if (getUrlVars()["projectid"]=="past") {
+                        $('.projy-11')[0].click();
+                        toggleContent(document.getElementById("container-11"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
+                    });
+                });
 			})();
 		</script>
 	</body>
