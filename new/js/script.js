@@ -78,7 +78,7 @@ $(document).ready(function(){
     });
     
     var hometext = ["I am a self-taught designer and developer attending the University of Chicago, and I challenge you to find something for me that I cannot learn to do.", "Nothing fascinates me more than the human brain, or understanding why people do what they do.", "I can play piano, sing, and weirdest of all, beatbox, and I love to read about technology.", "I want to change the world one day, and I will."];
-    var smalltext = ["Hi. I'm George Saieed.", "Made w/ HTML, CSS, jQuery | Sept. 2016", "March 22\, 2016 | 3 - 5 min. read", "All About Me"];
+    var smalltext = ["Hi. I'm George Saieed.", "Made w/ HTML, CSS, jQuery | Sept. 2016", "March 22\, 2016 | 3 - 5 min. read", "All About Me", "Contact Me"];
     var projtext = ["Church Website", "Facebook Re-Design", "Accident Report", "Smart Receipts", "Finals Generator", "Low Polygon Art", "Presentation Design", "Calc Color", "Instagram Logo Design", "Ultimate Horn", "UW Poster", "Past Websites"];
     var projsubtext = ["Made w/ HTML, CSS, jQuery | Sept. 2016", "Made w/ Sketch | Sept. 2016", "Made w/ Sketch | Aug. 2016", "Made w/ Sketch, Swift, XCode | Mar. 2016", "Made w/ Twilio, Python | May 2016", "Made w/ Photoshop | May 2016", "Made w/ Sketch | Jun. 2016", "Made w/ Sketch, Swift, XCode | Jul. 2016", "Made w/ Sketch | May 2016", "Made w/ Swift, XCode | Jul. 2016", "Made w/ Photoshop | May 2016", "Made w/ HTML, CSS, jQuery | Mar./Aug. 2016"];
     var projpics = ["church-img", "facebook-img", "accident-img", "smart-img", "finals-img", "low-img", "presentation-img", "calc-img", "instagram-img", "ultimate-img", "uw-img", "past-img"];
@@ -193,6 +193,15 @@ $(document).ready(function(){
         }
     });
     
+    $('.welcome').hover(function () {
+        if (!$('#welcome-text').hasClass("1")) {
+            $('#seemore').hide().fadeTo("slow", 1);
+            $(this).css("cursor", "pointer");
+        }
+    }, function() {
+        $('#seemore').fadeTo("slow", 0);
+    });
+    
     $('.fa-circle-o').click(function () {
         textnum = 0;
         $('#welcome-text').removeClass();
@@ -248,8 +257,17 @@ $(document).ready(function(){
             setTimeout(function(){
                 $( "#about-img").prev().css("display", "none");
             }, 400);
-            $('#current-count').html("1");
-            $('#total-count').html("1");
+        }
+        if ($(this).attr('id') == "5") {
+            $('#arrows').css("display", "none");
+            $('#welcome-description').html("Get In Touch!");
+            $('#welcome-description').addClass('huge');
+            $( "#contact-img" ).css("visibility", "visible");
+            $( "#contact-img" ).insertBefore( $( "#container" ) );
+            $( "#contact-img" ).css("opacity", "0").fadeTo(20, 1);
+            setTimeout(function(){
+                $( "#contact-img").prev().css("display", "none");
+            }, 400);
         }
         welcomeheight = ($(window).height() - $('.welcome').height())/2;
         $('.welcome').css('top', welcomeheight.toString()+"px");
