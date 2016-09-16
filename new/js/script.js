@@ -94,6 +94,10 @@ $(document).ready(function(){
     
     
     $('.fa-angle-double-down').click(function () {
+        if (!$('#welcome-text').hasClass("1")) {
+            $('#seemore').css("opacity", "0").fadeTo(500, 1);
+            $('.welcome').css("cursor", "pointer");
+        }
         if ($('#welcome-text').hasClass('1')) {
             textnum += 1;
             if (textnum > 3) {
@@ -143,6 +147,10 @@ $(document).ready(function(){
     });
     
     $('.fa-angle-double-up').click(function () {
+        if (!$('#welcome-text').hasClass("1")) {
+            $('#seemore').css("opacity", "0").fadeTo(500, 1);
+            $('.welcome').css("cursor", "pointer");
+        }
         if ($('#welcome-text').hasClass('1')) {
             textnum -= 1;
             if (textnum == -1) {
@@ -193,20 +201,20 @@ $(document).ready(function(){
         }
     });
     
-    $('.welcome').hover(function () {
-        if (!$('#welcome-text').hasClass("1")) {
-            $('#seemore').hide().fadeTo("slow", 1);
-            $(this).css("cursor", "pointer");
-        }
-    }, function() {
-        $('#seemore').fadeTo("slow", 0);
-    });
     
     $('.fa-circle-o').click(function () {
         textnum = 0;
         $('#welcome-text').removeClass();
         $('#welcome-text').addClass($(this).attr('id'));
         $('#welcome-text').html(smalltext[$(this).attr('id')-1]);
+        if (!$('#welcome-text').hasClass("1")) {
+            $('#seemore').fadeTo(20, 1);
+            $('.welcome').css("cursor", "pointer");
+        }
+        if ($('#welcome-text').hasClass("1")) {
+            $('#seemore').fadeTo(20, 0);
+            $('.welcome').css("cursor", "");
+        }
         if ($(this).attr('id') == "1") {
             $('#arrows').css("display", "block");
             $('#welcome-description').html(hometext[0]);
