@@ -634,8 +634,6 @@
 
 				function init() {
 					resetScroll();
-					// disable scrolling
-					window.addEventListener( 'scroll', noscroll );
 					// set current page trigger
 					classie.add( pageTriggers[ current ], 'thumb-nav__item--current' );
 					// set current container
@@ -692,7 +690,6 @@
 					// reset scroll
 					allowScroll();
 					resetScroll();
-					preventScroll();
 
 					var currentPageTrigger = pageTriggers[ current ],
 						nextContainer = document.getElementById( pageTrigger.getAttribute( 'data-container' ) ),
