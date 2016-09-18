@@ -29,6 +29,102 @@ $(document).ready(function(){
         if (getUrlVars()["section"]=="projects") {
             $('#2').trigger('click');
             $('#2').trigger('hover').trigger('mouseenter');
+            if (getUrlVars()["projectid"]=="church") {
+            }
+            else if (getUrlVars()["projectid"]=="facebook") {
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#facebook-img") ).prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="accident") {
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#accident-img") ).prev().css("display", "none");
+                $( ("#accident-img") ).prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="receipt") {
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#smart-img") ).prev().css("display", "none");
+                $( ("#smart-img") ).prev().prev().css("display", "none");
+                $( ("#smart-img") ).prev().prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="finals") {
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#finals-img") ).prev().css("display", "none");
+                $( ("#finals-img") ).prev().prev().css("display", "none");
+                $( ("#finals-img") ).prev().prev().prev().css("display", "none");
+                $( ("#finals-img") ).prev().prev().prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="polygon") {
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#low-img") ).prev().css("display", "none");
+                $( ("#low-img") ).prev().prev().css("display", "none");
+                $( ("#low-img") ).prev().prev().prev().css("display", "none");
+                $( ("#low-img") ).prev().prev().prev().prev().css("display", "none");
+                $( ("#low-img") ).prev().prev().prev().prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="presentation") {
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $( ("#presentation-img") ).prev().css("display", "none");
+                $( ("#presentation-img") ).prev().prev().css("display", "none");
+                $( ("#presentation-img") ).prev().prev().prev().css("display", "none");
+                $( ("#presentation-img") ).prev().prev().prev().prev().css("display", "none");
+                $( ("#presentation-img") ).prev().prev().prev().prev().prev().css("display", "none");
+                $( ("#presentation-img") ).prev().prev().prev().prev().prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="calc") {
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $( ("#calc-img") ).prev().css("display", "none");
+                $( ("#calc-img") ).prev().prev().css("display", "none");
+                $( ("#calc-img") ).prev().prev().prev().css("display", "none");
+                $( ("#calc-img") ).prev().prev().prev().prev().css("display", "none");
+                $( ("#calc-img") ).prev().prev().prev().prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="instagram") {
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $( ("#instagram-img") ).prev().css("display", "none");
+                $( ("#instagram-img") ).prev().prev().css("display", "none");
+                $( ("#instagram-img") ).prev().prev().prev().css("display", "none");
+                $( ("#instagram-img") ).prev().prev().prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="horn") {
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $( ("#ultimate-img") ).prev().css("display", "none");
+                $( ("#ultimate-img") ).prev().prev().css("display", "none");
+                $( ("#ultimate-img") ).prev().prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="uw") {
+                $('.fa-angle-double-up').trigger('click');
+                $('.fa-angle-double-up').trigger('click');
+                $( ("#uw-img") ).prev().css("display", "none");
+                $( ("#uw-img") ).prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["projectid"]=="past") {
+                $('.fa-angle-double-up').trigger('click');
+                $( ("#past-img") ).prev().css("display", "none");
+            }
         }
         if (getUrlVars()["section"]=="blog") {
             $('#3').trigger('click');
@@ -288,6 +384,47 @@ $(document).ready(function(){
                 $("#" + value).addClass('fa-circle-o');
             }
         });
+    });
+    
+    $('.welcome').click(function () {
+        if ($("#welcome-text").html() != "Hi. I'm George Saieed.") {
+            if ($('#welcome-description').html() == "Church Website") {
+                window.location.href = "projects.html?projectid=church";
+            }
+            if ($('#welcome-description').html() == "Facebook Re-Design") {
+                window.location.href = "projects.html?projectid=facebook";
+            }
+            if ($('#welcome-description').html() == "Accident Report") {
+                window.location.href = "projects.html?projectid=accident";
+            }
+            if ($('#welcome-description').html() == "Smart Receipts") {
+                window.location.href = "projects.html?projectid=receipt";
+            }
+            if ($('#welcome-description').html() == "Finals Generator") {
+                window.location.href = "projects.html?projectid=finals";
+            }
+            if ($('#welcome-description').html() == "Low Polygon Art") {
+                window.location.href = "projects.html?projectid=polygon";
+            }
+            if ($('#welcome-description').html() == "Presentation Design") {
+                window.location.href = "projects.html?projectid=presentation";
+            }
+            if ($('#welcome-description').html() == "Calc Color") {
+                window.location.href = "projects.html?projectid=calc";
+            }
+            if ($('#welcome-description').html() == "Instagram Logo Design") {
+                window.location.href = "projects.html?projectid=instagram";
+            }
+            if ($('#welcome-description').html() == "Ultimate Horn") {
+                window.location.href = "projects.html?projectid=horn";
+            }
+            if ($('#welcome-description').html() == "UW Poster") {
+                window.location.href = "projects.html?projectid=uw";
+            }
+            if ($('#welcome-description').html() == "Past Websites") {
+                window.location.href = "projects.html?projectid=past";
+            }
+        }
     });
     
 });
