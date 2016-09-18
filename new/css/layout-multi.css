@@ -399,7 +399,7 @@ body {
 	top: 50%;
 	min-height: 100%;
 	width: 100%;
-	opacity: .9;
+	opacity: .8;
 	-webkit-transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
 	transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
