@@ -389,40 +389,40 @@ $(document).ready(function(){
     $('.welcome').click(function () {
         if ($("#welcome-text").html() != "Hi. I'm George Saieed.") {
             if ($('#welcome-description').html() == "Church Website") {
-                window.location.href = "projects.html?projectid=church";
+                window.location.href = "projects?projectid=church";
             }
             if ($('#welcome-description').html() == "Facebook Re-Design") {
-                window.location.href = "projects.html?projectid=facebook";
+                window.location.href = "projects?projectid=facebook";
             }
             if ($('#welcome-description').html() == "Accident Report") {
-                window.location.href = "projects.html?projectid=accident";
+                window.location.href = "projects?projectid=accident";
             }
             if ($('#welcome-description').html() == "Smart Receipts") {
-                window.location.href = "projects.html?projectid=receipt";
+                window.location.href = "projects?projectid=receipt";
             }
             if ($('#welcome-description').html() == "Finals Generator") {
-                window.location.href = "projects.html?projectid=finals";
+                window.location.href = "projects?projectid=finals";
             }
             if ($('#welcome-description').html() == "Low Polygon Art") {
-                window.location.href = "projects.html?projectid=polygon";
+                window.location.href = "projects?projectid=polygon";
             }
             if ($('#welcome-description').html() == "Presentation Design") {
-                window.location.href = "projects.html?projectid=presentation";
+                window.location.href = "projects?projectid=presentation";
             }
             if ($('#welcome-description').html() == "Calc Color") {
-                window.location.href = "projects.html?projectid=calc";
+                window.location.href = "projects?projectid=calc";
             }
             if ($('#welcome-description').html() == "Instagram Logo Design") {
-                window.location.href = "projects.html?projectid=instagram";
+                window.location.href = "projects?projectid=instagram";
             }
             if ($('#welcome-description').html() == "Ultimate Horn") {
-                window.location.href = "projects.html?projectid=horn";
+                window.location.href = "projects?projectid=horn";
             }
             if ($('#welcome-description').html() == "UW Poster") {
-                window.location.href = "projects.html?projectid=uw";
+                window.location.href = "projects?projectid=uw";
             }
             if ($('#welcome-description').html() == "Past Websites") {
-                window.location.href = "projects.html?projectid=past";
+                window.location.href = "projects?projectid=past";
             }
         }
     });
