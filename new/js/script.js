@@ -129,6 +129,26 @@ $(document).ready(function(){
         if (getUrlVars()["section"]=="blog") {
             $('#3').trigger('click');
             $('#3').trigger('hover').trigger('mouseenter');
+            if (getUrlVars()["blogid"]=="search") {
+            }
+            else if (getUrlVars()["blogid"]=="apps") {
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#apps-img") ).prev().css("display", "none");
+            }
+            else if (getUrlVars()["blogid"]=="bike") {
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#bike-img") ).prev().css("display", "none");
+                $( ("#bike-img") ).prev().prev().css("display", "none");
+            }
+            else if (getUrlVars()["blogid"]=="light") {
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#light-img") ).prev().css("display", "none");
+                $( ("#light-img") ).prev().prev().css("display", "none");
+                $( ("#light-img") ).prev().prev().prev().css("display", "none");
+            }
         }
         if (getUrlVars()["section"]=="about") {
             $('#4').trigger('click');
@@ -423,6 +443,24 @@ $(document).ready(function(){
             }
             if ($('#welcome-description').html() == "Past Websites") {
                 window.location.href = "projects.html?projectid=past";
+            }
+            if ($('#welcome-description').html() == "Why am I 'terrible' with computers?") {
+                window.location.href = "projects.html?blogid=searching";
+            }
+            if ($('#welcome-description').html() == "How do mobile apps really work?") {
+                window.location.href = "projects.html?blogid=apps";
+            }
+            if ($('#welcome-description').html() == "Could you power your house with your bike?") {
+                window.location.href = "projects.html?blogid=bike";
+            }
+            if ($('#welcome-description').html() == "How much fun would it be to run at the speed of light?") {
+                window.location.href = "projects.html?blogid=light";
+            }
+            if ($('#welcome-description').html() == "So Who Am I?") {
+                window.location.href = "projects.html?aboutid=about";
+            }
+            if ($('#welcome-description').html() == "Get In Touch!") {
+                window.location.href = "projects.html?contactid=contact";
             }
         }
     });

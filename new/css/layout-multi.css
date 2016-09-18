@@ -562,6 +562,54 @@ body {
     border-bottom: solid 9px black;
 }
 
+.theme-13,
+.theme-13 .intro {
+	background-image: url('../img/blogbwc.jpeg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-14,
+.theme-14 .intro {
+	background-image: url('../img/blogdaw.jpeg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-15,
+.theme-15 .intro {
+	background-image: url('../img/blogbike.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-16,
+.theme-16 .intro {
+	background-image: url('../img/bloglight.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-17,
+.theme-17 .intro {
+	background-image: url('../img/me.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
+.theme-18,
+.theme-18 .intro {
+	background-image: url('../img/contact.jpg');
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 9px black;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1440px) {
