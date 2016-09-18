@@ -193,5 +193,5 @@
     top: -230px;
     left: 0;
     background: black;
-    z-index: 9999;
+    z-index: 100;
 }
