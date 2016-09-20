@@ -425,6 +425,10 @@ body {
 	transition: transform 0.3s, opacity 0.3s;
 }
 
+.sorry {
+    font-family: "Raleway" !important;
+}
+
 .item:hover .item__title {
 	opacity: 0;
 	-webkit-transform: translate3d(0, 20px, 0);
