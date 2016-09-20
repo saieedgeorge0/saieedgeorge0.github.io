@@ -614,6 +614,10 @@ body {
     display:none;
 }
 
+body {
+    visibility: hidden;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1440px) {
