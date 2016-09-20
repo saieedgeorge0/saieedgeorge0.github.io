@@ -198,8 +198,10 @@
 
 .sorry {
     position: fixed;
-    width: 100vw;
-    line-height:2;
+    width: 100%;
+    left: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
     text-align: center;
     top: 400px;
     color: white;
