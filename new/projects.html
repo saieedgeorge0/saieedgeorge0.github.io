@@ -19,7 +19,18 @@
         <script src="//fast.eager.io/E5fe_5zvsE.js"></script>
 	</head>
 	<body>
-        
+        <div class="cssload-container">
+            <div class="cssload-shaft1"></div>
+            <div class="cssload-shaft2"></div>
+            <div class="cssload-shaft3"></div>
+            <div class="cssload-shaft4"></div>
+            <div class="cssload-shaft5"></div>
+            <div class="cssload-shaft6"></div>
+            <div class="cssload-shaft7"></div>
+            <div class="cssload-shaft8"></div>
+            <div class="cssload-shaft9"></div>
+            <div class="cssload-shaft10"></div>
+        </div>
 		<svg class="hidden">
 			<g id="icon-grid">
 				<rect x="32.5" y="5.5" width="22" height="22"/>
@@ -128,7 +139,7 @@
 		</div><!-- /container -->
 		<div id="container-2" class="container theme-2">
 			<header class="intro">
-				<img class="intro__image" src="" alt="Road"/>
+				<img class="intro__image" src="img/header02.jpg" alt="Road"/>
 				<div class="intro__content">
 					<h1 class="intro__title">Facebook Re-Design</h1>
 					<div class="intro__subtitle">
@@ -1003,7 +1014,7 @@
                 $(document).ready(function(){ 
                     $(window).on("load", function() {
                     if (getUrlVars()["projectid"]=="church") {
-                        
+                        $("#container-1").css("display", "block");
                         $('.projy-1')[0].click();
                         toggleContent(document.getElementById("container-1"), this);
                         allowScroll();
@@ -1011,7 +1022,7 @@
                         window.scrollTo(10,0);
                     }
                     else if (getUrlVars()["projectid"]=="facebook") {
-                        $("#container-1 .intro__content").css("display", "block");
+                        $("#container-1").css("display", "block");
                         $("#container-2").css("display", "block");
                         $('.projy-2')[0].click();
                         toggleContent(document.getElementById("container-2"), this);
