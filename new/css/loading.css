@@ -195,3 +195,13 @@
     background: black;
     z-index: 1001;
 }
+
+.sorry {
+    position: fixed;
+    width: 100vw;
+    line-height:2;
+    text-align: center;
+    top: 400px;
+    color: white;
+    z-index: 1001;
+}

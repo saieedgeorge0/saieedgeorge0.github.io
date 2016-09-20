@@ -159,6 +159,7 @@ $(document).ready(function(){
             $('#5').trigger('hover').trigger('mouseenter');
         }
         $("#outside").css("visibility", "visible");
+        $(".sorry").delay(500).fadeOut(1000);
         $(".cssload-container").delay(500).fadeOut(1000);
     });
     
