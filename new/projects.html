@@ -1139,10 +1139,10 @@
                         window.scrollTo(10,0);
                     }
                     else if (getUrlVars()["blogid"]=="bike") {
-                        $("#container-15").css("display", "block");
-                        $("#container-1").css("display", "block");
                         $('.projy-15')[0].click();
                         toggleContent(document.getElementById("container-15"), this);
+                        $("#container-15").css("display", "block");
+                        $("#container-1").css("display", "block");
                         allowScroll();
                         $(window).trigger("scroll");
                         window.scrollTo(10,0);
