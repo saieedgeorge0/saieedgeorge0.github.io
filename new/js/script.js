@@ -182,13 +182,13 @@ $(document).ready(function(){
     
     $('.fa-circle-o').hover(function () {
             var labelnum = "#" + "label-" + $(this).attr('id');
-            $(labelnum.toString()).fadeIn(100);
+            $(labelnum.toString()).css("color","#fff");
             $(this).removeClass('fa-circle-o');
             $(this).addClass('fa-circle');
         }, function () {
             if (!$('#welcome-text').hasClass($(this).attr('id').toString())) {
                 var labelnum = "#" + "label-" + $(this).attr('id');
-                $(labelnum.toString()).fadeOut(100);
+                $(labelnum.toString()).css("color","#777");
                 $(this).removeClass('fa-circle');
                 $(this).addClass('fa-circle-o');
             }
@@ -400,11 +400,15 @@ $(document).ready(function(){
         $.each(thingies, function(index, value) {
             if (!$('#welcome-text').hasClass(value.toString())) {
                 var labelnum = "#" + "label-" + value;
-                $(labelnum.toString()).fadeOut(100);
+                $(labelnum.toString()).css("color", "#777");
                 $("#" + value).removeClass('fa-circle');
                 $("#" + value).addClass('fa-circle-o');
             }
         });
+    });
+    
+    $('.popup-close').click(function () {
+        $('#popup-maybe').fadeOut(100);
     });
     
     $('.welcome').click(function () {
@@ -458,7 +462,8 @@ $(document).ready(function(){
                 window.location.href = "projects.html?blogid=light";
             }
             if ($('#welcome-description').html() == "So Who Am I?") {
-                window.location.href = "projects.html?aboutid=about";
+                $('#anotha-one').html("<div class=\"popup-total\"><label id=\"popup-title\">So Who Am I?</label> <p class=\"popup-text\">I've broken three computers, two shredders, a printer, and a wireless router. I know you're judging me now, so I'll just say I was both a very foolish and very curious middle school child (and I'll have you know I fixed two of those computers). And that is how I taught myself to fix the everyday problems people face with their phones, computers, and the multitude of other gadgets out there. From there, I found programming, and I immediately fell in love. Over the course of five years, I proceeded to teach myself Java, Python, Ruby, Rails, C#, Swift, R, and Stata, building a multitude of web and mobile applications for all kinds of different devices in the process. Later down the line, I began to look into design, teaching myself how to use Photoshop and Sketch. On July 21 and 22, 2016, I taught myself HTML(5), CSS(3), Javascript, jQuery, and bootstrap, spending about 10 hours each day familiarizing myself with front-end development languages.</p> <p class=\"popup-text\">I've released one app on the Windows App Store (Epichess), two apps on the iOS App Store (CalcColor and UltimateHorn), and am currently working as a Full Stack Designer for Inventory Connection, LLC, to design and build the front-end for their main product. I am constantly looking to learn more about everything and anything (especially tech), and so I often build random applications (see my GitHub) and read as much as I can. I am a neuroscience major at the University of Chicago (I'm very interested in machine learning, deep neural nets, and artificial intelligence), and you can often find me helping other people with their computer or phone troubles. I hope to have a profound impact on the world, and my dream is to one day found my own start-up.</p></div>");
+                $('#popup-maybe').fadeIn(100);
             }
             if ($('#welcome-description').html() == "Get In Touch!") {
                 window.location.href = "projects.html?contactid=contact";
