@@ -188,7 +188,7 @@ $(document).ready(function(){
         }, function () {
             if (!$('#welcome-text').hasClass($(this).attr('id').toString())) {
                 var labelnum = "#" + "label-" + $(this).attr('id');
-                $(labelnum.toString()).css("color","#777");
+                $(labelnum.toString()).css("color","#fff");
                 $(this).removeClass('fa-circle');
                 $(this).addClass('fa-circle-o');
             }
@@ -400,7 +400,7 @@ $(document).ready(function(){
         $.each(thingies, function(index, value) {
             if (!$('#welcome-text').hasClass(value.toString())) {
                 var labelnum = "#" + "label-" + value;
-                $(labelnum.toString()).css("color", "#777");
+                $(labelnum.toString()).css("color", "#fff");
                 $("#" + value).removeClass('fa-circle');
                 $("#" + value).addClass('fa-circle-o');
             }
@@ -470,7 +470,8 @@ $(document).ready(function(){
                 $('#popup-maybe').fadeIn(100);
             }
             if ($('#welcome-description').html() == "Get In Touch!") {
-                window.location.href = "projects.html?contactid=contact";
+                $('#anotha-one').html("<div class=\"popup-total\"><label id=\"popup-title\">Contact Me</label> <div class=\"form-pad\"><form id=\"da-form\" name=\"sentMessage\" action = \"https://formspree.io/gs@georgesaieed.com\" method=\"POST\" novalidate> <div class=\"row control-group\"><div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>Name</label> <input type=\"text\" class=\"form-control\" placeholder=\"Name\" id=\"name\" required data-validation-required-message=\"Please enter your name.\" name = \"PersonName\"><p class=\"help-block text-danger\"></p></div></div> <div class=\"row control-group\"><div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>Email Address</label> <input type=\"email\" class=\"form-control\" placeholder=\"Email Address\" id=\"email\" required data-validation-required-message=\"Please enter your email address.\" name = \"_replyto\"><p class=\"help-block text-danger\"></p> </div> </div> <div class=\"row control-group\"> <div class=\"form-group col-xs-12 floating-label-form-group controls\"> <label>What's Your Question?</label> <textarea rows=\"5\" class=\"form-control\" placeholder=\"What's Your Question?\" id=\"message\" required data-validation-required-message=\"Please enter a message.\" name = \"PersonQuestion\"></textarea> <p class=\"help-block text-danger\"></p> </div> </div> <br> <div id=\"success\"></div> <div class=\"row\"> <div class=\"form-group2 col-xs-12\"> <input type=\"text\" name=\"_gotcha\" style=\"display:none\" /> <input type=\"hidden\" name=\"_next\" value=\"/?popup=thanks\" /><button type=\"submit\" id='contact-submit' class=\"btn btn-default\">Submit!</button></div> </div></form></div></div>");
+                $('#popup-maybe').fadeIn(100);
             }
         }
     });
