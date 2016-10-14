@@ -108,7 +108,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #about-img {
     background: url('../img/me.jpg');
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100%;
     top: 0;
@@ -724,7 +724,6 @@ body {
 #popup-maybe {
     background: rgba(0,0,0,1);
     width: 100%;
-    height: 100%;
     position:absolute;
     text-align: center;
     color: white;
@@ -737,11 +736,36 @@ body {
     font-size: 90px;
 }
 
+#popup-title2 {
+    font-size: 60px;
+}
+
+.maline {
+    margin-top: 40px;
+}
+
+.popup-text2-top {
+    margin-top: 50px;
+    font-size: 23px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.popup-text2 {
+    font-size: 23px;
+    font-weight: 200;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
 .popup-text {
     font-size: 25px;
     font-weight: 200;
     margin-top: 40px;
     margin-bottom: 40px;
+    text-align: left;
 }
 
 .popup-total {
@@ -769,4 +793,25 @@ body {
     -o-transform:scale(1.1);
     transform:scale(1.1);
     cursor:pointer;
+}
+
+.img-responsive {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.blandlink{
+    color:white;
+}
+
+.blandlink:hover{
+    color:white;
+}
+
+.blandlink:active{
+    color:white;
+}
+
+.blandlink:focus{
+    color:white;
 }
