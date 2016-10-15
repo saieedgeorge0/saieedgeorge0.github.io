@@ -841,6 +841,10 @@ body {
     text-align: left !important;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 @media(max-width:1000px) {
     .popup-total {
     margin-left: 15vw;
