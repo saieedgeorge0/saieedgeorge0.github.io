@@ -164,7 +164,6 @@ $(document).ready(function(){
     });
     
     $(window).resize(function(){
-        $(".cssload-container").css("display", "block");
         welcomeheight = ($(window).height() - $('.welcome').height())/2;
         $('.welcome').css('top', welcomeheight.toString()+"px");
         meheight = ($(window).height() - $('#me').height())/2;
@@ -177,7 +176,6 @@ $(document).ready(function(){
         $('#socialmedia').css('left', socmedialeft.toString()+"px");
         navcircles = ($(window).width() - $('#move-circles').width() + 210)/2;
         $('#move-circles').css('left', navcircles.toString()+"px");
-        $(".cssload-container").fadeOut(3000);
     });
     
     $('.fa-circle-o').hover(function () {
