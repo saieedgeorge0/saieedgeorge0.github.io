@@ -1,4 +1,8 @@
 
+body {
+    overflow:hidden;
+}
+
 .cssload-container {
     overflow: hidden;
 }
@@ -593,6 +597,10 @@ body, h1, h2, h3, h4, h5, h6 {
     margin-left: 255px;
 }
 
+#the-circles {
+    width: 100px;
+}
+
 .line {
     display: inline-block;
     width: 132px;
@@ -912,6 +920,29 @@ textarea:focus, input:focus{
 }
 }
 
-@media(max-width:1080px) { 
+@media(max-width:1057px) { 
+    #welcome-description {
+        width: 600px;
+    }
 }
 
+@media(max-width:968px) { 
+    #welcome-description {
+        width: 550px;
+    }
+}
+
+@media(max-width:911px) { 
+    #welcome-description {
+        width: 450px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width:812px) { 
+    #welcome-description {
+        width: 400px;
+        font-size: 23px;
+        left: 50px;
+    }
+}
