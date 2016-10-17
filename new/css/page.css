@@ -946,3 +946,187 @@ textarea:focus, input:focus{
         left: 50px;
     }
 }
+
+
+@media(max-width:400px) { 
+    .fa-facebook-official, .fa-github, .fa-linkedin-square, .fa-file-pdf-o {
+    margin-right: 30px;
+}
+}
+
+@media(max-width: 824px) {
+    .circle-1 {
+    margin-left: 150px;
+    }
+
+    .circle-2, .circle-3, .circle-4, .circle-5, .circle-6 {
+        margin-left: 110px;
+    }
+    
+    #line-1 {
+    margin-left: -91px;
+    }
+
+    #line-2 {
+        margin-left: 37px;
+    }
+
+    #line-3 {
+        margin-left: 165px;
+    }
+    
+    .line {
+        width: 112px;
+    }
+    
+    #label-2 {
+        margin-left: -127px;
+    }
+
+    #label-3 {
+        margin-left: 13px;
+    }
+
+    #label-4 {
+        margin-left: 136px;
+    }
+
+    #label-5 {
+        margin-left: 259px;
+    }
+}
+
+@media(max-width: 655px) {
+    .circle-1 {
+    margin-left: 100px;
+    }
+
+    .circle-2, .circle-3, .circle-4, .circle-5, .circle-6 {
+        margin-left: 80px;
+    }
+    
+    #line-1 {
+    margin-left: -141px;
+    }
+
+    #line-2 {
+        margin-left: -43px;
+    }
+
+    #line-3 {
+        margin-left: 54px;
+    }
+    
+    .line {
+        width: 83px;
+    }
+    
+    #label-2 {
+        margin-left: -176px;
+    }
+
+    #label-3 {
+        margin-left: -66px;
+    }
+
+    #label-4 {
+        margin-left: 27px;
+    }
+
+    #label-5 {
+        margin-left: 118px;
+    }
+}
+
+@media(max-width: 525px) {
+    .circle-1 {
+    margin-left: 80px;
+    }
+
+    .circle-2, .circle-3, .circle-4, .circle-5, .circle-6 {
+        margin-left: 60px;
+    }
+    
+    #line-1 {
+    margin-left: -161px;
+    }
+
+    #line-2 {
+        margin-left: -83px;
+    }
+
+    #line-3 {
+        margin-left: -05px;
+    }
+    
+    .line {
+        width: 63px;
+    }
+    
+    #label-2 {
+        margin-left: -196px;
+    }
+
+    #label-3 {
+        margin-left: -106px;
+    }
+
+    #label-4 {
+        margin-left: -33px;
+    }
+
+    #label-5 {
+        margin-left: 38px;
+    }
+}
+
+@media(max-width: 440px) {
+    .circle-1 {
+    margin-left: 55px;
+    }
+
+    .circle-2, .circle-3, .circle-4, .circle-5, .circle-6 {
+        margin-left: 40px;
+    }
+    
+    #line-1 {
+    margin-left: -186px;
+    }
+
+    #line-2 {
+        margin-left: -128px;
+    }
+
+    #line-3 {
+        margin-left: -71px;
+    }
+    
+    .line {
+        width: 43px;
+    }
+    
+    .labels {
+        font-size: 13.5px;
+    }
+    
+    #label-1 {
+        margin-left: -283px;
+    }
+    
+    #label-2 {
+        margin-left: -216px;
+    }
+
+    #label-3 {
+        margin-left: -148px;
+    }
+
+    #label-4 {
+        margin-left: -95px;
+    }
+
+    #label-5 {
+        margin-left: -42px;
+    }
+}
+
