@@ -448,14 +448,11 @@ body {
 }
 
 #container-1 {
-    background-image: url('../img/projcw.jpg') !important;
+    background: black;
 }
 
 .theme-1 .intro {
-	background-image: url('../img/projcw.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .items-wrap {
@@ -471,10 +468,7 @@ body {
 
 .theme-2,
 .theme-2 .intro {
-	background-image: url('../img/projfr.png');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-2 .item {
@@ -490,128 +484,80 @@ body {
 }
 
 .theme-3 .intro {
-	background-image: url('../img/projaig.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-4 .intro {
-	background-image: url('../img/projsr.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-5,
 .theme-5 .intro {
-	background-image: url('../img/projfg.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-6,
 .theme-6 .intro {
-	background-image: url('../img/projlpa.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-7 .intro {
-	background-image: url('../img/projpd.jpeg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-8,
 .theme-8 .intro {
-	background-image: url('../img/projcc.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-9,
 .theme-9 .intro {
-	background-image: url('../img/projid.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-10,
 .theme-10 .intro {
-	background-image: url('../img/projuh.jpeg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-11,
 .theme-11 .intro {
-	background-image: url('../img/projuw.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-12,
 .theme-12 .intro {
-	background-image: url('../img/projpw.png');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-13,
 .theme-13 .intro {
-	background-image: url('../img/blogbwc.jpeg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-14,
 .theme-14 .intro {
-	background-image: url('../img/blogdaw.jpeg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-15,
 .theme-15 .intro {
-	background-image: url('../img/blogbike.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-16,
 .theme-16 .intro {
-	background-image: url('../img/bloglight.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-17,
 .theme-17 .intro {
-	background-image: url('../img/me.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .theme-18,
 .theme-18 .intro {
-	background-image: url('../img/contact.jpg');
-    background-size: cover;
-    background-position: top;
-    border-bottom: solid 9px black;
+	background: black;
 }
 
 .container {

@@ -1,5 +1,6 @@
 $(document).ready(function(){
     var achange = 0;
+    var arrowwhee = 0;
     if($(window).width() > 824) {
         achange = 210;
     }
@@ -15,11 +16,17 @@ $(document).ready(function(){
     if($(window).width() <= 440 && $(window).width() > 0) {
         achange = 611;
     }
+    if($(window).width() <= 489) {
+        arrowwhee = 45;
+    }
+    else {
+        arrowwhee = 97;
+    }
     var welcomeheight = ($(window).height() - $('.welcome').height())/2;
     $('.welcome').css('top', welcomeheight.toString()+"px");
     var meheight = ($(window).height() - $('#me').height())/2;
     $('#me').css('top', meheight.toString()+"px");
-    var arrowsheight = ($(window).height() - $('#arrows').height() - 97)/2;
+    var arrowsheight = ($(window).height() - $('#arrows').height() - arrowwhee)/2;
     $('#arrows').css('top', arrowsheight.toString()+"px");
     var meleft = $(window).width() - $('#me').width() - (.08*$(window).width());
     $('#me').css('left', meleft.toString()+"px");
@@ -224,7 +231,7 @@ $(document).ready(function(){
             }
     });
     
-    var hometext = ["I am a self-taught designer and developer attending the University of Chicago, and I challenge you to find something for me that I cannot learn to do.", "Nothing fascinates me more than the human brain, or understanding why people do what they do.", "I can play piano, sing, and weirdest of all, beatbox, and I love to read about technology.", "I want to change the world one day, and I will."];
+    var hometext = ["I am a self-taught designer and developer attending the University of Chicago, and you will almost always find me trying to learn something.", "Nothing fascinates me more than the human brain, or understanding why people do what they do.", "I can play piano, sing, and weirdest of all, beatbox, and I love to read about technology.", "I want to change the world one day, and I will."];
     var smalltext = ["Hi. I'm George Saieed.", "Made w/ HTML, CSS, jQuery | Sept. 2016", "March 22\, 2016 | 3 - 5 min. read", "All About Me", "Contact Me"];
     var projtext = ["Church Website", "Facebook Re-Design", "Accident Report", "Smart Receipts", "Finals Generator", "Low Polygon Art", "Presentation Design", "Calc Color", "Instagram Logo Design", "Ultimate Horn", "UW Poster", "Past Websites"];
     var projsubtext = ["Made w/ HTML, CSS, jQuery | Sept. 2016", "Made w/ Sketch | Sept. 2016", "Made w/ Sketch | Aug. 2016", "Made w/ Sketch, Swift, XCode | Mar. 2016", "Made w/ Twilio, Python | May 2016", "Made w/ Photoshop | May 2016", "Made w/ Sketch | Jun. 2016", "Made w/ Sketch, Swift, XCode | Jul. 2016", "Made w/ Sketch | May 2016", "Made w/ Swift, XCode | Jul. 2016", "Made w/ Photoshop | May 2016", "Made w/ HTML, CSS, jQuery | Mar./Aug. 2016"];
