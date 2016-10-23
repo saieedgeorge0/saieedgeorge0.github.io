@@ -35,7 +35,7 @@ $(document).ready(function(){
             $('.ma-card-2').css("display", "block");
             $('.ma-card-1').css("display", "none");
             $('.confirm-card').css("height", "490px");
-            $('.confirm-card').css("margin-top", "-40px");
+            $('.confirm-card').css("margin-top", "-60px");
         }
     });
 });
