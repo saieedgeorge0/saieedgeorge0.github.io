@@ -46,7 +46,6 @@
                 function success(position) {
                     finallat = position.coords.latitude;
                     finallong = position.coords.longitude;
-                    document.getElementById('near-text-new').innerHTML(String(finallat));
                     alert("blah");
                 }
                 function error() {
@@ -55,18 +54,16 @@
 
                 navigator.geolocation.getCurrentPosition(success, error);
                 var xhr = new XMLHttpRequest();
-
                 var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
-                var params = "?location=" + latitude + "," + longitude + "&radius=50&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
-                xhr.open("GET", url, true);
-
+                var params = "?location=" + finallat + "," + finallong + "&radius=50&" + "type=hospital&keyword=hospital&key= AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
+                xhr.open("GET", url + params, true);
                 xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
                 xhr.onreadystatechange = function() {
                 if(xhr.readyState == 4 && xhr.status == 200) {
                     alert(xhr.responseText);
                     }	
                 }
-                xhr.send(params);
+                xhr.send(null);
             }
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
