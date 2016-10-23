@@ -25,10 +25,10 @@
                     <p id = "label-wait1" class="home-text">miles</p>
                     <p id= "label-wait2" class="home-text">min. distance</p>
                     <p id="label-wait3" class="home-text">min. wait</p>
-                    <p id="dist-miles" class="home-text new-wait">1.1</p>
-                    <p id="dist-time" class="home-text new-wait">6</p>
-                    <p id="hosp-time" class="home-text new-wait">44</p>
-                    <p id="total-time" class="home-text new-wait">50</p>
+                    <p id="dist-miles" class="home-text new-wait">...</p>
+                    <p id="dist-time" class="home-text new-wait">...</p>
+                    <p id="hosp-time" class="home-text new-wait">...</p>
+                    <p id="total-time" class="home-text new-wait">...</p>
                 </div>
             </div>
         </div>
@@ -174,8 +174,11 @@
                 navigator.geolocation.getCurrentPosition(success, error);
                 
             }
-            window.onload = geoFindNearestHospitals;
-            window.onload = geoFindNearestHospitals2;
+            function start() {
+                geoFindNearestHospitals();
+                geoFindNearestHospitals();
+            }
+            window.onload = start;
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src = "js/script2.js"></script>
