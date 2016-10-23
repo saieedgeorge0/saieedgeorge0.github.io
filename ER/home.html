@@ -62,9 +62,15 @@
                                     var name = response2.result.name;
                                     var address = response2.result.formatted_address;
                                     var phone = response2.result.formatted_phone_number;
+                                    var newphone = "";
+                                    for (var i = 0, len = phone.length; i < len; i++) {
+                                        if (phone[i] != "(" && phone[i] != ")" && phone[i] != " " && phone[i] != "-") {
+                                            newphone += phone[i];
+                                        }
+                                    }
                                     document.getElementById('hospital-name').innerHTML = name;
                                     document.getElementById('hospital-address').innerHTML = "<a href=\"https://www.google.com/maps/dir/"+ "My%20location" +"/"+address+"/\" target=\"_blank\">" + address + "</a>";
-                                    document.getElementById('hospital-number').innerHTML = "<a href=\"tel:"+phone+"\">"+phone+"</a>";
+                                    document.getElementById('hospital-number').innerHTML = "<a href=\"tel:"+newphone+"\">"+phone+"</a>";
                                 }
                             }
                             
