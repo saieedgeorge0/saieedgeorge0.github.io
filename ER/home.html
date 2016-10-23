@@ -51,7 +51,6 @@
                      alert("2");
                     var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
                     var params = "?location=" + dalats + "," + dalongs + "&rankby=distance&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
-                    xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
                      alert("3");
                     xhr.onreadystatechange = function() {
                         if(xhr.readyState == XMLHttpRequest.DONE) {
@@ -61,6 +60,7 @@
                     }
                      alert("5");
                     xhr.open("GET", url + params, true);
+                    xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
                      alert("6");
                     xhr.send(null);
                      alert("7");
