@@ -25,10 +25,10 @@
                     <p id = "label-wait1" class="home-text">miles</p>
                     <p id= "label-wait2" class="home-text">min. distance</p>
                     <p id="label-wait3" class="home-text">min. wait</p>
-                    <p id="dist-miles" class="home-text new-wait">1.1</p>
-                    <p id="dist-time" class="home-text new-wait">6</p>
-                    <p id="hosp-time" class="home-text new-wait">44</p>
-                    <p id="total-time" class="home-text new-wait">50</p>
+                    <p id="dist-miles" class="home-text new-wait">...</p>
+                    <p id="dist-time" class="home-text new-wait">...</p>
+                    <p id="hosp-time" class="home-text new-wait">...</p>
+                    <p id="total-time" class="home-text new-wait">...</p>
                     <div id="confirm-decline"><a class="nolink" href = "home.html"> DECLINE </a></div>
                     <div id="confirm-submit"><a class="nolink" href = "home.html?submitted=true"> CONFIRM </a></div>
                 </div>
@@ -73,6 +73,10 @@
                                     document.getElementById('hospital-name-new').innerHTML = name;
                                     document.getElementById('hospital-address-new').innerHTML = "<a href=\"https://www.google.com/maps/dir/"+ "My%20location" +"/"+address+"/\" target=\"_blank\">" + address + "</a>";
                                     document.getElementById('hospital-number-new').innerHTML = "<a href=\"tel:"+newphone+"\">"+phone+"</a>";
+                                    document.getElementById('dist-miles').innerHTML = "1.1";
+                                    document.getElementById('dist-time').innerHTML = "6";
+                                    document.getElementById('hosp-time').innerHTML = "44";
+                                    document.getElementById('total-time').innerHTML = "50";
                                 }
                             }
                             
