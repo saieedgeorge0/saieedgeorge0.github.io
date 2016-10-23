@@ -42,35 +42,24 @@
                 }
 
                 function success(position) {
-                    alert("1");
                     var finallat = position.coords.latitude;
                     var finallong = position.coords.longitude;
                     dalats = String(finallat);
                     dalongs = String(finallong);
                     var xhr = new XMLHttpRequest();
-                     alert("2");
                     var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
                     var params = "?location=" + dalats + "," + dalongs + "&rankby=distance&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
-                     alert("3");
                     xhr.onreadystatechange = function() {
                         if(xhr.readyState == XMLHttpRequest.DONE) {
-                             alert("4");
-                            alert(xhr.responseText);
+                            var response = JSON.parse(xhr.responseText);
+                            var place_id = response.results[0].place_id;
+                            document.getElementById('hospital-name').innerHTML = place_id;
                         }	
                     }
-                     alert("5");
                     xhr.open("GET", url + params, true);
                     xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
-                     alert("6");
                     xhr.send(null);
                     
-                    $.getJSON(url+params, function(result){
-                        alert(result);
-                        $.each(result, function(i, field){
-                            alert(field);
-                        });
-                    });
-                     alert("hiasdf");
                 }
                 function error() {
                     output = "Unable to retrieve your location";
