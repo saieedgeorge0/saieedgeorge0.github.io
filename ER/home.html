@@ -61,10 +61,14 @@
                      alert("5");
                     xhr.open("GET", url + params, true);
                     xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
-                    xhr.setRequestHeader('Access-Control-Allow-Headers', '*');
-                    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
                      alert("6");
                     xhr.send(null);
+                    
+                    $.getJSON(url+params, function(result){
+                        $.each(result, function(i, field){
+                            alert(field);
+                        });
+                    });
                      alert("7");
                 }
                 function error() {
