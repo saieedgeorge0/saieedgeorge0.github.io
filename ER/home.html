@@ -42,6 +42,7 @@
                 }
 
                 function success(position) {
+                    alert("nandz sux");
                     var finallat = position.coords.latitude;
                     var finallong = position.coords.longitude;
                     dalats = String(finallat);
@@ -67,6 +68,10 @@
                                     document.getElementById('hospital-number').innerHTML = phone;
                                 }
                             }
+                            
+                            xhr2.open("GET", url2, true);
+                            xhr2.setRequestHeader("Content-type", "application/json; charset=utf-8");
+                            xhr2.send(null);
                         }	
                     }
                     xhr.open("GET", url + params, true);
