@@ -49,14 +49,14 @@
                     dalongs = String(finallong);
                     var xhr = new XMLHttpRequest();
                     var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
-                    var params = "?location=" + dalats + "," + dalongs + "&radius=50&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
-                    xhr.open("GET", url + params, true);
+                    var params = "?location=" + dalats + "," + dalongs + "&rankby=distance&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
                     xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
                     xhr.onreadystatechange = function() {
-                    if(xhr.readyState == 4 && xhr.status == 200) {
-                    alert(xhr.responseText);
-                    }	
+                        if(xhr.readyState == XMLHttpRequest.DONE) {
+                            alert(xhr.responseText);
+                        }	
                     }
+                    xhr.open("GET", url + params, true);
                     xhr.send(null);
                 }
                 function error() {
