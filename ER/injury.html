@@ -58,7 +58,6 @@
             document.getElementById('Injury').value
                                      = e.results[0][0].transcript;
             recognition.stop();
-            document.getElementById('injuryform').submit();
           };
 
           recognition.onerror = function(e) {
