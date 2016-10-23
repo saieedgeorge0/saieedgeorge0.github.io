@@ -42,7 +42,6 @@
                 }
 
                 function success(position) {
-                    alert("nandz sux");
                     var finallat = position.coords.latitude;
                     var finallong = position.coords.longitude;
                     dalats = String(finallat);
@@ -64,8 +63,8 @@
                                     var address = response2.result.formatted_address;
                                     var phone = response2.result.formatted_phone_number;
                                     document.getElementById('hospital-name').innerHTML = name;
-                                    document.getElementById('hospital-address').innerHTML = address;
-                                    document.getElementById('hospital-number').innerHTML = phone;
+                                    document.getElementById('hospital-address').innerHTML = "<a href=\"https://www.google.com/maps/dir//" + address + "/\" target=\"_blank\">" + address + "</a>";
+                                    document.getElementById('hospital-number').innerHTML = "<a href=\"tel:"+phone+"\">"+phone+"</a>";
                                 }
                             }
                             
