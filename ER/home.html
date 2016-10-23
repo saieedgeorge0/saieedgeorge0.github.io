@@ -60,9 +60,9 @@
                             xhr2.onreadystatechange = function() {
                                 if(xhr2.readyState == XMLHttpRequest.DONE) {
                                     var response2 = JSON.parse(xhr2.responseText);
-                                    var name = response2.name;
-                                    var address = response2.formatted_address;
-                                    var phone = response2.formatted_phone_number;
+                                    var name = response2.result.name;
+                                    var address = response2.result.formatted_address;
+                                    var phone = response2.result.formatted_phone_number;
                                     document.getElementById('hospital-name').innerHTML = name;
                                     document.getElementById('hospital-address').innerHTML = address;
                                     document.getElementById('hospital-number').innerHTML = phone;
