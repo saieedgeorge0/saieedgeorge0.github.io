@@ -545,27 +545,27 @@ a {
     text-align: center;
     display: inline-block;
     position:absolute;
-    margin-top: 25px;
+    margin-top: 155px;
     font-weight: 500;
     color: white;
     background: #16A573;
 }
 
 #dist-miles {
-    margin-left: 40px;
+    margin-left: 70px;
 }
 
 #dist-time {
-    margin-left: 147px;
+    margin-left: 217px;
 }
 
 #hosp-time {
-    margin-left: 255px;
+    margin-left: 365px;
 }
 
 #total-time {
-    margin-left: 121px;
-    margin-top: 150px;
+    margin-left: 191px;
+    margin-top: 280px;
     font-size: 70px;
     padding-top: 10px;
     width: 128px;
@@ -576,8 +576,8 @@ a {
 .hospital-wait-text {
     display: inline-block;
     position:absolute;
-    margin-top: 238px;
-    margin-left: 145px;
+    margin-top: 368px;
+    margin-left: 215px;
     font-size: 18px;
     color: white;
     width: 100px;
@@ -589,7 +589,7 @@ a {
     display: inline-block;
     position:absolute;
     margin-top: 218px;
-    margin-left: 147px;
+    margin-left: 217px;
     font-size: 18px;
     color: black;
     width: 80px;
@@ -606,14 +606,14 @@ a {
     position: absolute;
     font-size: 18px;
     margin-left: 50px;
-    margin-top: 305px;
+    margin-top: 35px;
     display: inline-block;
     font-weight: 600;
 }
 #hospital-name-new {
     display: inline-block;
     position: absolute;
-    margin-top: 328px;
+    margin-top: 58px;
     margin-left: 50px;
     font-size: 23px;
 }
@@ -623,7 +623,7 @@ a {
     position:absolute;
     font-size: 17px;
     margin-left: 50px;
-    margin-top: 359px;
+    margin-top: 89px;
 }
 
 #hospital-number-new {
@@ -631,31 +631,31 @@ a {
     position: absolute;
     font-size: 17px;
     margin-left: 50px;
-    margin-top: 384px;
+    margin-top: 114px;
 }
 
 #label-wait1 {
     color:black;
     display: inline-block;
     position: absolute;
-    margin-left: 54px;
-    margin-top: 100px;
+    margin-left: 84px;
+    margin-top: 230px;
 }
 
 #label-wait2 {
     color:black;
     display: inline-block;
     position: absolute;
-    margin-left: 125px;
-    margin-top: 100px;
+    margin-left: 195px;
+    margin-top: 230px;
 }
 
 #label-wait3 {
     color:black;
     display: inline-block;
     position: absolute;
-    margin-left: 255px;
-    margin-top: 100px;
+    margin-left: 360px;
+    margin-top: 230px;
 }
 
 #confirm-decline, #confirm-submit {
@@ -672,12 +672,12 @@ a {
 
 #confirm-decline {
     margin-top: 435px;
-    margin-left: 48px;
+    margin-left: 75px;
 }
 
 #confirm-submit {
     margin-top: 435px;
-    margin-left: 210px;
+    margin-left: 315px;
 }
 
 #confirm-decline:hover, #confirm-submit:hover {
