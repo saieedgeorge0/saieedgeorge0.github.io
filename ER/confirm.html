@@ -38,16 +38,14 @@
         <script>
             function geoFindNearestHospitals() {
                 alert("outide");
-                var finallat = "";
-                var finallong = "";
                 if(!navigator.geolocation) {
                     alert("not supported");
                     return "geolocation isn't supported by your browser";
                 }
 
                 function success(position) {
-                    finallat = position.coords.latitude;
-                    finallong = position.coords.longitude;
+                    var finallat = position.coords.latitude;
+                    var finallong = position.coords.longitude;
                     alert("blah");
                 }
                 function error() {
@@ -57,7 +55,7 @@
                 navigator.geolocation.getCurrentPosition(success, error);
                 var xhr = new XMLHttpRequest();
                 var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
-                var params = "?location=" + finallat + "," + finallong + "&radius=50&" + "type=hospital&keyword=hospital&key= AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
+                var params = "?location=" + finallat + "," + finallong + "&radius=50&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
                 xhr.open("GET", url + params, true);
                 xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
                 xhr.onreadystatechange = function() {
