@@ -46,7 +46,7 @@
                 function success(position) {
                     finallat = position.coords.latitude;
                     finallong = position.coords.longitude;
-                    document.getElementById('near-text-new').innerHTML(finallat);
+                    document.getElementById('near-text-new').innerHTML(String(finallat));
                 }
                 function error() {
                     output = "Unable to retrieve your location";
