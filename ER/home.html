@@ -53,12 +53,26 @@
                         if(xhr.readyState == XMLHttpRequest.DONE) {
                             var response = JSON.parse(xhr.responseText);
                             var place_id = response.results[0].place_id;
-                            document.getElementById('hospital-name').innerHTML = place_id;
+                            
+                            var xhr2 = new XMLHttpRequest();
+                            var url2 = "https://maps.googleapis.com/maps/api/place/details/json?placeid=" + place_id + "&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
+                            xhr2.onreadystatechange = function() {
+                                if(xhr2.readyState == XMLHttpRequest.DONE) {
+                                    var response2 = JSON.parse(xhr2.responseText);
+                                    var name = response2.name;
+                                    var address = response2.formatted_address;
+                                    var phone = response2.formatted_phone_number;
+                                    document.getElementById('hospital-name').innerHTML = name;
+                                    document.getElementById('hospital-address').innerHTML = address;
+                                    document.getElementById('hospital-number').innerHTML = phone;
+                                }
+                            }
                         }	
                     }
                     xhr.open("GET", url + params, true);
                     xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
                     xhr.send(null);
+                    
                     
                 }
                 function error() {
