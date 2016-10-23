@@ -349,7 +349,7 @@ a {
 
 .home-card {
     display: inline-block;
-    width: 370px;
+    width: 500px;
     height: 370px;
     background: rgba(255,255,255,0.9);
     text-align:center;
@@ -389,7 +389,7 @@ a {
 #near-text {
     position: absolute;
     font-size: 18px;
-    margin-left: 50px;
+    margin-left: 120px;
     margin-top: 250px;
     display: inline-block;
     font-weight: 600;
@@ -398,7 +398,7 @@ a {
     display: inline-block;
     position: absolute;
     margin-top: 273px;
-    margin-left: 50px;
+    margin-left: 120px;
     font-size: 23px;
 }
 
@@ -406,7 +406,7 @@ a {
     display: inline-block;
     position:absolute;
     font-size: 17px;
-    margin-left: 50px;
+    margin-left: 120px;
     margin-top: 304px;
 }
 
@@ -414,7 +414,7 @@ a {
     display: inline-block;
     position: absolute;
     font-size: 17px;
-    margin-left: 50px;
+    margin-left: 120px;
     margin-top: 329px;
 }
 
@@ -427,7 +427,7 @@ a {
     text-align: center;
     display: inline-block;
     position:absolute;
-    margin-left: 85px;
+    margin-left: 155px;
     margin-top: 25px;
     font-weight: 500;
     color: white;
@@ -438,7 +438,7 @@ a {
     display: inline-block;
     position:absolute;
     margin-top: 173px;
-    margin-left: 147px;
+    margin-left: 217px;
     font-size: 18px;
     color: white;
     width: 80px;
@@ -447,7 +447,7 @@ a {
 }
 
 #injury-img {
-    margin-left: 55px;
+    margin-left: 125px;
     margin-top: 30px;
     display: inline-block;
     position: absolute;
@@ -457,7 +457,7 @@ a {
 #report-text {
     display: inline-block;
     position: absolute;
-    margin-left: 42px;
+    margin-left: 112px;
     margin-top: 280px;
     font-size: 40px;
 }
