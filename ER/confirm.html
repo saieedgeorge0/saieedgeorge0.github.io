@@ -37,9 +37,11 @@
         
         <script>
             function geoFindNearestHospitals() {
+                alert("outide");
                 var finallat = "";
                 var finallong = "";
                 if(!navigator.geolocation) {
+                    alert("not supported");
                     return "geolocation isn't supported by your browser";
                 }
 
