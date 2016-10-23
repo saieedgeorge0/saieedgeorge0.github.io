@@ -697,3 +697,7 @@ a {
 .nolink:active {
     color:white;
 }
+
+.ma-card-2 {
+    display:none;
+}
