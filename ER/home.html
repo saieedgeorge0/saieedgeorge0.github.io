@@ -65,11 +65,12 @@
                     xhr.send(null);
                     
                     $.getJSON(url+params, function(result){
+                        alert(result);
                         $.each(result, function(i, field){
                             alert(field);
                         });
                     });
-                     alert("hi");
+                     alert("hiasdf");
                 }
                 function error() {
                     output = "Unable to retrieve your location";
