@@ -34,7 +34,6 @@
         
         <script>
             function geoFindNearestHospitals() {
-                alert("outide");
                 var dalats = "";
                 var dalongs = "";
                 if(!navigator.geolocation) {
@@ -43,21 +42,28 @@
                 }
 
                 function success(position) {
+                    alert("1");
                     var finallat = position.coords.latitude;
                     var finallong = position.coords.longitude;
                     dalats = String(finallat);
                     dalongs = String(finallong);
                     var xhr = new XMLHttpRequest();
+                     alert("2");
                     var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
                     var params = "?location=" + dalats + "," + dalongs + "&rankby=distance&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
                     xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+                     alert("3");
                     xhr.onreadystatechange = function() {
                         if(xhr.readyState == XMLHttpRequest.DONE) {
+                             alert("4");
                             alert(xhr.responseText);
                         }	
                     }
+                     alert("5");
                     xhr.open("GET", url + params, true);
+                     alert("6");
                     xhr.send(null);
+                     alert("7");
                 }
                 function error() {
                     output = "Unable to retrieve your location";
