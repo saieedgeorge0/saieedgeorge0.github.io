@@ -1,5 +1,5 @@
 
-body {
+html, body {
     overflow-x:hidden;
 }
 
@@ -853,6 +853,10 @@ body {
 #me {
     position: absolute;
     left: -webkit-calc(100% - 250px);
+    left: -moz-calc(100% - 250px);
+    left: -ms-calc(100% - 250px);
+    left: -o-calc(100% - 250px);
+    left: calc(100% - 250px);
 }
 
 textarea:focus, input:focus{
@@ -1252,12 +1256,20 @@ textarea:focus, input:focus{
 @media(max-width: 709px) {
     #me {
     left: -webkit-calc(100% - 200px);
+        left: -moz-calc(100% - 200px);
+        left: -ms-calc(100% - 200px);
+        left: -o-calc(100% - 200px);
+        left: calc(100% - 200px);
 }
 }
 
 @media(max-width: 579px) {
     #me {
     left: -webkit-calc(50% - 75px);
+        left: -moz-calc(50% - 75px);
+        left: -ms-calc(50% - 75px);
+        left: -o-calc(50% - 75px);
+        left: calc(50% - 75px);
 }
 }
 
