@@ -3,6 +3,10 @@ $(document).ready(function(){
     
     var achange = 0;
     var arrowwhee = 0;
+    var blahblah = 0;
+    if($(window).width() < 580) {
+        blahblah = 30;
+    }
     if($(window).width() > 824) {
         achange = 210;
     }
@@ -24,7 +28,7 @@ $(document).ready(function(){
     else {
         arrowwhee = 80;
     }
-    var welcomeheight = ($(window).height() - $('.welcome').height())/2;
+    var welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
     $('.welcome').css('top', welcomeheight.toString()+"px");
     var meheight = ($(window).height() - $('#me').height())/2;
     $('#me').css('top', meheight.toString()+"px");
@@ -267,7 +271,9 @@ $(document).ready(function(){
             }
         }
         
-        
+        if($(window).width() < 580) {
+            blahblah = 30;
+        }
         if($(window).width() > 824) {
         achange = 210;
         }
@@ -283,7 +289,7 @@ $(document).ready(function(){
         if($(window).width() <= 440 && $(window).width() > 0) {
             achange = 611;
         }
-        welcomeheight = ($(window).height() - $('.welcome').height())/2;
+        welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
         $('.welcome').css('top', welcomeheight.toString()+"px");
         meheight = ($(window).height() - $('#me').height())/2;
         $('#me').css('top', meheight.toString()+"px");
