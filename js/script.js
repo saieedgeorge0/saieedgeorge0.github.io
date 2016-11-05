@@ -4,9 +4,8 @@ $(document).ready(function(){
     var achange = 0;
     var arrowwhee = 0;
     var blahblah = 0;
-    if($(window).width() < 580) {
-        blahblah = 30;
-    }
+    
+
     if($(window).width() > 824) {
         achange = 210;
     }
@@ -190,7 +189,15 @@ $(document).ready(function(){
         $(".sorry").delay(500).fadeOut(1000);
         $(".cssload-container").delay(500).fadeOut(1000);
         
-         
+        blahblah=0;
+            if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
+    if($(window).width() < 580) {
+        blahblah = 30;
+    }
+    } 
+        var welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
+    $('.welcome').css('top', welcomeheight.toString()+"px");
+        
         if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
             if ($(window).width() <= 914) {
                 $("#welcome-description").css("font-size", "55px");
@@ -271,9 +278,18 @@ $(document).ready(function(){
             }
         }
         
+        if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
         if($(window).width() < 580) {
             blahblah = 30;
         }
+        
+        else if($(window).width() >= 580) {
+            blahblah = 0;
+        }
+        }
+        
+        
+        
         if($(window).width() > 824) {
         achange = 210;
         }
@@ -569,7 +585,16 @@ $(document).ready(function(){
             }
         }
         
-        welcomeheight = ($(window).height() - $('.welcome').height())/2;
+        blahblah=0;
+            if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
+    if($(window).width() < 580) {
+        blahblah = 30;
+    }
+                if($(window).width() >= 580) {
+        blahblah = 0;
+    }
+    } 
+        welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
         $('.welcome').css('top', welcomeheight.toString()+"px");
         var thingies = ["1","2","3","4","5","6"];
         $.each(thingies, function(index, value) {
