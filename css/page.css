@@ -1,9 +1,4 @@
 
-html, body {
-  height: 100%;
-    width: 100%;
-    overflow-x:hidden;
-}
 
 .cssload-container {
     overflow: hidden;
@@ -1340,5 +1335,11 @@ textarea:focus, input:focus{
 }
 
 
+#blah {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
 
 
