@@ -275,7 +275,7 @@ $(document).ready(function(){
                 $("#welcome-description").css("font-size", "32px");
             }
         }
-        
+        blahblah=0;
         if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
         if($(window).width() < 580) {
             blahblah = 30;
