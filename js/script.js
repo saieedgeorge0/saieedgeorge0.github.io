@@ -1,6 +1,6 @@
 $(document).ready(function(){
     if(navigator.platform == 'iPhone' || navigator.platform == 'iPod'){ 
-        $("#blah").css("height", window.innerHeight.toString());
+        $("#blah").css("height", window.innerHeight().toString());
     }
     
     var achange = 0;
