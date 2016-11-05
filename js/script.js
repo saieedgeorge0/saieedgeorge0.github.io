@@ -1,5 +1,7 @@
 $(document).ready(function(){
-
+    if(navigator.platform == 'iPhone' || navigator.platform == 'iPod'){ 
+        $("#blah").css("height", window.innerHeight.toString());
+    }
     
     var achange = 0;
     var arrowwhee = 0;
