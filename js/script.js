@@ -1,12 +1,7 @@
 $(document).ready(function(){
     
-    var deviceAgent = navigator.userAgent.toLowerCase();
-	var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-	if (agentID) {
-
         $("#blah").css("height", window.innerHeight().toString());
  
-	}
     
     var achange = 0;
     var arrowwhee = 0;
