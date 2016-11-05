@@ -1334,8 +1334,10 @@ textarea:focus, input:focus{
     
 }
 
-
-html, body {
+#blah {
+    position: fixed;
+    left: -3px;
+    top: -3px;
     height: 100%;
     width: 100%;
     overflow:hidden;
