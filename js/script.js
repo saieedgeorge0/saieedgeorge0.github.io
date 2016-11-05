@@ -1,8 +1,4 @@
 $(document).ready(function(){
-    
-    $('#blah').css('height', window.outerHeight.toString()+"px");
- 
-    
     var achange = 0;
     var arrowwhee = 0;
     var blahblah = 0;
