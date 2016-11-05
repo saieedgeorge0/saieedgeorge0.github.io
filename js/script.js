@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-        $("#blah").css("height", window.innerHeight().toString()+"px");
+    $('#blah').css('height', $(window).height().toString()+"px");
  
     
     var achange = 0;
