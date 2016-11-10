@@ -36,11 +36,7 @@
         <script src="https://use.fontawesome.com/74ad5e6449.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
         <script src = "js/jquery-3.1.0.js"></script>
-        <!-- Include jQuery Mobile stylesheets -->
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
-        <!-- Include the jQuery Mobile library -->
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/jgestures.js"></script>
         <script src="js/script.js"></script>
         </script>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -91,7 +87,7 @@
                     <div class = "welcome animate fadeInUp one">
                         <div class = "subwelcome">
                         <h1 id = "welcome-text" class = "1 animate fadeInUp one">Hi! I'm George Saieed.</h1>
-                        <h1 id = "welcome-description" class = "animate fadeInUp one">I am a self-taught designer and developer attending the University of Chicago, and you will almost always find me trying to learn something</h1>
+                        <h1 id = "welcome-description" class = "animate fadeInUp one">I am a self-taught designer and developer attending the University of Chicago, and you will almost always find me trying to learn something.</h1>
                         </div>
                         <div id = "seemore">view more</div>
                     </div>
@@ -135,5 +131,10 @@
             </div>
         </div>
         </div>
+        <script type="text/javascript">
+        $('#container').bind('swipeone swipeleft', function(){
+            alert("test");
+        });
+        </script>
     </body>
 </html>
