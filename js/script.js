@@ -618,11 +618,11 @@ $(document).ready(function(){
             $('#arrows').css("display", "block");
             $('#welcome-description').html(projtext[0]);
             $('#welcome-description').addClass('semi-huge');
-            $( "#church-img" ).css("visibility", "visible");
-            $( "#church-img" ).insertBefore( $( "#container" ) );
-            $( "#church-img" ).css("opacity", "0").fadeTo(20, 1);
+            $( "#speeder-img" ).css("visibility", "visible");
+            $( "#speeder-img" ).insertBefore( $( "#container" ) );
+            $( "#speeder-img" ).css("opacity", "0").fadeTo(20, 1);
             setTimeout(function(){
-                $( "#church-img").prev().css("display", "none");
+                $( "#speeder-img").prev().css("display", "none");
             }, 400);
             $('#current-count').html("1");
             $('#total-count').html("13");
