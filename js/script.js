@@ -367,7 +367,114 @@ $(document).ready(function(){
    $('#container').swipe( {
     //Generic swipe handler for all directions
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-          alert("You swiped " + direction);  
+           if(direction == "up")
+               {
+                           if (!$('#welcome-text').hasClass("1")) {
+                    $('#seemore').css("opacity", "0").fadeTo(500, 1);
+                    $('.welcome').css("cursor", "pointer");
+                }
+                if ($('#welcome-text').hasClass('1')) {
+                    textnum += 1;
+                    if (textnum > 3) {
+                        textnum = 0;
+                    }
+                    $('#welcome-description').hide().delay(50).fadeIn('slow');
+                    $('#welcome-description').html(hometext[textnum]);
+                    $('#current-count').html((textnum + 1).toString());
+                    $('#current-count').hide().fadeIn(400);
+                }
+                if ($('#welcome-text').hasClass('2')) {
+                    textnum += 1;
+                    if (textnum > 12) {
+                        textnum = 0;
+                    }
+                    $('#welcome-description').hide().delay(50).fadeIn('slow');
+                    $('#welcome-description').html(projtext[textnum]);
+                    $('#welcome-text').hide().delay(50).fadeIn('slow');
+                    $('#welcome-text').html(projsubtext[textnum]);
+                    $( ("#" + projpics[textnum]) ).css("visibility", "visible");
+                    $( ("#" + projpics[textnum]) ).insertBefore( $( "#container" ) );
+                    $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
+                    setTimeout(function(){
+                        $( ("#" + projpics[textnum]) ).prev().css("display", "none");
+                    }, 400);
+                    $('#current-count').html((textnum + 1).toString());
+                    $('#current-count').hide().fadeIn(400);
+                }
+                if ($('#welcome-text').hasClass('3')) {
+                    textnum += 1;
+                    if (textnum > 3) {
+                        textnum = 0;
+                    }
+                    $('#welcome-description').hide().delay(50).fadeIn('slow');
+                    $('#welcome-description').html(blogtext[textnum]);
+                    $('#welcome-text').hide().delay(50).fadeIn('slow');
+                    $('#welcome-text').html(blogsubtext[textnum]);
+                    $( ("#" + blogpics[textnum]) ).css("visibility", "visible");
+                    $( ("#" + blogpics[textnum]) ).insertBefore( $( "#container" ) );
+                    $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
+                    setTimeout(function(){
+                        $( ("#" + blogpics[textnum]) ).prev().css("display", "none");
+                    }, 400);
+                    $('#current-count').html((textnum + 1).toString());
+                    $('#current-count').hide().fadeIn(400);
+                }
+               }
+            if (direction=="down") {
+                if (!$('#welcome-text').hasClass("1")) {
+            $('#seemore').css("opacity", "0").fadeTo(500, 1);
+            $('.welcome').css("cursor", "pointer");
+        }
+        if ($('#welcome-text').hasClass('1')) {
+            textnum -= 1;
+            if (textnum == -1) {
+                textnum = 3;
+            }
+            $('#welcome-description').hide().delay(50).fadeIn('slow');
+            $('#welcome-description').html(hometext[textnum]);
+            $('#current-count').html((textnum + 1).toString());
+            $('#current-count').hide().fadeIn(400);
+        
+        }
+        if ($('#welcome-text').hasClass('2')) {
+            textnum -= 1;
+            if (textnum == -1) {
+                textnum = 12;
+            }
+            $('#welcome-description').hide().delay(50).fadeIn('slow');
+            $('#welcome-description').html(projtext[textnum]);
+            $('#welcome-text').hide().delay(50).fadeIn('slow');
+            $('#welcome-text').html(projsubtext[textnum]);
+            $( ("#" + projpics[textnum]) ).css("visibility", "visible");
+            $( ("#" + projpics[textnum]) ).insertBefore( $( "#container" ) );
+            $( ("#" + projpics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
+            setTimeout(function(){
+                $( ("#" + projpics[textnum]) ).prev().css("display", "none");
+            }, 400);
+            $('#current-count').html((textnum + 1).toString());
+            $('#current-count').hide().fadeIn(400);
+        
+        }
+        if ($('#welcome-text').hasClass('3')) {
+            textnum -= 1;
+            if (textnum == -1) {
+                textnum = 3;
+            }
+            $('#welcome-description').hide().delay(50).fadeIn('slow');
+            $('#welcome-description').html(blogtext[textnum]);
+            $('#welcome-text').hide().delay(50).fadeIn('slow');
+            $('#welcome-text').html(blogsubtext[textnum]);
+            $( ("#" + blogpics[textnum]) ).css("visibility", "visible");
+            $( ("#" + blogpics[textnum]) ).insertBefore( $( "#container" ) );
+            $( ("#" + blogpics[textnum]) ).css("opacity", "0").fadeTo(20, 1);
+            setTimeout(function(){
+                $( ("#" + blogpics[textnum]) ).prev().css("display", "none");
+            }, 400);
+            $('#current-count').html((textnum + 1).toString());
+            $('#current-count').hide().fadeIn(400);
+        }
+            }
+            
         }
    });
     
