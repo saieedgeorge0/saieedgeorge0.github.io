@@ -368,7 +368,7 @@ $(document).ready(function(){
             alert("up");
     });
     
-   $('#container').bind('swipeone swipeup', function(){
+   $('#container').bind('swipeone swipedown', function(){
             alert("down");
     });
     
