@@ -364,7 +364,9 @@ $(document).ready(function(){
     var textnum = 0;
     
     
-    $('#container').on('swipedown',function(){alert("swipedown..");} );
+    $("#container").on("swipe",function(){
+        alert("blah");
+    });
     
     $('.fa-angle-double-down').click(function () {
         if (!$('#welcome-text').hasClass("1")) {
