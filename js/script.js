@@ -364,14 +364,12 @@ $(document).ready(function(){
     var textnum = 0;
     
     
-   $('#container').bind('swipeone', function (event, obj) {
-       var direction=obj.description.split(":")[2]
-       if(direction=="up"){
+   $('#container').bind('swipeup', function(){
             alert("up");
-       }
-       if(direction=="down"){
+    });
+    
+   $('#container').bind('swipedown', function(){
             alert("down");
-       }
     });
     
     $('.fa-angle-double-down').click(function () {
