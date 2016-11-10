@@ -364,7 +364,7 @@ $(document).ready(function(){
     var textnum = 0;
     
     
-   $('#container').bind('swipeup', function(){
+   $('#container').bind('swipeone swipeup', function(){
             alert("test");
     });
     
