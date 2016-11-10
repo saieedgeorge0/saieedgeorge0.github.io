@@ -2,6 +2,7 @@ $(document).ready(function(){
     var achange = 0;
     var arrowwhee = 0;
     var blahblah = 0;
+    var section = 1;
     
 
     if($(window).width() > 824) {
@@ -475,6 +476,44 @@ $(document).ready(function(){
         }
             }
             
+            if (direction == "left") {
+                if ($('#1').hasClass('fa-circle')) {
+                    $('#2').trigger('click');
+                    $('#2').trigger('hover').trigger('mouseenter');
+                }
+                else if ($('#2').hasClass('fa-circle')) {
+                    $('#3').trigger('click');
+                    $('#3').trigger('hover').trigger('mouseenter');
+                }
+                else if ($('#3').hasClass('fa-circle')) {
+                    $('#4').trigger('click');
+                    $('#4').trigger('hover').trigger('mouseenter');
+                }
+                else if ($('#4').hasClass('fa-circle')) {
+                    $('#5').trigger('click');
+                    $('#5').trigger('hover').trigger('mouseenter');
+                }
+            }
+            
+            if (direction == "right") {
+                if ($('#5').hasClass('fa-circle')) {
+                    $('#4').trigger('click');
+                    $('#4').trigger('hover').trigger('mouseenter');
+                }
+                else if ($('#4').hasClass('fa-circle')) {
+                    $('#3').trigger('click');
+                    $('#3').trigger('hover').trigger('mouseenter');
+                }
+                else if ($('#3').hasClass('fa-circle')) {
+                    $('#2').trigger('click');
+                    $('#2').trigger('hover').trigger('mouseenter');
+                }
+                else if ($('#2').hasClass('fa-circle')) {
+                    $('#1').trigger('click');
+                    $('#1').trigger('hover').trigger('mouseenter');
+                }
+            }
+            
         }
    });
     
@@ -601,6 +640,7 @@ $(document).ready(function(){
             $('.welcome').css("cursor", "");
         }
         if ($(this).attr('id') == "1") {
+            section = 1;
             $('#arrows').css("display", "block");
             $('#welcome-description').html(hometext[0]);
             $('#welcome-description').removeClass('huge');
@@ -615,6 +655,7 @@ $(document).ready(function(){
             $('#total-count').html("4");
         }
         if ($(this).attr('id') == "2") {
+            section = 2;
             $('#arrows').css("display", "block");
             $('#welcome-description').html(projtext[0]);
             $('#welcome-description').addClass('semi-huge');
@@ -628,6 +669,7 @@ $(document).ready(function(){
             $('#total-count').html("13");
         }
         if ($(this).attr('id') == "3") {
+            section = 3;
             $('#arrows').css("display", "block");
             $('#welcome-description').html(blogtext[0]);
             $('#welcome-description').addClass('semi-huge');
@@ -641,6 +683,7 @@ $(document).ready(function(){
             $('#total-count').html("4");
         }
         if ($(this).attr('id') == "4") {
+            section = 4;
             $('#arrows').css("display", "none");
             $('#welcome-description').html(abouttext[0]);
             $('#welcome-description').addClass('huge');
@@ -652,6 +695,7 @@ $(document).ready(function(){
             }, 400);
         }
         if ($(this).attr('id') == "5") {
+            section = 5;
             $('#arrows').css("display", "none");
             $('#welcome-description').html("Get In Touch!");
             $('#welcome-description').addClass('huge');
