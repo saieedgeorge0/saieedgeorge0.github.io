@@ -365,7 +365,11 @@ $(document).ready(function(){
     
     
    $('#container').bind('swipeone swipeup', function(){
-            alert("test");
+            alert("up");
+    });
+    
+   $('#container').bind('swipeone swipeup', function(){
+            alert("down");
     });
     
     $('.fa-angle-double-down').click(function () {
