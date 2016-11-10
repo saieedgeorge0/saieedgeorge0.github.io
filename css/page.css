@@ -1361,7 +1361,6 @@ textarea:focus, input:focus{
     top: 0px;
     height: 100%;
     width: 100%;
-    padding-bottom: 70px;
     overflow-x:hidden;
 }
 
