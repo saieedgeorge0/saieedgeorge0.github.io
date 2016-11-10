@@ -54,27 +54,38 @@ $(document).ready(function(){
         if (getUrlVars()["section"]=="projects") {
             $('#2').trigger('click');
             $('#2').trigger('hover').trigger('mouseenter');
-            if (getUrlVars()["projectid"]=="church") {
+            if (getUrlVars()["projectid"]=="speeder") {
+            }
+            else if (getUrlVars()["projectid"]=="church") {
+                $('.fa-angle-double-down').trigger('click');
+                $( ("#church-img") ).prev().css("display", "none");
             }
             else if (getUrlVars()["projectid"]=="facebook") {
                 $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
                 $( ("#facebook-img") ).prev().css("display", "none");
+                $( ("#facebook-img") ).prev().prev().css("display", "none");
             }
             else if (getUrlVars()["projectid"]=="accident") {
                 $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
+                $('.fa-angle-double-down').trigger('click');
                 $( ("#accident-img") ).prev().css("display", "none");
                 $( ("#accident-img") ).prev().prev().css("display", "none");
+                $( ("#accident-img") ).prev().prev().prev().css("display", "none");
             }
             else if (getUrlVars()["projectid"]=="receipt") {
+                $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
                 $( ("#smart-img") ).prev().css("display", "none");
                 $( ("#smart-img") ).prev().prev().css("display", "none");
                 $( ("#smart-img") ).prev().prev().prev().css("display", "none");
+                $( ("#smart-img") ).prev().prev().prev().prev().css("display", "none");
             }
             else if (getUrlVars()["projectid"]=="finals") {
+                $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
@@ -83,8 +94,10 @@ $(document).ready(function(){
                 $( ("#finals-img") ).prev().prev().css("display", "none");
                 $( ("#finals-img") ).prev().prev().prev().css("display", "none");
                 $( ("#finals-img") ).prev().prev().prev().prev().css("display", "none");
+                $( ("#finals-img") ).prev().prev().prev().prev().prev().css("display", "none");
             }
             else if (getUrlVars()["projectid"]=="polygon") {
+                $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
                 $('.fa-angle-double-down').trigger('click');
@@ -95,8 +108,10 @@ $(document).ready(function(){
                 $( ("#low-img") ).prev().prev().prev().css("display", "none");
                 $( ("#low-img") ).prev().prev().prev().prev().css("display", "none");
                 $( ("#low-img") ).prev().prev().prev().prev().prev().css("display", "none");
+                $( ("#low-img") ).prev().prev().prev().prev().prev().prev().css("display", "none");
             }
             else if (getUrlVars()["projectid"]=="presentation") {
+                $('.fa-angle-double-up').trigger('click');
                 $('.fa-angle-double-up').trigger('click');
                 $('.fa-angle-double-up').trigger('click');
                 $('.fa-angle-double-up').trigger('click');
@@ -109,6 +124,7 @@ $(document).ready(function(){
                 $( ("#presentation-img") ).prev().prev().prev().prev().css("display", "none");
                 $( ("#presentation-img") ).prev().prev().prev().prev().prev().css("display", "none");
                 $( ("#presentation-img") ).prev().prev().prev().prev().prev().prev().css("display", "none");
+                $( ("#presentation-img") ).prev().prev().prev().prev().prev().prev().prev().css("display", "none");
             }
             else if (getUrlVars()["projectid"]=="calc") {
                 $('.fa-angle-double-up').trigger('click');
@@ -150,6 +166,7 @@ $(document).ready(function(){
                 $('.fa-angle-double-up').trigger('click');
                 $( ("#past-img") ).prev().css("display", "none");
             }
+            
         }
         if (getUrlVars()["section"]=="blog") {
             $('#3').trigger('click');
@@ -187,14 +204,7 @@ $(document).ready(function(){
         $(".sorry").delay(500).fadeOut(1000);
         $(".cssload-container").delay(500).fadeOut(1000);
         
-        blahblah=0;
-            if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
-    if($(window).width() < 580) {
-        blahblah = 30;
-    }
-    } 
-        var welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
-    $('.welcome').css('top', welcomeheight.toString()+"px");
+       
         
         if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
             if ($(window).width() <= 914) {
@@ -223,6 +233,16 @@ $(document).ready(function(){
                 $("#seemore").css("margin-top", "-15px");
             }
         }
+         blahblah=0;
+            if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
+                if($(window).width() < 580) {
+                    blahblah = 30;
+                }
+            } 
+        setTimeout(function(){
+        welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
+        $('.welcome').css('top', welcomeheight.toString()+"px");
+        }, 100);
     });
     
     $(window).resize(function(){
@@ -331,9 +351,9 @@ $(document).ready(function(){
     
     var hometext = ["I am a self-taught designer and developer attending the University of Chicago, and you will almost always find me trying to learn something.", "Nothing fascinates me more than the human brain, or understanding why people do what they do.", "I can play piano, sing, and weirdest of all, beatbox, and I love to read about technology.", "I want to change the world one day, and I will."];
     var smalltext = ["Hi! I'm George Saieed.", "Made w/ HTML, CSS, jQuery | Sept. 2016", "March 22\, 2016 | 3 - 5 min. read", "All About Me", "Contact Me"];
-    var projtext = ["Church Website", "Facebook Re-Design", "Accident Report", "Smart Receipts", "Finals Generator", "Low Polygon Art", "Presentation Design", "Calc Color", "Instagram Logo Design", "Ultimate Horn", "UW Poster", "Past Websites"];
-    var projsubtext = ["Made w/ HTML, CSS, jQuery | Sept. 2016", "Made w/ Sketch | Sept. 2016", "Made w/ Sketch | Aug. 2016", "Made w/ Sketch, Swift, XCode | Mar. 2016", "Made w/ Twilio, Python | May 2016", "Made w/ Photoshop | May 2016", "Made w/ Sketch | Jun. 2016", "Made w/ Sketch, Swift, XCode | Jul. 2016", "Made w/ Sketch | May 2016", "Made w/ Swift, XCode | Jul. 2016", "Made w/ Photoshop | May 2016", "Made w/ HTML, CSS, jQuery | Mar./Aug. 2016"];
-    var projpics = ["church-img", "facebook-img", "accident-img", "smart-img", "finals-img", "low-img", "presentation-img", "calc-img", "instagram-img", "ultimate-img", "uw-img", "past-img"];
+    var projtext = ["Speed ER","Church Website", "Facebook Re-Design", "Accident Report", "Smart Receipts", "Finals Generator", "Low Polygon Art", "Presentation Design", "Calc Color", "Instagram Logo Design", "Ultimate Horn", "UW Poster", "Past Websites"];
+    var projsubtext = ["Made w/ HTML, CSS, jQuery | Oct. 2016", "Made w/ HTML, CSS, jQuery | Sept. 2016", "Made w/ Sketch | Sept. 2016", "Made w/ Sketch | Aug. 2016", "Made w/ Sketch, Swift, XCode | Mar. 2016", "Made w/ Twilio, Python | May 2016", "Made w/ Photoshop | May 2016", "Made w/ Sketch | Jun. 2016", "Made w/ Sketch, Swift, XCode | Jul. 2016", "Made w/ Sketch | May 2016", "Made w/ Swift, XCode | Jul. 2016", "Made w/ Photoshop | May 2016", "Made w/ HTML, CSS, jQuery | Mar./Aug. 2016"];
+    var projpics = ["speeder-img","church-img", "facebook-img", "accident-img", "smart-img", "finals-img", "low-img", "presentation-img", "calc-img", "instagram-img", "ultimate-img", "uw-img", "past-img"];
     var blogtext = ["Why am I 'terrible' with computers?", "How do mobile apps really work?", "Could you power your house with your bike?", "How much fun would it be to run at light speed?"];
     var blogsubtext = ["March 22\, 2016 | 3 - 5 min. read", "July 14\, 2015 | 8 - 14 min. read", "July 15\, 2016 | 2 - 3 min. read", "July 18\, 2016 | 1-3 min. read"];
     var blogpics = ["search-img", "apps-img", "bike-img", "light-img"];
@@ -344,6 +364,7 @@ $(document).ready(function(){
     var textnum = 0;
     
     
+    $('#container').on('swipedown',function(){alert("swipedown..");} );
     
     $('.fa-angle-double-down').click(function () {
         if (!$('#welcome-text').hasClass("1")) {
@@ -362,7 +383,7 @@ $(document).ready(function(){
         }
         if ($('#welcome-text').hasClass('2')) {
             textnum += 1;
-            if (textnum > 11) {
+            if (textnum > 12) {
                 textnum = 0;
             }
             $('#welcome-description').hide().delay(50).fadeIn('slow');
@@ -417,7 +438,7 @@ $(document).ready(function(){
         if ($('#welcome-text').hasClass('2')) {
             textnum -= 1;
             if (textnum == -1) {
-                textnum = 11;
+                textnum = 12;
             }
             $('#welcome-description').hide().delay(50).fadeIn('slow');
             $('#welcome-description').html(projtext[textnum]);
@@ -492,7 +513,7 @@ $(document).ready(function(){
                 $( "#church-img").prev().css("display", "none");
             }, 400);
             $('#current-count').html("1");
-            $('#total-count').html("12");
+            $('#total-count').html("13");
         }
         if ($(this).attr('id') == "3") {
             $('#arrows').css("display", "block");
@@ -616,6 +637,9 @@ $(document).ready(function(){
         if ($("#welcome-text").html() != "Hi! I'm George Saieed.") {
             if ($('#welcome-description').html() == "Church Website") {
                 window.location.href = "projects.html?projectid=church";
+            }
+            if ($('#welcome-description').html() == "Speed ER") {
+                window.location.href = "projects.html?projectid=speeder";
             }
             if ($('#welcome-description').html() == "Facebook Re-Design") {
                 window.location.href = "projects.html?projectid=facebook";

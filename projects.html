@@ -62,7 +62,9 @@
             <a data-container="container-16" class="thumb-nav__item projy-16" href="#"><img src="img/thumbs/projpw.png" alt="thumb03" /><span>12</span></a>
             <a data-container="container-17" class="thumb-nav__item projy-17" href="#"><img src="img/thumbs/projpw.png" alt="thumb03" /><span>12</span></a>
             <a data-container="container-18" class="thumb-nav__item projy-18" href="#"><img src="img/thumbs/projpw.png" alt="thumb03" /><span>12</span></a>
+            <a data-container="container-19" class="thumb-nav__item projy-19" href="#"><img src="img/thumbs/projpw.png" alt="thumb03" /><span>12</span></a>
 		</nav>
+        
 		<div id="container-1" class="container theme-1">
 			<header class="intro">
 				<img class="intro__image" src="" alt="Lava"/>
@@ -598,17 +600,63 @@
 				</div><!-- /intro__content -->
 			</header><!-- /intro -->
 			<section class="items-wrap">
-				<a href="#" class="item">
+				<a href="http://georgesaieed.com/old/old.html" class="item">
 					<img class="item__image" src="img/projimg/pwimg/img1.png" alt="item01"/>
 					<h2 class="item__title"></h2>
 				</a>
-                <a href="#" class="item">
+                <a href="http://georgesaieed.com/old2/index.html" class="item">
 					<img class="item__image" src="img/projimg/pwimg/img2.png" alt="item01"/>
 					<h2 class="item__title"></h2>
 				</a>
 			</section>
             <section class="related2">
 			</section>
+		</div><!-- /container -->
+        <div id="container-19" class="container theme-1">
+			<header class="intro">
+				<img class="intro__image" src="" alt="Lava"/>
+				<div class="intro__content">
+					<h1 class="intro__title">Speed ER</h1>
+					<div class="intro__subtitle">
+						<div class="codrops-links">
+							<a class="codrops-icon codrops-icon--prev" href="index.html?section=projects&projectid=speeder" title="Main"><span>Home Page</span></a>
+							<div class="codrops-icon codrops-icon--drop" href="" title="Nothing"><span>Nothing</span></div>
+						</div>
+						<div class="intro__description">
+							Prototype of a platform to help speed up Emergency Room wait times. Built at HackHarvard. Sign up with any credentials.
+							<div class="demos">
+								<a class="demos__item demos__item--current" href="http://georgesaieed.com/ER/login.html">Visit Site</a>
+								<a class="demos__item demos__item--current" href="https://github.com/anandnk24/SpeedER">Source Code</a>
+							</div>
+						</div>
+						<button class="trigger" style="display:none;">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<use class="icon icon--grid" xlink:href="#icon-grid" />
+								<use class="icon icon--cross" xlink:href="#icon-cross" />
+							</svg>
+							<span>Toggle content</span>
+						</button>
+					</div>
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+			<section class="items-wrap">
+				<a href="#" class="item">
+					<img class="item__image" src="img/projimg/speeder/img1.png" alt="item01"/>
+					<h2 class="item__title"></h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/projimg/speeder/img2.png" alt="item02"/>
+					<h2 class="item__title"></h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/projimg/speeder/img3.png" alt="item03"/>
+					<h2 class="item__title"></h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/projimg/speeder/img4.png" alt="item04"/>
+					<h2 class="item__title"></h2>
+				</a>
+            </section>
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
 		<script>
@@ -880,6 +928,15 @@
                         $(window).trigger("scroll");
                         window.scrollTo(10,0);
                     }
+                    else if (getUrlVars()["projectid"]=="speeder") {
+                        $("#container-19").css("display", "block");
+                        $("#container-1").css("display", "block");
+                        $('.projy-19')[0].click();
+                        toggleContent(document.getElementById("container-19"), this);
+                        allowScroll();
+                        $(window).trigger("scroll");
+                        window.scrollTo(10,0);
+                    }
                     else if (getUrlVars()["blogid"]=="searching") {
                         $("#container-13").css("display", "block");
                         $("#container-1").css("display", "block");
@@ -934,6 +991,7 @@
                         $(window).trigger("scroll");
                         window.scrollTo(10,0);
                     }
+                        
                     });
                 });
 			})();

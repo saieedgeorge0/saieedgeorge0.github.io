@@ -422,6 +422,26 @@ body, h1, h2, h3, h4, h5, h6 {
     transition: opacity .3s ease-in-out;
     display: none;
 } 
+
+#speeder-img{
+    background: url('../img/projse.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: -1;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    display: none;
+} 
+
 #home-img{
     -webkit-transition: opacity .3s ease-in-out;
     -moz-transition: opacity .3s ease-in-out;
