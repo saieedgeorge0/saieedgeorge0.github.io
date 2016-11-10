@@ -1364,4 +1364,9 @@ textarea:focus, input:focus{
     overflow-x:hidden;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 
