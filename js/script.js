@@ -364,13 +364,12 @@ $(document).ready(function(){
     var textnum = 0;
     
     
-   $('#container').bind('swipeup', function(){
-            alert("up");
-    });
-    
-   $('#container').bind('swipedown', function(){
-            alert("down");
-    });
+   $('#container').swipe( {
+    //Generic swipe handler for all directions
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+          alert("You swiped " + direction);  
+        }
+   });
     
     $('.fa-angle-double-down').click(function () {
         if (!$('#welcome-text').hasClass("1")) {
