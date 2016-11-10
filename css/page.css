@@ -1355,14 +1355,14 @@ textarea:focus, input:focus{
     
 }
 
-#blah {
+/*#blah {
     position: fixed;
     left: 0px;
     top: 0px;
     height: 100%;
     width: 100%;
     overflow-x:hidden;
-}
+}*/
 
 html, body {
     height: 100%;
