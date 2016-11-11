@@ -5,7 +5,7 @@ $(document).ready(function(){
     var section = 1;
     
     /*if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)  { */
-        $('blah').css("height", "-webkit-calc(100% - 100px)");
+        $('blah').css("height", "-webkit-calc(100% - 60px)");
     //}
     
 
