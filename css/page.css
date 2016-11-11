@@ -1355,10 +1355,6 @@ textarea:focus, input:focus{
     
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-}
 
 #blah {
     position: fixed;
@@ -1367,7 +1363,7 @@ html, body {
     height: 100%;
     width: 100%;
     overflow-x:hidden;
-    padding-bottom: 44px;
+    padding-bottom: 60px;
 }
 
 
