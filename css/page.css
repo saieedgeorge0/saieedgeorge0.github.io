@@ -91,7 +91,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #contact-img {
     background: url('../img/contact.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -110,7 +110,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #about-img {
     background: url('../img/me.jpg');
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -129,7 +129,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #light-img{
     background: url('../img/bloglight.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -147,7 +147,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #bike-img{
     background: url('../img/blogbike.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -165,7 +165,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #apps-img{
     background: url('../img/blogdaw.jpeg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -183,7 +183,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #search-img{
     background: url('../img/blogbwc.jpeg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -201,7 +201,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #past-img{
     background: url('../img/projpw.png');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -219,7 +219,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #uw-img{
     background: url('../img/projuw.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -237,7 +237,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #ultimate-img{
     background: url('../img/projuh.jpeg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -259,7 +259,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #instagram-img{
     background: url('../img/projid.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -281,7 +281,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #calc-img{
     background: url('../img/projcc.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -299,7 +299,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #presentation-img{
     background: url('../img/projpd.jpeg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -317,7 +317,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #low-img{
     background: url('../img/projlpa.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -335,7 +335,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #finals-img{
     background: url('../img/projfg.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -353,7 +353,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #smart-img{
     background: url('../img/projsr.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -371,7 +371,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #accident-img{
     background: url('../img/projaig.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -389,7 +389,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #facebook-img{
     background: url('../img/projfr.png');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -407,7 +407,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #church-img{
     background: url('../img/projcw.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -426,7 +426,7 @@ body, h1, h2, h3, h4, h5, h6 {
 #speeder-img{
     background: url('../img/projse.jpg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
