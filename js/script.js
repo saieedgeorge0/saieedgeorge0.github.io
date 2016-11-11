@@ -21,7 +21,7 @@ $(document).ready(function(){
         achange = 611;
     }
     if($(window).width() <= 489) {
-        arrowwhee = 0;
+        arrowwhee = 55;
     }
     else {
         arrowwhee = 0;
