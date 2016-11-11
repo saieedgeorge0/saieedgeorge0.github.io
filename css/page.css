@@ -1357,7 +1357,7 @@ textarea:focus, input:focus{
 
 
 #blah {
-    position: fixed;
+    /*position: fixed;*/
     left: 0px;
     top: 0px;
     height: 100%;
