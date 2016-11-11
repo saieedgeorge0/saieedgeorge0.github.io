@@ -4,6 +4,10 @@ $(document).ready(function(){
     var blahblah = 0;
     var section = 1;
     
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)  { 
+        $('blah').css("height", "-webkit-calc(100% - 30px)");
+    }
+    
 
     if($(window).width() > 824) {
         achange = 210;
