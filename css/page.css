@@ -450,7 +450,7 @@ body, h1, h2, h3, h4, h5, h6 {
     transition: opacity .3s ease-in-out;
     background: url('../img/background.jpeg');
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -680,7 +680,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #socialmedia {
     position: absolute;
-    top: 10%;
+    top: 90%;
 }
 
 #arrows {
