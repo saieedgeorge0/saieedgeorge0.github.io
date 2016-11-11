@@ -680,7 +680,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #socialmedia {
     position: absolute;
-    top: 90%;
+    top: 80%;
 }
 
 #arrows {
@@ -1363,7 +1363,7 @@ textarea:focus, input:focus{
     height: 100%;
     width: 100%;
     overflow-x:hidden;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
 }
 
 
