@@ -248,8 +248,6 @@ $(document).ready(function(){
     $('.welcome').css('top', welcomeheight.toString()+"px");
     var meheight = ($(window).height() - $('#me').height())/2;
     $('#me').css('top', meheight.toString()+"px");
-    var arrowsheight = ($(window).height() - $('#arrows').height() - arrowwhee)/2;
-    $('#arrows').css('top', arrowsheight.toString()+"px");
     var socmedialeft = ($(window).width() - $('#socialmedia').width() - 107)/2;
     $('#socialmedia').css('left', socmedialeft.toString()+"px");
     var navcircles = ($(window).width() - $('#move-circles').width() + achange)/2;
