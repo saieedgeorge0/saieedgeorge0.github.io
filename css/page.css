@@ -680,7 +680,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #socialmedia {
     position: absolute;
-    top: 90vh;
+    top: 90%;
 }
 
 #arrows {
@@ -1355,10 +1355,6 @@ textarea:focus, input:focus{
     
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-}
 
 #blah {
     position: fixed;
