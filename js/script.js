@@ -24,7 +24,7 @@ $(document).ready(function(){
         arrowwhee = 55;
     }
     else {
-        arrowwhee = 0;
+        arrowwhee = 80;
     }
     var welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
     $('.welcome').css('top', welcomeheight.toString()+"px");
