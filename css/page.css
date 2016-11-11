@@ -108,7 +108,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 #about-img {
-    background: url('../img/med.jpg');
+    background: url('../img/me.jpg');
     position: fixed;
     height: 100%;
     width: 100%;
@@ -1363,7 +1363,6 @@ textarea:focus, input:focus{
     height: 100%;
     width: 100%;
     overflow-x:hidden;
-    padding-bottom: 70px;
 }
 
 
