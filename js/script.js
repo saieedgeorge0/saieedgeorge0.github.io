@@ -21,10 +21,10 @@ $(document).ready(function(){
         achange = 611;
     }
     if($(window).width() <= 489) {
-        arrowwhee = 55;
+        arrowwhee = 0;
     }
     else {
-        arrowwhee = 80;
+        arrowwhee = 0;
     }
     var welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
     $('.welcome').css('top', welcomeheight.toString()+"px");
@@ -244,14 +244,6 @@ $(document).ready(function(){
         welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
         $('.welcome').css('top', welcomeheight.toString()+"px");
         }, 100);
-        var welcomeheight = ($(window).height() - $('.welcome').height() - blahblah)/2;
-    $('.welcome').css('top', welcomeheight.toString()+"px");
-    var meheight = ($(window).height() - $('#me').height())/2;
-    $('#me').css('top', meheight.toString()+"px");
-    var socmedialeft = ($(window).width() - $('#socialmedia').width() - 107)/2;
-    $('#socialmedia').css('left', socmedialeft.toString()+"px");
-    var navcircles = ($(window).width() - $('#move-circles').width() + achange)/2;
-    $('#move-circles').css('left', navcircles.toString()+"px");
     });
     
     $(window).resize(function(){
