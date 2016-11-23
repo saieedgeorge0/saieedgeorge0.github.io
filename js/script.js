@@ -355,7 +355,7 @@ $(document).ready(function(){
     var projtext = ["Speed ER","Church Website", "Facebook Re-Design", "Accident Report", "Smart Receipts", "Finals Generator", "Low Polygon Art", "Presentation Design", "Calc Color", "Instagram Logo Design", "Ultimate Horn", "UW Poster", "Past Websites"];
     var projsubtext = ["Made w/ HTML, CSS, jQuery | Oct. 2016", "Made w/ HTML, CSS, jQuery | Sept. 2016", "Made w/ Sketch | Sept. 2016", "Made w/ Sketch | Aug. 2016", "Made w/ Sketch, Swift, XCode | Mar. 2016", "Made w/ Twilio, Python | May 2016", "Made w/ Photoshop | May 2016", "Made w/ Sketch | Jun. 2016", "Made w/ Sketch, Swift, XCode | Jul. 2016", "Made w/ Sketch | May 2016", "Made w/ Swift, XCode | Jul. 2016", "Made w/ Photoshop | May 2016", "Made w/ HTML, CSS, jQuery | Mar./Aug. 2016"];
     var projpics = ["speeder-img","church-img", "facebook-img", "accident-img", "smart-img", "finals-img", "low-img", "presentation-img", "calc-img", "instagram-img", "ultimate-img", "uw-img", "past-img"];
-    var blogtext = ["Why am I 'terrible' with computers?", "How do mobile apps really work?", "Power A House With A Bike", "Run At Light Speed"];
+    var blogtext = ["Why am I &lsquo; terrible &lsquo; with computers?", "How do mobile apps really work?", "Power A House With A Bike", "Run At Light Speed"];
     var blogsubtext = ["March 22\, 2016 | 3 - 5 min. read", "July 14\, 2015 | 8 - 14 min. read", "July 15\, 2016 | 2 - 3 min. read", "July 18\, 2016 | 1-3 min. read"];
     var blogpics = ["search-img", "apps-img", "bike-img", "light-img"];
     var abouttext = ["So Who Am I?"];
