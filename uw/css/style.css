@@ -1,0 +1,203 @@
+body {
+    background: #170124;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#triangle-1 {
+    width: 0;
+    height: 0;
+    border-left: 325px solid transparent;
+    border-right: 325px solid transparent;
+    border-top: 325px solid rgba(255,255,255,.11);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: fixed;
+    bottom: 0;
+    left: -155px;
+}
+
+#triangle-2 {
+    width: 0;
+    height: 0;
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    border-top: 175px solid rgba(255,255,255,.07);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    position: fixed;
+    right: -73px;
+    top: 10px;
+}
+
+#buttons {
+    width: 100px;
+    height: 99.5%;
+    margin: 0 auto;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+}
+
+#divider {
+    border: solid 3px white;
+    width: 0px;
+    height: 90%;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+.icos {
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+    margin: 0 auto;
+    z-index: 5;
+    color: #170124;
+}
+
+#facebook {
+    -webkit-transform: translateY(-25vh);
+    -moz-transform: translateY(-25vh);
+    -ms-transform: translateY(-25vh);
+    -o-transform: translateY(-25vh);
+    transform: translateY(-25vh);
+}
+
+#fb-ico {
+    -webkit-transform: translateY(-25vh) translateY(1px);
+    -moz-transform: translateY(-25vh) translateY(1px);
+    -ms-transform: translateY(-25vh) translateY(1px);
+    -o-transform: translateY(-25vh) translateY(1px);
+    transform: translateY(-25vh) translateY(1px);
+}
+
+#email {
+    -webkit-transform: translateY(25vh);
+    -moz-transform: translateY(25vh);
+    -ms-transform: translateY(25vh);
+    -o-transform: translateY(25vh);
+    transform: translateY(25vh);
+}
+
+#em-ico {
+    -webkit-transform: translateY(25vh);
+    -moz-transform: translateY(25vh);
+    -ms-transform: translateY(25vh);
+    -o-transform: translateY(25vh);
+    transform: translateY(25vh);
+}
+
+#vid-ico {
+    -webkit-transform: translateX(2px) translateY(1px);
+    -moz-transform: translateX(2px) translateY(1px);
+    -ms-transform: translateX(2px) translateY(1px);
+    -o-transform: translateX(2px) translateY(1px);
+    transform: translateX(2px) translateY(1px);
+}
+
+#nav {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 99.5%;
+    width: 50%;
+}
+
+#info {
+    position:absolute;
+    top: 0;
+    left: 49.5%;
+    height: 99.5%;
+    width: 50%;
+}
+
+#logo {
+    margin: 0 auto;
+    width: 198px;
+    font-family: 'Abril Fatface';
+    font-weight: 100;
+    font-size: 130px;
+    transform: translateY(10vh);
+}
+
+.letter {
+    display: inline-block;
+    height: 0px;
+    margin-top: 0px;
+}
+
+.dub {
+    transform: translateX(-37px);
+    margin-right: -37px;
+}
+
+#menu {
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    transform: translateY(10vh);
+}
+
+.menu-item {
+    margin-top: 45px;
+    margin-bottom: 0px;
+}
+
+.selected {
+    height: 0px;
+    border: solid 2px white;
+    margin: 0 auto;
+    padding: 0px;
+    margin-top: 3px;
+}
+
+#about {
+    width: 60px;
+}
+
+#members {
+    width: 90px;
+    display: none;
+}
+
+#repertoire {
+    width: 95px;
+    display: none;
+}
+
+#selected {
+    width: 100px;
+    display: none;
+}
+
+#about-blob {
+    width: 58%;
+    height: 60%;
+    margin: 0 auto;
+    transform: translateY(15vh) translateX(20px);
+    font-size: 21px;
+    font-weight: 100;
+}
+
+@media(max-width: 0px) {
+    
+}
