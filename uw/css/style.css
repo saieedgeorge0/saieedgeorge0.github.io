@@ -407,6 +407,7 @@ strong {
     background: rgba(0,0,0,0);
     border-bottom: dotted 3px white;
     float: right;
+    border-radius: 0px;
 }
 
 #submit_button:hover {
