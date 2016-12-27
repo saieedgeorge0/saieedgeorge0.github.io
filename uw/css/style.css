@@ -678,6 +678,9 @@ strong {
         visibility: visible;
     }
     
+    #about-blob, #contact-section, #repertoire-list, .info-mem, .get-back {
+        font-weight: 300;
+    }
 }
 
 @media (max-width: 500px) {
