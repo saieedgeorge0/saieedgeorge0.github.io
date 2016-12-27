@@ -1,4 +1,12 @@
 $(document).ready(function(){ 
+    $(window).resize(function() {
+        if($(window).width() > 796) {
+                $('#menu').fadeIn(0);
+        }
+        if($(window).width() < 797) {
+                $('#menu').fadeOut(0);
+        }
+    });
     
     function getUrlVars() {
         var vars = [], hash;
@@ -22,6 +30,26 @@ $(document).ready(function(){
         }
     });
     
+    $('.mobile-menu').click(function () {
+        $('#menu').css("visibility", "visible");
+        $('.info').fadeOut(0)
+        $('#menu').fadeOut(0)
+        $(this).fadeOut(200);
+        $('#menu').fadeIn(500);
+        $('html,body').animate({
+            scrollTop: $("#menu").offset().top
+        });
+        
+    });
+    
+    $('.menu-item').click(function () {
+        if($(window).width() < 797) {
+            $('#menu').fadeOut(0)
+            $('.mobile-menu').fadeIn(500);
+        }
+        $('.person').css("border", "none");
+    });
+    
     $('#facebook').click(function () {
         window.open('https://www.facebook.com/UnaccompaniedWomen/', '_blank');
     });
@@ -40,6 +68,27 @@ $(document).ready(function(){
         window.open('mailto:unaccompaniedwomen@gmail.com');
     });
     $('#em-ico').click(function () {
+        window.open('mailto:unaccompaniedwomen@gmail.com');
+    });
+    
+    $('#facebook-2').click(function () {
+        window.open('https://www.facebook.com/UnaccompaniedWomen/', '_blank');
+    });
+    $('#fb-ico-2').click(function () {
+        window.open('https://www.facebook.com/UnaccompaniedWomen/', '_blank');
+    });
+    
+    $('#video-2').click(function () {
+        window.open('https://www.youtube.com/user/UnaccompaniedWomen', '_blank');
+    });
+    $('#vid-ico-2').click(function () {
+        window.open('https://www.youtube.com/user/UnaccompaniedWomen', '_blank');
+    });
+    
+    $('#email-2').click(function () {
+        window.open('mailto:unaccompaniedwomen@gmail.com');
+    });
+    $('#em-ico-2').click(function () {
         window.open('mailto:unaccompaniedwomen@gmail.com');
     });
     
@@ -101,6 +150,9 @@ $(document).ready(function(){
         $('.person').css("z-index", "9"); 
         $(this).css("transform", "scale(1.8)");
         $(this).css("z-index", "10");
+        $('.person').css("border", "none"); 
+        $(this).css("border", "solid 3px white");
+        $("html, body").animate({ scrollTop: $(document).height() }, 200);
     });
     
     $('.elizabeth').click(function () {
@@ -151,10 +203,10 @@ $(document).ready(function(){
         $('#member-information').fadeOut(0);
         $('#name').html("Sylvia Cheever");
         $('#place').html("Brooklyn, NY | 3rd Year");
-        $('#year').html("<strong>Major:</strong> ????");
-        $('#fav-song').html("<strong>Favorite Song:</strong> ????");
-        $('#weapon').html("<strong>Weapon of Choice:</strong> ????");
-        $('#her-bio').html("Sylvia stinks and didn't give the website creator a bio so this is what she gets for now.");
+        $('#year').html("<strong>Major:</strong> Anthropology / Biology Minor");
+        $('#fav-song').html("<strong>Favorite Song:</strong> Don't Ask Me to Pick One");
+        $('#weapon').html("<strong>Weapon of Choice:</strong> My Bare Hands");
+        $('#her-bio').html("Sylvia is versed in the art of dance, and can swing and salsa her way into your heart! She’s very involved in the Peer Health Exchange, participates in MUN, and does a frightening Louis Armstrong impersonation! Incapable of taking serious pictures of herself, she slips into her baby voice when exhausted. You can find her studying bones in the Oriental Institute, hiking mountains, or snuggling.");
         $('#member-information').fadeIn(500);
     });
     
