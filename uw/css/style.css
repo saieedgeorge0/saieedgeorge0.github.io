@@ -4,6 +4,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+button:focus, input:focus, textarea:focus {
+    outline: 0;
+}
+
 #triangle-1 {
     width: 0;
     height: 0;
@@ -88,6 +92,7 @@ body {
     -ms-transform: translateY(-25vh) translateY(1px);
     -o-transform: translateY(-25vh) translateY(1px);
     transform: translateY(-25vh) translateY(1px);
+    background: none;
 }
 
 #email {
@@ -104,6 +109,7 @@ body {
     -ms-transform: translateY(25vh);
     -o-transform: translateY(25vh);
     transform: translateY(25vh);
+    background: none;
 }
 
 #vid-ico {
@@ -112,6 +118,11 @@ body {
     -ms-transform: translateX(2px) translateY(1px);
     -o-transform: translateX(2px) translateY(1px);
     transform: translateX(2px) translateY(1px);
+    background: none;
+}
+
+.circle:hover, .icos:hover {
+    cursor:pointer;
 }
 
 #nav {
@@ -122,7 +133,7 @@ body {
     width: 50%;
 }
 
-#info {
+.info {
     position:absolute;
     top: 0;
     left: 49.5%;
@@ -151,9 +162,11 @@ body {
 }
 
 #menu {
+    margin: 0 auto;
     font-size: 23px;
     font-weight: 100;
     text-align: center;
+    width: 100px;
     transform: translateY(10vh);
 }
 
@@ -162,12 +175,17 @@ body {
     margin-bottom: 0px;
 }
 
+.menu-item:hover {
+    cursor: pointer;
+}
+
 .selected {
     height: 0px;
     border: solid 2px white;
     margin: 0 auto;
     padding: 0px;
     margin-top: 3px;
+    transition: opacity 0.3s linear;
 }
 
 #about {
@@ -176,18 +194,36 @@ body {
 
 #members {
     width: 90px;
-    display: none;
+    opacity: 0;
 }
 
 #repertoire {
     width: 95px;
-    display: none;
+    opacity: 0;
+    
 }
 
-#selected {
+#contact {
     width: 100px;
-    display: none;
+    opacity: 0;
 }
+
+#about-nav:hover + #about {
+    opacity: 1 !important;
+}
+
+#members-nav:hover + #members {
+    opacity: 1 !important;
+}
+
+#repertoire-nav:hover + #repertoire {
+    opacity: 1 !important;
+}
+
+#contact-nav:hover + #contact {
+    opacity: 1 !important;
+}
+
 
 #about-blob {
     width: 58%;
@@ -196,6 +232,204 @@ body {
     transform: translateY(15vh) translateX(20px);
     font-size: 21px;
     font-weight: 100;
+}
+
+#repertoire-list {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+    width: 58%;
+    height: 60%;
+    margin: 0 auto;
+    transform: translateY(15vh) translateX(20px);
+}
+
+#members-div {
+    width: 58%;
+    height: 60%;
+    margin: 0 auto;
+    transform: translateY(12vh) translateX(20px);
+}
+
+.random {
+    display:none;
+}
+
+.row {
+    margin: 0 auto;
+    width: 93%;
+}
+
+.person {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.person:hover {
+    cursor: pointer;
+    transform: scale(1.8) !important;
+    z-index: 11 !important;
+}
+
+.elizabeth {
+    background: url('../img/liz.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.aliyah {
+    background: url('../img/aliyah.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.kate {
+    background: url('../img/kate.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.laura {
+    background: url('../img/laura.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.sylvia {
+    background: url('../img/sylvia.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.mariam {
+    background: url('../img/mariam.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.dj {
+    background: url('../img/dj.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.rebecca {
+    background: url('../img/rebecca.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.renee {
+    background: url('../img/renee.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.elissa {
+    background: url('../img/elissa.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.samuela {
+    background: url('../img/samuela.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+#member-information {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+#name {
+    font-size: 22px;
+    margin-bottom: -2px;
+}
+
+#place {
+    padding-bottom: 10px;
+}
+
+#divid {
+    padding: 0px;
+    margin-top: -1px;
+    margin-bottom: 8px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.info-mem {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.song-div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#contact-section { 
+    font-size: 22px;
+    font-weight: 100;
+    width: 58%;
+    height: 60%;
+    margin: 0 auto;
+    transform: translateY(20vh) translateX(20px);
+}
+
+#name1, #email1, #message {
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: solid 1px white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#submit_button {
+    border: none;
+    background: rgba(0,0,0,0);
+    border-bottom: dotted 3px white;
+    float: right;
+}
+
+#submit_button:hover {
+    border-bottom: solid 3px white;
+}
+
+#thanks { 
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    width: 58%;
+    height: 60%;
+    margin: 0 auto;
+    transform: translateY(20vh) translateX(20px);
+}
+
+.getback {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.opb {
+    font-size: 16px;
+    display: inline-block;
 }
 
 @media(max-width: 0px) {
