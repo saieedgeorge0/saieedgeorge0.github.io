@@ -399,6 +399,7 @@ strong {
     border-bottom: solid 1px white;
     width: 100%;
     margin-bottom: 10px;
+    border-radius: 0px;
 }
 
 #submit_button {
