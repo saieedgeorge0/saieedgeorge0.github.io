@@ -250,7 +250,7 @@ $(document).ready(function(){
         $('#name').html("Alex Hummels");
         $('#place').html("West Lafayette, IN | 1st Year");
         $('#year').html("<strong>Major:</strong> Undecided");
-        $('#fav-song').html("<strong>Audition Song:</strong> Take On Me, by A-Ha");
+        $('#fav-song').html("<strong>Audition Song:</strong> Take On Me, by a-ha");
         $('#weapon').html("<strong>Favorite Tree Type:</strong> Rainbow Eucalyptus");
         $('#quote').html("<strong>Favorite Quote:</strong> 'Are you a cop? Legally you have to tell me if you're a cop,' by Shakespeare");
         $('#her-bio').html("I love science, running, chipotle, and dissonance. The best thing in this world (besides a chipotle quesarito) is parallel tritones. Anyone who has performed the Battle of Jericho by Moses Hogan knows what I mean. Also, please never clap on beats 1 and 3 (in 4/4) around me. It makes me want to vomit. ");
