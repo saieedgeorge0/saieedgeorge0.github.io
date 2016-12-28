@@ -200,7 +200,7 @@ $(document).ready(function(){
         $('#year').html("<strong>Major:</strong> Anthropology / Biology Minor");
         $('#fav-song').html("<strong>Favorite Song:</strong> Don't Ask Me to Pick One");
         $('#weapon').html("<strong>Weapon of Choice:</strong> My Bare Hands");
-        $('#her-bio').html("Sylvia is versed in the art of dance, and can swing and salsa her way into your heart! She’s very involved in the Peer Health Exchange, participates in MUN, and does a frightening Louis Armstrong impersonation! Incapable of taking serious pictures of herself, she slips into her baby voice when exhausted. You can find her studying bones in the Oriental Institute, hiking mountains, or snuggling.");
+        $('#her-bio').html("Surrounded by fake pizza and mediocre bagels, Sylvia keeps herself busy teaching health to teens via Peer Health Exchange, volunteering with InTouch, hanging with her Pi Phi sisters, Crisis Directing ChoMUN, and working as UChicago's condom queen (aka Student Coordinator of the WellCzars). In her free time she loves to swing and Latin dance, and perfect her cheesy pasta recipe.");
         $('#member-information').fadeIn(500);
     });
     
