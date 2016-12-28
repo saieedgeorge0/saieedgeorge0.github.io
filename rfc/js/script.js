@@ -66,24 +66,24 @@ $(document).ready(function(){
     });
     
     $('#facebook-2').click(function () {
-        window.open('https://www.facebook.com/UnaccompaniedWomen/', '_blank');
+        window.open('https://www.facebook.com/UChicagoRunforCover/', '_blank');
     });
     $('#fb-ico-2').click(function () {
-        window.open('https://www.facebook.com/UnaccompaniedWomen/', '_blank');
+        window.open('https://www.facebook.com/UChicagoRunforCover/', '_blank');
     });
     
     $('#video-2').click(function () {
-        window.open('https://www.youtube.com/user/UnaccompaniedWomen', '_blank');
+        window.open('https://play.spotify.com/artist/1WN22dBwn6fM3biZufox5W', '_blank');
     });
     $('#vid-ico-2').click(function () {
-        window.open('https://www.youtube.com/user/UnaccompaniedWomen', '_blank');
+        window.open('https://play.spotify.com/artist/1WN22dBwn6fM3biZufox5W', '_blank');
     });
     
     $('#email-2').click(function () {
-        window.open('mailto:unaccompaniedwomen@gmail.com');
+        window.open('mailto:uofcrunforcover@gmail.com');
     });
     $('#em-ico-2').click(function () {
-        window.open('mailto:unaccompaniedwomen@gmail.com');
+        window.open('mailto:uofcrunforcover@gmail.com');
     });
     
     $('#about-nav').click(function () { 
