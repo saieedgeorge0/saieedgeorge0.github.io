@@ -670,6 +670,8 @@ $(document).ready(function(){
         }
         if ($(this).attr('id') == "3") {
             section = 3;
+            window.location.href = "https://medium.com/george-saieed";
+            $('body').css("display", "none");
             $('#arrows').css("display", "block");
             $('#welcome-description').html(blogtext[0]);
             $('#welcome-description').addClass('semi-huge');
